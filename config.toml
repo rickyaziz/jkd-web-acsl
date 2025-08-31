@@ -22,7 +22,7 @@ title = 'ACSL | Jaringan Komputer Dasar'
 [params.docs]
   title = "ACSL Docs"
   darkMode = true
-  themeColor = "green"
+  themeColor = "yellow"
   favicon = "/images/favicon.png"
   titleIcon = true
   sidebarIcons = true
