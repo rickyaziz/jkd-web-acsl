@@ -20,8 +20,9 @@
 
 <html lang="en"><head>
   <meta charset="utf-8" />
-  <title>Data Digital | ACSL Docs</title>
+  <title>INTERNET PROTOCOL VERSION 4(IPv4) | ACSL Docs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Struktur, kelas, Alamat khusus dalam IPv4" />
   <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
   <meta name="author" content="Colin Wilson - Lotus Labs" />
   <meta name="email" content="support@aigis.uk" />
@@ -34,37 +35,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://192.168.100.63/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://192.168.100.63/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="http://192.168.100.63/site.webmanifest">
-<meta property="og:title" content="Data Digital" />
-<meta property="og:description" content="Data digital adalah representasi dari informasi dalam bentuk yang terdiri dari
-angka-angka biner (1 dan 0) yang banyak dikenalsebagai bit atau binary digit. Di dunia
-komputer, data digital adalah bentuk yang paling umum dari data, dan hampir semua
-perangkat elektronik modern menggunakan data digital. Setiap bit dalam data digital
-merepresentasikan satu dari dua keadaan, biasanya disebut sebagai &ldquo;0&rdquo; atau &ldquo;1&rdquo;.
-Dengan menggabungkan sejumlah besar bit ini, kita dapat merepresentasikan
-informasi yang lebih kompleks, termasuk teks, gambar, suara, video, dan lainnya.
-Proses pengkodean dan penguraian (encoding dan decoding) digunakan untuk
-mengubah informasi dari bentuk aslinya menjadi data digital dan sebaliknya. Proses
-ini melibatkan penggunaan metode khusus untuk mewakili informasi dalam bentuk
-serangkaian bit yang dapat dipahami oleh komputer atau perangkat elektronik
-lainnya." />
+<meta property="og:title" content="INTERNET PROTOCOL VERSION 4(IPv4)" />
+<meta property="og:description" content="Struktur, kelas, Alamat khusus dalam IPv4" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://192.168.100.63/docs/briefing/datadigital/" /><meta property="og:image" content="http://192.168.100.63/opengraph/card-base-2_hu_879f8ff7e8e0da81.png"/><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2025-08-31T23:20:07+07:00" />
-<meta property="article:modified_time" content="2025-08-31T23:20:07+07:00" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://192.168.100.63/opengraph/card-base-2_hu_879f8ff7e8e0da81.png"/>
-<meta name="twitter:title" content="Data Digital"/>
-<meta name="twitter:description" content="Data digital adalah representasi dari informasi dalam bentuk yang terdiri dari
-angka-angka biner (1 dan 0) yang banyak dikenalsebagai bit atau binary digit. Di dunia
-komputer, data digital adalah bentuk yang paling umum dari data, dan hampir semua
-perangkat elektronik modern menggunakan data digital. Setiap bit dalam data digital
-merepresentasikan satu dari dua keadaan, biasanya disebut sebagai &ldquo;0&rdquo; atau &ldquo;1&rdquo;.
-Dengan menggabungkan sejumlah besar bit ini, kita dapat merepresentasikan
-informasi yang lebih kompleks, termasuk teks, gambar, suara, video, dan lainnya.
-Proses pengkodean dan penguraian (encoding dan decoding) digunakan untuk
-mengubah informasi dari bentuk aslinya menjadi data digital dan sebaliknya. Proses
-ini melibatkan penggunaan metode khusus untuk mewakili informasi dalam bentuk
-serangkaian bit yang dapat dipahami oleh komputer atau perangkat elektronik
-lainnya."/>
+<meta property="og:url" content="http://192.168.100.63/docs/babone/ipvfour/" /><meta property="og:image" content="http://192.168.100.63/opengraph/card-base-2_hu_6aedf364d619d02d.png"/><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2025-09-07T17:46:03+07:00" />
+<meta property="article:modified_time" content="2025-09-07T17:46:03+07:00" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://192.168.100.63/opengraph/card-base-2_hu_6aedf364d619d02d.png"/>
+<meta name="twitter:title" content="INTERNET PROTOCOL VERSION 4(IPv4)"/>
+<meta name="twitter:description" content="Struktur, kelas, Alamat khusus dalam IPv4"/>
 
   
   <link
@@ -126,7 +105,7 @@ lainnya."/>
       </li>
          
       <li
-        class="sidebar-dropdown  current active"
+        class="sidebar-dropdown  "
       >
         <button class="btn">
           <i class="material-icons me-2"
@@ -134,7 +113,7 @@ lainnya."/>
           >
           Briefing
         </button>
-        <div class="sidebar-submenu d-block">
+        <div class="sidebar-submenu ">
           <ul>
               
             <li
@@ -170,7 +149,7 @@ lainnya."/>
             </li>
                
             <li
-              class="current "
+              class=" "
             >
               <a class="sidebar-nested-link" href="http://192.168.100.63/docs/briefing/datadigital/"
                 >Data Digital</a
@@ -182,7 +161,7 @@ lainnya."/>
       </li>
          
       <li
-        class="sidebar-dropdown  "
+        class="sidebar-dropdown  current active"
       >
         <button class="btn">
           <i class="material-icons me-2"
@@ -190,7 +169,7 @@ lainnya."/>
           >
           Tutorial Bab 1
         </button>
-        <div class="sidebar-submenu ">
+        <div class="sidebar-submenu d-block">
           <ul>
               
             <li
@@ -202,7 +181,7 @@ lainnya."/>
             </li>
                
             <li
-              class=" "
+              class="current "
             >
               <a class="sidebar-nested-link" href="http://192.168.100.63/docs/babone/ipvfour/"
                 >INTERNET PROTOCOL VERSION 4(IPv4)</a
@@ -498,15 +477,15 @@ lainnya."/>
             
             
                 <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="/docs/briefing/">
-                        <span itemprop="name">Briefing</span>
+                    <a itemprop="item" href="/docs/babone/">
+                        <span itemprop="name">Tutorial Bab 1</span>
                     </a>
                     <meta itemprop="position" content='2' />
                 </li>
             
         
             <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">Data Digital</span>
+                <span itemprop="name">INTERNET PROTOCOL VERSION 4(IPv4)</span>
                 <meta itemprop="position" content='3' />
             </li>
         
@@ -519,9 +498,9 @@ lainnya."/>
     <div class="fw-bold text-uppercase mb-2">On this page</div>
     <nav id="toc">
   <ul>
-    <li><a href="#jenis-sistem-bilangan">Jenis Sistem Bilangan</a></li>
-    <li><a href="#konversi-bilangan">Konversi Bilangan</a></li>
-    <li><a href="#tugas">Tugas</a></li>
+    <li><a href="#struktur-alamat-ipv4">Struktur Alamat IPv4</a></li>
+    <li><a href="#kelas---kelas-ip">Kelas - Kelas IP</a></li>
+    <li><a href="#alamat-khusus-dalam-ipv4">Alamat Khusus dalam IPv4</a></li>
   </ul>
 </nav>
     </toc></div>
@@ -533,209 +512,215 @@ lainnya."/>
                                             </button>
 <nav id="toc-mobile">
   <ul class="dropdown-menu">
-    <li><a href="#jenis-sistem-bilangan">Jenis Sistem Bilangan</a></li>
-    <li><a href="#konversi-bilangan">Konversi Bilangan</a></li>
-    <li><a href="#tugas">Tugas</a></li>
+    <li><a href="#struktur-alamat-ipv4">Struktur Alamat IPv4</a></li>
+    <li><a href="#kelas---kelas-ip">Kelas - Kelas IP</a></li>
+    <li><a href="#alamat-khusus-dalam-ipv4">Alamat Khusus dalam IPv4</a></li>
   </ul>
 </nav></div>
                                         <div class="docs-content col-12 col-xl-9 mt-0">
                                             <div class="mb-0 d-flex">
                                                 
-                                                <i class="material-icons title-icon me-2">123</i>
+                                                <i class="material-icons title-icon me-2">article</i>
                                                 
                                                 <h1 class="content-title mb-0">
-                                                    Data Digital
+                                                    INTERNET PROTOCOL VERSION 4(IPv4)
                                                     
                                                 </h1>
                                             </div>
                                             
-                                                <p class="lead mb-3"></p>
+                                                <p class="lead mb-3">Struktur, kelas, Alamat khusus dalam IPv4</p>
                                             
                                             <div id="content" class="main-content" data-bs-spy="scroll" data-bs-root-margin="0px 0px -65%" data-bs-target="#toc-mobile">
                                                 
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
-        <p>Data digital adalah representasi dari informasi dalam bentuk yang terdiri dari
-angka-angka biner (1 dan 0) yang banyak dikenalsebagai bit atau binary digit. Di dunia
-komputer, data digital adalah bentuk yang paling umum dari data, dan hampir semua
-perangkat elektronik modern menggunakan data digital. Setiap bit dalam data digital
-merepresentasikan satu dari dua keadaan, biasanya disebut sebagai &ldquo;0&rdquo; atau &ldquo;1&rdquo;.
-Dengan menggabungkan sejumlah besar bit ini, kita dapat merepresentasikan
-informasi yang lebih kompleks, termasuk teks, gambar, suara, video, dan lainnya.
-Proses pengkodean dan penguraian (encoding dan decoding) digunakan untuk
-mengubah informasi dari bentuk aslinya menjadi data digital dan sebaliknya. Proses
-ini melibatkan penggunaan metode khusus untuk mewakili informasi dalam bentuk
-serangkaian bit yang dapat dipahami oleh komputer atau perangkat elektronik
-lainnya.</p>
-<h2 id="jenis-sistem-bilangan">Jenis Sistem Bilangan <a href="#jenis-sistem-bilangan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Jenis sistem bilangan merujuk pada cara berbeda untuk merepresentasikan
-dan memahami angka. Berikut adalah beberapa contoh sistem bilangan yang sering
-digunakan:</p>
+        <p>IPv4 adalah metode pengalamatan dalam protokol TCP/IP versi 4,
+dikembangkan pada tahun 1981 dan telah menjadi standar utama untuk
+mengidentifikasi perangkat di jaringan komputer. Dengan panjang 32-bit, IPv4
+mampu mengalamati sekitar 4 miliar perangkat di seluruh dunia. Masing -masing
+alamat IPv4 ditulis menggunakan format desimal dengan pemisah titik, yang terdiri
+dari empat oktet, dimana setiap oktet berukuran 8-bit dan memiliki nilai antara 0
+hingga 255.</p>
+<p>Meskipun demikian, sejumlah alamat IPv4 memiliki fungsi khusus, seperti
+alamat untuk broadcast, yang dipakai untuk mengirim data ke setiap perangkat dalam
+jaringan, serta alamat jaringan, yang digunakan untuk mengidentifikasi jaringan itu
+sendiri. IPv4 juga memiliki beberapa keterbatasan, terutama dalam hal kapasitas
+alamat, yang menyebabkan pengembangan IPv6 untuk mengatasi kekurangan ini.
+Hierarki pengalamatan pada IPv4 seperti gambar dibawah ini :</p>
+<div class="d-flex justify-content-center w-100">
+<img src="/images/babOne/bf-1.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 70%; max-width: 100%; height: auto;">
+</div>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirxw1MttiQiY2Qul8eferTtLbNLRCkN6_acBtGlYzG7g65I-fqgwlBY9sXXKPnYY0iboPetzlxnzitg4wK5qRyBrJko9Quc4YvVy0ra3wB6s5PS4Rklf9ZNNnute88Z3KrzjbfImzs5Vk/s640/7.jpg" rel="external" target="_blank">Source Gambar<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a></p>
+<h2 id="struktur-alamat-ipv4">Struktur Alamat IPv4 <a href="#struktur-alamat-ipv4" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><ol>
+<li>32-bit Address:
+Alamat IPv4 dibentuk oleh 32 bit yang dibagi menjadi dua bagian utama:
+Network ID dan Host ID. Dalam gambar, 32 bit ini terbagi menjadi empat oktet,
+dengan masing - masing oktet memiliki panjang 8 bit.</li>
+<li>Nework ID:
+Network ID adalah komponen dalam alamat IP yang berfungsi untuk
+mengenali jaringan tempat perangkat terhubung. Pada gambar, Network ID
+mencakup tiga oktet pertama, yaitu &ldquo;192.168.121&rdquo;. Ini menunjukkan bahwa
+semua perangkat yang memiliki Network ID yang serupa terhubung dalam
+jaringan yang sama. Network ID ini krusial untuk menjamin bahwa data yang
+dikirimkan melalui jaringan dapat diteruskan ke jaringan yang tepat sebelum
+sampai ke perangkat yang dituju.</li>
+<li>Host ID:
+Host ID merupakan bagian dalam alamat IP yang mengidentifikasi perangkat
+tertentu dalam jaringan yang sama. Dalam gambar, Host ID adalah oktet
+terakhir &ldquo;16&rdquo;. Ini berarti perangkat yang bersangkutan memiliki alamat host
+&ldquo;16&rdquo; dalam jaringan &ldquo;192.168.121&rdquo;.</li>
+<li>Oktet:
+Setiap oktet terdiri dari 8 bit, dengan nilai yang dapat bervariasi antara 0
+hingga 255 dalam notasi desimal. Pada gambar, empat oktet adalah &ldquo;192&rdquo;,
+&ldquo;168&rdquo;, &ldquo;121&rdquo;, dan &ldquo;16&rdquo;, yang menunjukkan struktur standar dari alamat IPv4.</li>
+<li>Pembagian Network dan Host:</li>
+</ol>
+<div class="d-flex justify-content-center w-100">
+<img src="/images/babOne/bf-2.png" alt="Gambar B.2" class="img-fluid mb-3" style="width: 70%; max-width: 100%; height: auto;">
+</div>
+<p><a href="https://findmytechome.wordpress.com/wp-content/uploads/2019/05/266db-image004.png?w=400&h=201" rel="external" target="_blank">Source Gambar<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a></p>
+<p>Gambar diatas menunjukkan pembagian Network dan Host dalam berbagai
+kelas IP:</p>
+<ul>
+<li>Kelas A: Oktet pertama digunakan untuk Network, sementara tiga oktet sisanya dialokasikan untuk Host.</li>
+<li>Kelas B: Dua oktet pertama dialokasikan untuk Network, sementara dua oktet terakhir untuk Host.</li>
+<li>Kelas C: Tiga oktet pertama diperuntukkan bagi Network, sementara oktet terakhir digunakan untuk Host.</li>
+<li>Kelas D: Tidak ada pembagian antara Network dan Host, digunakan untuk multicast.</li>
+</ul>
+<p>Pembagian ini penting untuk routing dan pengalamatan IP, di mana router
+di jaringan lokal akan menggunakan Network ID untuk mengarahkan data ke
+jaringan yang tepat, dan Host ID untuk memastikan bahwa data mencapai
+perangkat yang benar di dalam jaringan.</p>
+<h2 id="kelas---kelas-ip">Kelas - Kelas IP <a href="#kelas---kelas-ip" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><div class="d-flex justify-content-center w-100">
+<img src="/images/babOne/bf-3.png" alt="Gambar B.2" class="img-fluid mb-3" style="width: 70%; max-width: 100%; height: auto;">
+</div>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUYGOR4TFIDFoylnOrz8KoJpN_dEqNU5fqPmuxRYEqZ2-XgPytrwhihUaWtSUdg_gtqiXNbADfBjlwwcF7QIfsUhjhF20ENtAhyphenhyphenAv9-5zWJaxc7rRr4cm4M_mEBInodHEL_QvyzxAzppeHYvq6Uz-3rKvLklgPSuh6z1uFb-dWou-TxKaLnzsXg_qymkoM/w640-h438-rw/ip-address-classes.webp" rel="external" target="_blank">Source Gambar<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a></p>
+<p>kelas IP dibagi menjadi lima kategori utama berdasarkan rentang alamat yang
+tersedia, yang dikenal sebagai Kelas A, B, C, D, dan E. Dibawah ini penjelasan
+singkat tentang masing-masing kelas:</p>
 <ol>
 <li>
-<p><strong>Desimal :</strong> Desimal adalah yang paling sering digunakan dalam kehidupan sehari-hari. Sistem ini berbasis 10, dengan angka-angka yang terdiri dari 0 hingga 9. Setiap digit memiliki nilai yang bervariasi tergantung pada posisinya dalam bilangan tersebut.</p>
+<p>Kelas A:</p>
+<ul>
+<li>Range Alamat: 1.0.0.0 sampai 126.0.0.0</li>
+<li>Pembagian: Oktet pertama untuk Network, tiga oktet berikutnya untuk Host.</li>
+<li>Penggunaan: Untuk jaringan besar dengan banyak host.</li>
+<li>Contoh: 10.0.0.1 (IP Address Kelas A menggunakan subnet mask
+255.0.0.0)</li>
+</ul>
 </li>
 <li>
-<p><strong>Biner :</strong> Biner adalah sistem bilangan yang digunakan dalam teknologi digital dan
-komputer. Berbasis 2, dengan hanya dua angka: 0 dan 1. Setiap digit
-merepresentasikan keadaan saklar elektronik (on/off) dalam perangkat digital.</p>
+<p>Kelas B:</p>
+<ul>
+<li>Range Alamat: 128.0.0.0 sampai 191.255.0.0</li>
+<li>Pembagian: Dua oktet awal dialokasikan untuk Network, sedangkan dua
+oktet sisanya diperuntukkan bagi Host.</li>
+<li>Penggunaan: Untuk jaringan skala menengah, seperti pada perusahaan
+besar.</li>
+<li>Contoh: 172.16.0.1 (IP Address Kelas B menggunakan subnet mask
+255.255.0.0)</li>
+</ul>
 </li>
 <li>
-<p><strong>Oktal :</strong> Oktal adalah sistem bilangan yang kurang umum, namun digunakan dalam
-beberapa aplikasi komputer. Berbasis 8, dengan angka-angka dari 0 hingga 7. Setiap
-digit merepresentasikan kombinasi dari tiga bit biner.</p>
+<p>Kelas C:</p>
+<ul>
+<li>Range Alamat: 192.0.0.0 sampai 223.255.255.0</li>
+<li>Pembagian: Tiga oktet awal dialokasikan untuk Network, sedangkan oktet
+terakhir ditujukan untuk Host.</li>
+<li>Penggunaan: Untuk jaringan kecil, seperti jaringan rumah atau kantor
+kecil.</li>
+<li>Contoh: 192.168.1.1 (IP Address Kelas C menggunakan subnet mask
+255.255.255.0)</li>
+</ul>
 </li>
 <li>
-<p><strong>Heksadesimal :</strong> Heksadesimal adalah sistem bilangan yang umum dipakai dalam
-pemrograman komputer dan representasi warna. Berbasis 16, menggunakan angka 0
-hingga 9 dan huruf A hingga F (yang mewakili nilai 10 hingga 15). Setiap digit
-merepresentasikan kombinasi dari empat bit biner.</p>
+<p>Kelas D:</p>
+<ul>
+<li>Range Alamat: 224.0.0.0 sampai 239.255.255.255</li>
+<li>Penggunaan: Untuk multicast, tidak dibagi antara Network dan Host.</li>
+<li>Contoh: 224.0.0.1 (Alamat multicast untuk protokol routing tertentu)</li>
+</ul>
+</li>
+<li>
+<p>Kelas E:</p>
+<ul>
+<li>Rentang Alamat: 240.0.0.0 hingga 255.255.255.255</li>
+<li>Penggunaan: Reserved untuk keperluan eksperimen serta jarang dipakai
+secara luas.</li>
+<li>Contoh: 250.0.0.1 (IP Address Kelas E, umumnya tidak digunakan dalam
+jaringan publik)</li>
+</ul>
 </li>
 </ol>
-<h2 id="konversi-bilangan">Konversi Bilangan <a href="#konversi-bilangan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Pada dasarnya perangkat elektronik tidak dapat menerima peritah begitu saja,
-karena perangkat elektronik hanya mengerti perintah dalam bit. Semisal bila
-pengguna ingin mengetikan huruf pada keyboard maka, perintah tersebut harus
-diubah dulu dari huruf menjadi angka yang terdapat pada kode ASCII, lalu dikirimkan
-ke prosesor yang sudah dalam bentuk bit. Sebagai contoh angka 42(desimal) akan
-dikonversikan ke berbagai jenis sistem bilangan.</p>
-
-<div class="alert alert-info d-flex" role="alert">
-  <div class="flex-shrink-1 alert-icon">
-  
-  <span class="material-icons size-20 me-2">
-  info
-  </span></div>
-  
-  <div class="w-100">bila bilangan dari desimal ke jenis sitem lain maka bagi dengan jumlah basisnya dan bila biner ke oktal ataupun heksadesimal lihat representasi bitnya.</div>
-  </div>
+<p>Pembagian ini memungkinkan pengalokasian alamat IP yang efisien sesuai
+dengan kebutuhan jaringan. Alamat 127.x.x.x diperuntukkan bagi loopback, yang
+berfungsi untuk memungkinkan perangkat mengirim data ke dirinya sendiri. Alamat
+127.0.0.1 adalah yang paling sering digunakan dan dikenal sebagai localhost. Ini
+berguna untuk menguji dan memvalidasi jaringan atau aplikasi lokal tanpa melibatkan
+jaringan eksternal.</p>
+<h2 id="alamat-khusus-dalam-ipv4">Alamat Khusus dalam IPv4 <a href="#alamat-khusus-dalam-ipv4" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Dalam IPv4, ada beberapa jenis alamat khusus yang memiliki fungsi dan
+penggunaan tertentu. Berikut adalah penjelasan untuk beberapa kategori utama:</p>
 <ol>
 <li>
-<p>Desimal ke Biner : Angka 42(desimal) akan diubah ke biner dengan cara membagi angka tersebut
-dengan angka 2.</p>
-
-
-
-
-
-
-
-<table class="table table-striped">
-  <thead>
-      <tr>
-          <th>JUMLAH</th>
-          <th>HASIL</th>
-          <th>SISA</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>42/2</td>
-          <td>21</td>
-          <td>0</td>
-      </tr>
-      <tr>
-          <td>21/2</td>
-          <td>10</td>
-          <td>1</td>
-      </tr>
-      <tr>
-          <td>10/2</td>
-          <td>5</td>
-          <td>0</td>
-      </tr>
-      <tr>
-          <td>5/2</td>
-          <td>2</td>
-          <td>1</td>
-      </tr>
-      <tr>
-          <td>2/2</td>
-          <td>1</td>
-          <td>0</td>
-      </tr>
-      <tr>
-          <td>1/2</td>
-          <td>0</td>
-          <td>1</td>
-      </tr>
-  </tbody>
-</table>
-
-<p>Hasil yang didapat adalah = <strong>101010(biner)</strong>.</p>
+<p>Alamat Pribadi (Private): Alamat pribadi adalah alamat IP yang khusus diperuntukkan bagi penggunaan
+di jaringan lokal dan tidak dapat diakses langsung melalui internet publik. Alamat ini digunakan untuk mengidentifikasi perangkat dalam jaringan lokal
+dan biasanya diterjemahkan ke alamat publik menggunakan teknik Network
+Address Translation (NAT). Contoh:</p>
+<ul>
+<li>192.168.1.1</li>
+<li>10.0.0.5</li>
+<li>172.16.0.10</li>
+</ul>
 </li>
 <li>
-<p>Biner ke Desimal : Angka 101010(biner) akan diubah ke decimal</p>
-
-
-
-
-
-
-
-<table class="table table-striped">
-  <thead>
-      <tr>
-          <th>ANKA BINER</th>
-          <th>1</th>
-          <th>0</th>
-          <th>1</th>
-          <th>0</th>
-          <th>1</th>
-          <th>0</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Pangakat 2</strong></td>
-          <td>2^5</td>
-          <td>2^4</td>
-          <td>2^3</td>
-          <td>2^2</td>
-          <td>2^1</td>
-          <td>2^0</td>
-      </tr>
-      <tr>
-          <td><strong>Hasil</strong></td>
-          <td>1(2^5)</td>
-          <td>0(2^4)</td>
-          <td>1(2^3)</td>
-          <td>0(2^2)</td>
-          <td>1(2^1)</td>
-          <td>0(2^0)</td>
-      </tr>
-  </tbody>
-</table>
-
-<p>Hasil yang didapat adalah = 32+0+8+0+2+0 <strong>42(desimal)</strong>.</p>
+<p>Alamat publik: Alamat publik adalah alamat IP yang dapat dijangkau secara langsung melalui
+internet. Alamat ini digunakan untuk identifikasi global di internet dan harus
+unik di seluruh dunia. Alamat public biasanya diberikan oleh penyedia layanan
+internet (ISP).
+Contoh:</p>
+<ul>
+<li>8.8.8.8 (Alamat DNS Google)</li>
+<li>172.217.1.14 (Alamat IP salah satu server Google)</li>
+</ul>
+</li>
+<li>
+<p>Alamat Boroadcast: Alamat broadcast diperuntukan untuk mentransmisikan paket ke semua
+perangkat di jaringan lokal. Ada dua jenis broadcast: broadcast terbatas dan
+broadcast global.</p>
+<ul>
+<li>Broadcast Terbatas: Alamat broadcast untuk jaringan tertentu, misalnya
+untuk subnet 192.168.1.0/24, alamat broadcast adalah 192.168.1.255.</li>
+<li>Broadcast Global: Biasanya tidak digunakan di IPv4 karena broadcast
+terbatas sudah mencakup sebagian besar kebutuhan. Broadcast global
+adalah 255.255.255.255 yang dapat mentransmisikan untuk mengirimkan
+pesan broadcast ke seluruh perangkat di jaringan lokal yang sama.</li>
+</ul>
+</li>
+<li>
+<p>Alamat Loopback: Alamat loopback adalah alamat yang dipakai oleh perangkat untuk
+mengirimkan data ke dirinya sendiri. Ini biasanya digunakan untuk pengujian
+dan debugging. Rentang Alamat Loopback di kelas A dari 127.0.0.0 hingga
+127.255.255.255. Contoh:</p>
+<ul>
+<li>127.0.0.1 (Alamat loopback standar, sering disebut sebagai &ldquo;localhost&rdquo;)</li>
+</ul>
+</li>
+<li>
+<p>Alamat Multicast: Alamat multicast digunakan untuk mengirimkan paket ke sekelompok
+perangkat yang telah bergabung dalam grup multicast tertentu. Rentang
+Alamat Multicast di kelas D dari 224.0.0.0 sampai 239.255.255.255.
+Contoh:</p>
+<ul>
+<li>224.0.0.1 (Digunakan untuk semua host dalam jaringan lokal)</li>
+</ul>
+</li>
+<li>
+<p>Alamat Reserved: Alamat reserved adalah alamat yang dikhususkan untuk penggunaan tertentu
+dan tidak digunakan dalam jaringan umum. Contoh termasuk alamat untuk
+percobaan dan penelitian. Rentang Alamat Reserved di Kelas E dari 240.0.0.0
+hingga 255.255.255.255.</p>
 </li>
 </ol>
-<h2 id="tugas">Tugas <a href="#tugas" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><div class="alert alert-success" role="alert">
-<h5 class="alert-heading"><i class="material-icons align-middle me-2">assignment</i>Tugas Praktikum</h5>
-<hr>
-<p class="mb-3"><strong>Kerjakan tugas berikut untuk memahami konversi bilangan:</strong></p>
-<div class="row">
-<div class="col-md-6">
-<div class="badge bg-primary text-white mb-2">1</div>
-<p class="mb-2"><strong>Tugas 1:</strong></p>
-<p>Ubah angka <code>64(desimal)</code> ke:</p>
-<ul>
-<li>Heksadesimal</li>
-<li>Oktal</li>
-</ul>
-</div>
-<div class="col-md-6">
-<div class="badge bg-primary text-white mb-2">2</div>
-<p class="mb-2"><strong>Tugas 2:</strong></p>
-<p>Ubah angka <code>110011(biner)</code> ke:</p>
-<ul>
-<li>Heksadesimal</li>
-<li>Oktal</li>
-</ul>
-</div>
-</div>
-<div class="mt-3">
-<small class="text-muted"><i class="material-icons align-middle me-1">info</i>Gunakan metode pembagian untuk konversi dari desimal, dan gunakan representasi bit untuk konversi dari biner.</small>
-</div>
-</div>
 
     </div>
 
@@ -750,14 +735,14 @@ dengan angka 2.</p>
     class="row flex-xl-nowrap "
   >
     <div class="col-sm-6 pt-2 doc-next">
-      <a href="/docs/briefing/arsitekturdantopologijaringan/">
+      <a href="/docs/babone/pengelamatan/">
         <div class="card h-100 my-1">
           <div class="card-body py-2">
             <p class="card-title fs-5 fw-semibold lh-base mb-0">
-              <i class="material-icons align-middle">navigate_before</i> Arsitektur, Topologi Dan Tipe Jaringan
+              <i class="material-icons align-middle">navigate_before</i> Pengalamatan IP
             </p>
             <p class="card-text ms-2">
-              
+              Pengalamatan IP pada IPV4 dan …
             </p>
             
           </div>
@@ -765,15 +750,15 @@ dengan angka 2.</p>
       </a>
     </div>
     <div class="col-sm-6 pt-2 doc-prev">
-      <a class="ms-auto" href="/docs/babone/pengelamatan/">
+      <a class="ms-auto" href="/docs/babone/ipvsix/">
         <div class="card h-100 my-1 text-end">
           <div class="card-body py-2">
             <p class="card-title fs-5 fw-semibold lh-base mb-0">
-              Pengalamatan IP
+              INTERNET PROTOCOL VERSION 6(IPv6)
               <i class="material-icons align-middle">navigate_next</i>
             </p>
             <p class="card-text me-2">
-              Pengalamatan IP pada IPV4 dan …
+              Strukktur dalam IPv6
             </p>
             
           </div>
