@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+
+
+
+
+
+    
+        
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <title>Jaringan Komputer Dasar | ACSL Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dokumentasi dari semua bab yang akan dipelajari pada Laboratorium Lanjut Gunadarma." />
+  <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
+  <meta name="author" content="Colin Wilson - Lotus Labs" />
+  <meta name="email" content="support@aigis.uk" />
+  <meta name="website" content="https://lotusdocs.dev" />
+  <meta name="Version" content="v0.1.0" />
+  
+  <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" crossorigin="use-credentials" href="/site.webmanifest">
+<meta property="og:title" content="Jaringan Komputer Dasar" />
+<meta property="og:description" content="Dokumentasi dari semua bab yang akan dipelajari pada Laboratorium Lanjut Gunadarma." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/" /><meta property="og:image" content="/opengraph/card-base-2_hu_a7cd0b7745dfe429.png"/><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/opengraph/card-base-2_hu_a7cd0b7745dfe429.png"/>
+<meta name="twitter:title" content="Jaringan Komputer Dasar"/>
+<meta name="twitter:description" content="Dokumentasi dari semua bab yang akan dipelajari pada Laboratorium Lanjut Gunadarma."/>
+
+  
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Atom feed for ACSL | Jaringan Komputer Dasar"
+    href="/index.xml"
+  />
+  
+  <script>
+    {
+      {
+        $darkModeInit.Content | safeJS;
+      }
+    }
+  </script>
+  
+  
+   
+  <script
+    type="text/javascript"
+    src="/docs/js/flexsearch.bundle.min.f5159d5a2151ffbb653996ec17eaff7da4e04c286bd879fc41839d36a5586f3f20eaead0b6089de48f9adc669cdee771.js"
+    integrity="sha384-9RWdWiFR/7tlOZbsF&#43;r/faTgTChr2Hn8QYOdNqVYbz8g6urQtgid5I&#43;a3Gac3udx"
+    crossorigin="anonymous"
+  ></script>
+    
+  
+
+  <link
+    rel="stylesheet"
+    href="/docs/scss/style.min.bd0423993e90b8ff724c0ed61cea69eacd047712e1e1b0e7d1d156b15012abd9845cace92e2b08fe06fba68e033b9b3e.css"
+    integrity="sha384-vQQjmT6QuP9yTA7WHOpp6s0EdxLh4bDn0dFWsVASq9mEXKzpLisI/gb7po4DO5s&#43;"
+    crossorigin="anonymous"
+  />
+  
+  
+   </head>
+<body>
+        <div class="content">
+            <div class="page-wrapper toggled">
+<nav id="sidebar" class="sidebar-wrapper">
+  <div class="sidebar-brand">
+    <a
+      href='/'
+      aria-label="HomePage"
+      alt="HomePage"
+    >
+       <svg height="48" viewBox="0 -960 6400 1920" width="82" fill="#e8eaed" version="1.1" id="svg1" sodipodi:docname="logo 1.svg" xml:space="preserve" inkscape:version="1.3 (0e150ed6c4, 2023-07-21)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs1"><clipPath id="clip0"><rect x="1819" y="81" width="629" height="166" id="rect1"></rect></clipPath><clipPath id="clip1"><rect x="1829" y="80" width="634" height="155" id="rect2"></rect></clipPath><clipPath id="clip2"><rect x="1829" y="80" width="634" height="155" id="rect3"></rect></clipPath></defs><sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="2.9427083" inkscape:cx="93.281418" inkscape:cy="35.681417" inkscape:window-width="1440" inkscape:window-height="830" inkscape:window-x="-6" inkscape:window-y="-6" inkscape:window-maximized="1" inkscape:current-layer="g2"></sodipodi:namedview><g style="overflow:hidden;fill:#000000;fill-opacity:1" id="g2" transform="matrix(12.210901,0,0,11.39928,-53.145918,-848.22675)"><g id="g38" transform="matrix(0.84690738,0,0,0.84690738,-1544.4413,-61.41962)" clip-path="url(#clipPath47)" style="fill:#0066ff;fill-opacity:1"><path d="m 69.8996,152.732 c -2.4582,-0.642 -5.2372,-1.924 -6.199,-2.993 C 59.5322,145.143 5.45088,20.8416 0.534401,4.59584 L -0.10688,2.1376 H 14.215 28.5368 L 39.332,26.5063 c 5.8781,13.36 14.4286,32.7054 18.9176,42.9659 9.94,22.4448 18.3836,39.5458 19.6659,39.5458 0.962,0 9.4056,-17.3149 18.3835,-38.1566 l 6.199,-14.2149 H 89.7793 77.1675 L 74.816,48.9512 C 73.4268,44.6758 71.7165,39.1181 70.9683,36.553 l -1.3895,-4.489 h 21.6969 21.5893 l 6.306,-14.9632 6.199,-14.9632 h 14.857 c 8.123,0 14.749,0.21376 14.749,0.5344 0,3.95457 -46.386,111.796 -56.8601,132.211 -6.3058,12.398 -9.6192,16.245 -15.3907,17.849 -4.8097,1.389 -6.7336,1.282 -12.8256,0 z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path3" style="fill:#0066ff;fill-opacity:1"></path><path d="m 382.951,152.839 c -12.612,-2.352 -24.903,-8.444 -32.598,-16.353 -12.613,-12.826 -14.109,-34.095 -3.314,-46.7067 8.017,-9.2987 19.773,-15.1769 47.669,-23.4069 22.338,-6.7333 32.493,-10.6879 36.125,-14.1082 2.994,-2.8856 3.313,-3.6338 2.886,-7.9089 -1.283,-10.9018 -7.482,-14.6425 -25.651,-15.2838 -28.109,-1.069 -39.76,4.9164 -44.569,23.0861 l -1.282,4.4889 h -14.751 -14.748 l 0.856,-5.0235 c 5.77,-36.8735 39.011,-56.86012 83.258,-50.12668 13.895,2.13759 23.942,6.73346 33.347,15.39078 9.191,8.5504 11.543,14.0013 11.543,26.6131 0,12.8256 -2.565,20.0935 -9.618,27.1476 -7.377,7.3746 -17.102,11.7566 -43.928,19.6658 -33.242,9.8334 -43.607,15.2834 -41.898,21.9104 1.174,4.382 7.374,9.192 14.321,11.116 8.657,2.458 27.255,2.565 35.377,0.213 8.873,-2.565 13.682,-8.657 13.682,-17.1 v -4.917 h 14.964 14.961 v 4.596 c 0,5.558 -2.243,14.108 -5.343,20.521 -5.022,10.367 -17.956,19.452 -34.203,24.048 -9.191,2.565 -28.321,3.634 -37.086,2.138 z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path4" style="fill:#0066ff;fill-opacity:1"></path><path d="m 223.7,151.128 c -19.238,-4.168 -38.584,-17.849 -48.31,-33.987 -25.972,-43.3937 -6.413,-96.62 41.577,-112.8658 9.939,-3.313279 27.895,-4.06144 39.118,-1.6032 16.566,3.63393 31.957,12.8256 42.43,25.5443 7.696,9.5123 11.438,16.9938 11.438,23.4067 v 5.0235 h -13.895 -13.895 l -2.565,-5.1302 c -7.803,-15.3907 -29.926,-25.9719 -47.347,-22.7656 -27.683,5.0233 -45.424,31.1022 -39.76,58.036 5.344,25.4373 31.102,42.8593 55.685,37.7283 3.847,-0.748 8.657,-2.244 10.687,-3.313 6.52,-3.313 16.674,-11.009 20.093,-15.391 l 3.421,-4.275 h 13.895 14 l -0.64,3.848 c -1.069,6.306 -7.056,15.284 -16.887,25.223 -7.695,7.696 -10.795,9.94 -19.238,14.002 -16.033,7.802 -33.668,10.047 -49.807,6.519 z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path5" style="fill:#0066ff;fill-opacity:1"></path><path d="M 494.855,76.4193 V 0 l 53.012,0.21376 53.012,0.320641 4.169,13.894399 c 2.243,7.6954 4.169,14.0014 4.169,14.215 0,0.1069 -18.704,0.2138 -41.577,0.2138 -36.446,0 -41.898,0.2139 -43.286,1.71 -1.496,1.4964 -1.712,8.5505 -1.712,61.9907 V 152.839 H 508.75 494.855 Z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path6" style="fill:#0066ff;fill-opacity:1"></path></g></g></svg> 
+    </a>
+  </div>
+  <div class="sidebar-content" style="height: calc(100% - 131px)">
+    <ul class="sidebar-menu">
+          
+      <li class="">
+        <a class="sidebar-root-link" href="/docs/sop/">
+          <i class="material-icons me-2">description</i>
+           Standar Operasional Prosedure
+        </a>
+      </li>
+         
+      <li
+        class="sidebar-dropdown  "
+      >
+        <button class="btn">
+          <i class="material-icons me-2"
+            >article</i
+          >
+          Briefing
+        </button>
+        <div class="sidebar-submenu ">
+          <ul>
+              
+            <li
+              class=" "
+            >
+              <a class="sidebar-nested-link" href="/docs/briefing/sejarahdanevolusi/"
+                >Sejarah Dan Evolusi Jaringan</a
+              >
+            </li>
+               
+            <li
+              class=" "
+            >
+              <a class="sidebar-nested-link" href="/docs/briefing/definisidancarakerja/"
+                >Definisi Dan Cara Kerja Jaringan</a
+              >
+            </li>
+               
+            <li
+              class=" "
+            >
+              <a class="sidebar-nested-link" href="/docs/briefing/perangkatjaringan/"
+                >Perangkat Jaringan</a
+              >
+            </li>
+               
+            <li
+              class=" "
+            >
+              <a class="sidebar-nested-link" href="/docs/briefing/arsitekturdantopologijaringan/"
+                >Arsitektur, Topologi Dan Tipe Jaringan</a
+              >
+            </li>
+               
+            <li
+              class=" "
+            >
+              <a class="sidebar-nested-link" href="/docs/briefing/datadigital/"
+                >Data Digital</a
+              >
+            </li>
+             
+          </ul>
+        </div>
+      </li>
+         
+      <li
+        class="sidebar-dropdown  "
+      >
+        <button class="btn">
+          <i class="material-icons me-2"
+            >pin</i
+          >
+          Tutorial Bab 1
+        </button>
+        <div class="sidebar-submenu ">
+          <ul>
+              
+            <li
+              class=" "
+            >
+              <a class="sidebar-nested-link" href="/docs/babone/pengelamatan/"
+                >Pengalamatan IP</a
+              >
+            </li>
+               
+            <li
+              class=" "
+            >
+              <a class="sidebar-nested-link" href="/docs/babone/ipvfour/"
+                >INTERNET PROTOCOL VERSION 4(IPv4)</a
+              >
+            </li>
+               
+            <li
+              class=" "
+            >
+              <a class="sidebar-nested-link" href="/docs/babone/ipvsix/"
+                >INTERNET PROTOCOL VERSION 6(IPv6)</a
+              >
+            </li>
+               
+            <li
+              class=" "
+            >
+              <a class="sidebar-nested-link" href="/docs/babone/subnetting/"
+                >Subnetting</a
+              >
+            </li>
+             
+          </ul>
+        </div>
+      </li>
+        
+    </ul>
+    
+  </div>
+  
+  <ul class="sidebar-footer list-unstyled mb-0">
+    
+  </ul>
+  
+</nav>
+
+
+                    <main class="page-content bg-transparent">
+                        
+<div id="top-header" class="top-header d-print-none">
+  <div class="header-bar d-flex justify-content-between">
+    <div class="d-flex align-items-center">
+      <a
+        href='/'
+        class="logo-icon me-3"
+        aria-label="HomePage"
+        alt="HomePage"
+      >
+        <div class="small">
+           <svg height="48" viewBox="0 -960 6400 1920" width="82" fill="#e8eaed" version="1.1" id="svg1" sodipodi:docname="logo 1.svg" xml:space="preserve" inkscape:version="1.3 (0e150ed6c4, 2023-07-21)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs1"><clipPath id="clip0"><rect x="1819" y="81" width="629" height="166" id="rect1"></rect></clipPath><clipPath id="clip1"><rect x="1829" y="80" width="634" height="155" id="rect2"></rect></clipPath><clipPath id="clip2"><rect x="1829" y="80" width="634" height="155" id="rect3"></rect></clipPath></defs><sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="2.9427083" inkscape:cx="93.281418" inkscape:cy="35.681417" inkscape:window-width="1440" inkscape:window-height="830" inkscape:window-x="-6" inkscape:window-y="-6" inkscape:window-maximized="1" inkscape:current-layer="g2"></sodipodi:namedview><g style="overflow:hidden;fill:#000000;fill-opacity:1" id="g2" transform="matrix(12.210901,0,0,11.39928,-53.145918,-848.22675)"><g id="g38" transform="matrix(0.84690738,0,0,0.84690738,-1544.4413,-61.41962)" clip-path="url(#clipPath47)" style="fill:#0066ff;fill-opacity:1"><path d="m 69.8996,152.732 c -2.4582,-0.642 -5.2372,-1.924 -6.199,-2.993 C 59.5322,145.143 5.45088,20.8416 0.534401,4.59584 L -0.10688,2.1376 H 14.215 28.5368 L 39.332,26.5063 c 5.8781,13.36 14.4286,32.7054 18.9176,42.9659 9.94,22.4448 18.3836,39.5458 19.6659,39.5458 0.962,0 9.4056,-17.3149 18.3835,-38.1566 l 6.199,-14.2149 H 89.7793 77.1675 L 74.816,48.9512 C 73.4268,44.6758 71.7165,39.1181 70.9683,36.553 l -1.3895,-4.489 h 21.6969 21.5893 l 6.306,-14.9632 6.199,-14.9632 h 14.857 c 8.123,0 14.749,0.21376 14.749,0.5344 0,3.95457 -46.386,111.796 -56.8601,132.211 -6.3058,12.398 -9.6192,16.245 -15.3907,17.849 -4.8097,1.389 -6.7336,1.282 -12.8256,0 z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path3" style="fill:#0066ff;fill-opacity:1"></path><path d="m 382.951,152.839 c -12.612,-2.352 -24.903,-8.444 -32.598,-16.353 -12.613,-12.826 -14.109,-34.095 -3.314,-46.7067 8.017,-9.2987 19.773,-15.1769 47.669,-23.4069 22.338,-6.7333 32.493,-10.6879 36.125,-14.1082 2.994,-2.8856 3.313,-3.6338 2.886,-7.9089 -1.283,-10.9018 -7.482,-14.6425 -25.651,-15.2838 -28.109,-1.069 -39.76,4.9164 -44.569,23.0861 l -1.282,4.4889 h -14.751 -14.748 l 0.856,-5.0235 c 5.77,-36.8735 39.011,-56.86012 83.258,-50.12668 13.895,2.13759 23.942,6.73346 33.347,15.39078 9.191,8.5504 11.543,14.0013 11.543,26.6131 0,12.8256 -2.565,20.0935 -9.618,27.1476 -7.377,7.3746 -17.102,11.7566 -43.928,19.6658 -33.242,9.8334 -43.607,15.2834 -41.898,21.9104 1.174,4.382 7.374,9.192 14.321,11.116 8.657,2.458 27.255,2.565 35.377,0.213 8.873,-2.565 13.682,-8.657 13.682,-17.1 v -4.917 h 14.964 14.961 v 4.596 c 0,5.558 -2.243,14.108 -5.343,20.521 -5.022,10.367 -17.956,19.452 -34.203,24.048 -9.191,2.565 -28.321,3.634 -37.086,2.138 z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path4" style="fill:#0066ff;fill-opacity:1"></path><path d="m 223.7,151.128 c -19.238,-4.168 -38.584,-17.849 -48.31,-33.987 -25.972,-43.3937 -6.413,-96.62 41.577,-112.8658 9.939,-3.313279 27.895,-4.06144 39.118,-1.6032 16.566,3.63393 31.957,12.8256 42.43,25.5443 7.696,9.5123 11.438,16.9938 11.438,23.4067 v 5.0235 h -13.895 -13.895 l -2.565,-5.1302 c -7.803,-15.3907 -29.926,-25.9719 -47.347,-22.7656 -27.683,5.0233 -45.424,31.1022 -39.76,58.036 5.344,25.4373 31.102,42.8593 55.685,37.7283 3.847,-0.748 8.657,-2.244 10.687,-3.313 6.52,-3.313 16.674,-11.009 20.093,-15.391 l 3.421,-4.275 h 13.895 14 l -0.64,3.848 c -1.069,6.306 -7.056,15.284 -16.887,25.223 -7.695,7.696 -10.795,9.94 -19.238,14.002 -16.033,7.802 -33.668,10.047 -49.807,6.519 z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path5" style="fill:#0066ff;fill-opacity:1"></path><path d="M 494.855,76.4193 V 0 l 53.012,0.21376 53.012,0.320641 4.169,13.894399 c 2.243,7.6954 4.169,14.0014 4.169,14.215 0,0.1069 -18.704,0.2138 -41.577,0.2138 -36.446,0 -41.898,0.2139 -43.286,1.71 -1.496,1.4964 -1.712,8.5505 -1.712,61.9907 V 152.839 H 508.75 494.855 Z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path6" style="fill:#0066ff;fill-opacity:1"></path></g></g></svg> 
+        </div>
+        <div class="big">
+           <svg height="48" viewBox="0 -960 6400 1920" width="82" fill="#e8eaed" version="1.1" id="svg1" sodipodi:docname="logo 1.svg" xml:space="preserve" inkscape:version="1.3 (0e150ed6c4, 2023-07-21)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs1"><clipPath id="clip0"><rect x="1819" y="81" width="629" height="166" id="rect1"></rect></clipPath><clipPath id="clip1"><rect x="1829" y="80" width="634" height="155" id="rect2"></rect></clipPath><clipPath id="clip2"><rect x="1829" y="80" width="634" height="155" id="rect3"></rect></clipPath></defs><sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="2.9427083" inkscape:cx="93.281418" inkscape:cy="35.681417" inkscape:window-width="1440" inkscape:window-height="830" inkscape:window-x="-6" inkscape:window-y="-6" inkscape:window-maximized="1" inkscape:current-layer="g2"></sodipodi:namedview><g style="overflow:hidden;fill:#000000;fill-opacity:1" id="g2" transform="matrix(12.210901,0,0,11.39928,-53.145918,-848.22675)"><g id="g38" transform="matrix(0.84690738,0,0,0.84690738,-1544.4413,-61.41962)" clip-path="url(#clipPath47)" style="fill:#0066ff;fill-opacity:1"><path d="m 69.8996,152.732 c -2.4582,-0.642 -5.2372,-1.924 -6.199,-2.993 C 59.5322,145.143 5.45088,20.8416 0.534401,4.59584 L -0.10688,2.1376 H 14.215 28.5368 L 39.332,26.5063 c 5.8781,13.36 14.4286,32.7054 18.9176,42.9659 9.94,22.4448 18.3836,39.5458 19.6659,39.5458 0.962,0 9.4056,-17.3149 18.3835,-38.1566 l 6.199,-14.2149 H 89.7793 77.1675 L 74.816,48.9512 C 73.4268,44.6758 71.7165,39.1181 70.9683,36.553 l -1.3895,-4.489 h 21.6969 21.5893 l 6.306,-14.9632 6.199,-14.9632 h 14.857 c 8.123,0 14.749,0.21376 14.749,0.5344 0,3.95457 -46.386,111.796 -56.8601,132.211 -6.3058,12.398 -9.6192,16.245 -15.3907,17.849 -4.8097,1.389 -6.7336,1.282 -12.8256,0 z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path3" style="fill:#0066ff;fill-opacity:1"></path><path d="m 382.951,152.839 c -12.612,-2.352 -24.903,-8.444 -32.598,-16.353 -12.613,-12.826 -14.109,-34.095 -3.314,-46.7067 8.017,-9.2987 19.773,-15.1769 47.669,-23.4069 22.338,-6.7333 32.493,-10.6879 36.125,-14.1082 2.994,-2.8856 3.313,-3.6338 2.886,-7.9089 -1.283,-10.9018 -7.482,-14.6425 -25.651,-15.2838 -28.109,-1.069 -39.76,4.9164 -44.569,23.0861 l -1.282,4.4889 h -14.751 -14.748 l 0.856,-5.0235 c 5.77,-36.8735 39.011,-56.86012 83.258,-50.12668 13.895,2.13759 23.942,6.73346 33.347,15.39078 9.191,8.5504 11.543,14.0013 11.543,26.6131 0,12.8256 -2.565,20.0935 -9.618,27.1476 -7.377,7.3746 -17.102,11.7566 -43.928,19.6658 -33.242,9.8334 -43.607,15.2834 -41.898,21.9104 1.174,4.382 7.374,9.192 14.321,11.116 8.657,2.458 27.255,2.565 35.377,0.213 8.873,-2.565 13.682,-8.657 13.682,-17.1 v -4.917 h 14.964 14.961 v 4.596 c 0,5.558 -2.243,14.108 -5.343,20.521 -5.022,10.367 -17.956,19.452 -34.203,24.048 -9.191,2.565 -28.321,3.634 -37.086,2.138 z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path4" style="fill:#0066ff;fill-opacity:1"></path><path d="m 223.7,151.128 c -19.238,-4.168 -38.584,-17.849 -48.31,-33.987 -25.972,-43.3937 -6.413,-96.62 41.577,-112.8658 9.939,-3.313279 27.895,-4.06144 39.118,-1.6032 16.566,3.63393 31.957,12.8256 42.43,25.5443 7.696,9.5123 11.438,16.9938 11.438,23.4067 v 5.0235 h -13.895 -13.895 l -2.565,-5.1302 c -7.803,-15.3907 -29.926,-25.9719 -47.347,-22.7656 -27.683,5.0233 -45.424,31.1022 -39.76,58.036 5.344,25.4373 31.102,42.8593 55.685,37.7283 3.847,-0.748 8.657,-2.244 10.687,-3.313 6.52,-3.313 16.674,-11.009 20.093,-15.391 l 3.421,-4.275 h 13.895 14 l -0.64,3.848 c -1.069,6.306 -7.056,15.284 -16.887,25.223 -7.695,7.696 -10.795,9.94 -19.238,14.002 -16.033,7.802 -33.668,10.047 -49.807,6.519 z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path5" style="fill:#0066ff;fill-opacity:1"></path><path d="M 494.855,76.4193 V 0 l 53.012,0.21376 53.012,0.320641 4.169,13.894399 c 2.243,7.6954 4.169,14.0014 4.169,14.215 0,0.1069 -18.704,0.2138 -41.577,0.2138 -36.446,0 -41.898,0.2139 -43.286,1.71 -1.496,1.4964 -1.712,8.5505 -1.712,61.9907 V 152.839 H 508.75 494.855 Z" fill="#276f8b" transform="matrix(1.01325,0,0,-1,1829.88,234.899)" id="path6" style="fill:#0066ff;fill-opacity:1"></path></g></g></svg> 
+        </div>
+      </a>
+      <button id="close-sidebar" class="btn btn-icon btn-soft">
+        <span class="material-icons size-20 menu-icon align-middle">menu</span>
+      </button>
+       
+      
+      <button
+        id="flexsearch-button"
+        class="ms-3 btn btn-soft"
+        data-bs-toggle="collapse"
+        data-bs-target="#FlexSearchCollapse"
+        aria-expanded="false"
+        aria-controls="FlexSearchCollapse"
+      >
+        <span class="material-icons size-20 menu-icon align-middle"
+          >search</span
+        >
+        <span class="flexsearch-button-placeholder ms-1 me-2 d-none d-sm-block"
+          >Search</span
+        >
+        <div class="d-none d-sm-block">
+          <span class="flexsearch-button-keys">
+            <kbd class="flexsearch-button-cmd-key">
+              <svg width="44" height="15">
+                <path
+                  d="M2.118,11.5A1.519,1.519,0,0,1,1,11.042,1.583,1.583,0,0,1,1,8.815a1.519,1.519,0,0,1,1.113-.458h.715V6.643H2.118A1.519,1.519,0,0,1,1,6.185,1.519,1.519,0,0,1,.547,5.071,1.519,1.519,0,0,1,1,3.958,1.519,1.519,0,0,1,2.118,3.5a1.519,1.519,0,0,1,1.114.458A1.519,1.519,0,0,1,3.69,5.071v.715H5.4V5.071A1.564,1.564,0,0,1,6.976,3.5,1.564,1.564,0,0,1,8.547,5.071,1.564,1.564,0,0,1,6.976,6.643H6.261V8.357h.715a1.575,1.575,0,0,1,1.113,2.685,1.583,1.583,0,0,1-2.227,0A1.519,1.519,0,0,1,5.4,9.929V9.214H3.69v.715a1.519,1.519,0,0,1-.458,1.113A1.519,1.519,0,0,1,2.118,11.5Zm0-.857a.714.714,0,0,0,.715-.714V9.214H2.118a.715.715,0,1,0,0,1.429Zm4.858,0a.715.715,0,1,0,0-1.429H6.261v.715a.714.714,0,0,0,.715.714ZM3.69,8.357H5.4V6.643H3.69ZM2.118,5.786h.715V5.071a.714.714,0,0,0-.715-.714.715.715,0,0,0-.5,1.22A.686.686,0,0,0,2.118,5.786Zm4.143,0h.715a.715.715,0,0,0,.5-1.22.715.715,0,0,0-1.22.5Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M12.4,11.475H11.344l3.879-7.95h1.056Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M25.073,5.384l-.864.576a2.121,2.121,0,0,0-1.786-.923,2.207,2.207,0,0,0-2.266,2.326,2.206,2.206,0,0,0,2.266,2.325,2.1,2.1,0,0,0,1.782-.918l.84.617a3.108,3.108,0,0,1-2.622,1.293,3.217,3.217,0,0,1-3.349-3.317,3.217,3.217,0,0,1,3.349-3.317A3.046,3.046,0,0,1,25.073,5.384Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M30.993,5.142h-2.07v5.419H27.891V5.142h-2.07V4.164h5.172Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M34.67,4.164c1.471,0,2.266.658,2.266,1.851,0,1.087-.832,1.809-2.134,1.855l2.107,2.691h-1.28L33.591,7.87H33.07v2.691H32.038v-6.4Zm-1.6.969v1.8h1.572c.832,0,1.22-.3,1.22-.918s-.411-.882-1.22-.882Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M42.883,10.561H38.31v-6.4h1.033V9.583h3.54Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </kbd>
+            <kbd class="flexsearch-button-key">
+              <svg width="15" height="15">
+                <path
+                  d="M5.926,12.279H4.41L9.073,2.721H10.59Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </kbd>
+          </span>
+        </div>
+      </button>
+       </div>
+
+    <div class="d-flex align-items-center">
+      <ul class="list-unstyled mb-0">
+          
+        <li class="list-inline-item mb-0">
+          <a
+            href=" https://github.com/https://github.com/gunadarma-academy "
+            alt="github"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div class="btn btn-icon btn-default border-0">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> 
+            </div>
+          </a>
+        </li>
+         
+        <li class="list-inline-item mb-0">
+          <a
+            href=" https://instagram.com/labacsl_ug "
+            alt="instagram"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div class="btn btn-icon btn-default border-0">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> 
+            </div>
+          </a>
+        </li>
+         
+      </ul>
+      <button
+        id="mode"
+        class="btn btn-icon btn-default ms-2"
+        type="button"
+        aria-label="Toggle user interface mode"
+      >
+        <span class="toggle-dark">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30"
+            width="30"
+            viewBox="0 0 48 48"
+            fill="currentColor"
+          >
+            <title>
+              Enable dark mode
+            </title>
+            <path
+              d="M24 42q-7.5 0-12.75-5.25T6 24q0-7.5 5.25-12.75T24 6q.4 0 .85.025.45.025 1.15.075-1.8 1.6-2.8 3.95-1 2.35-1 4.95 0 4.5 3.15 7.65Q28.5 25.8 33 25.8q2.6 0 4.95-.925T41.9 22.3q.05.6.075.975Q42 23.65 42 24q0 7.5-5.25 12.75T24 42Zm0-3q5.45 0 9.5-3.375t5.05-7.925q-1.25.55-2.675.825Q34.45 28.8 33 28.8q-5.75 0-9.775-4.025T19.2 15q0-1.2.25-2.575.25-1.375.9-3.125-4.9 1.35-8.125 5.475Q9 18.9 9 24q0 6.25 4.375 10.625T24 39Zm-.2-14.85Z"
+            />
+          </svg>
+        </span>
+        <span class="toggle-light">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30"
+            width="30"
+            viewBox="0 0 48 48"
+            fill="currentColor"
+          >
+            <title>
+              Enable light mode
+            </title>
+            <path
+              d="M24 31q2.9 0 4.95-2.05Q31 26.9 31 24q0-2.9-2.05-4.95Q26.9 17 24 17q-2.9 0-4.95 2.05Q17 21.1 17 24q0 2.9 2.05 4.95Q21.1 31 24 31Zm0 3q-4.15 0-7.075-2.925T14 24q0-4.15 2.925-7.075T24 14q4.15 0 7.075 2.925T34 24q0 4.15-2.925 7.075T24 34ZM3.5 25.5q-.65 0-1.075-.425Q2 24.65 2 24q0-.65.425-1.075Q2.85 22.5 3.5 22.5h5q.65 0 1.075.425Q10 23.35 10 24q0 .65-.425 1.075-.425.425-1.075.425Zm36 0q-.65 0-1.075-.425Q38 24.65 38 24q0-.65.425-1.075.425-.425 1.075-.425h5q.65 0 1.075.425Q46 23.35 46 24q0 .65-.425 1.075-.425.425-1.075.425ZM24 10q-.65 0-1.075-.425Q22.5 9.15 22.5 8.5v-5q0-.65.425-1.075Q23.35 2 24 2q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 10 24 10Zm0 36q-.65 0-1.075-.425-.425-.425-.425-1.075v-5q0-.65.425-1.075Q23.35 38 24 38q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 46 24 46ZM12 14.1l-2.85-2.8q-.45-.45-.425-1.075.025-.625.425-1.075.45-.45 1.075-.45t1.075.45L14.1 12q.4.45.4 1.05 0 .6-.4 1-.4.45-1.025.45-.625 0-1.075-.4Zm24.7 24.75L33.9 36q-.4-.45-.4-1.075t.45-1.025q.4-.45 1-.45t1.05.45l2.85 2.8q.45.45.425 1.075-.025.625-.425 1.075-.45.45-1.075.45t-1.075-.45ZM33.9 14.1q-.45-.45-.45-1.05 0-.6.45-1.05l2.8-2.85q.45-.45 1.075-.425.625.025 1.075.425.45.45.45 1.075t-.45 1.075L36 14.1q-.4.4-1.025.4-.625 0-1.075-.4ZM9.15 38.85q-.45-.45-.45-1.075t.45-1.075L12 33.9q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-2.8 2.85q-.45.45-1.075.425-.625-.025-1.075-.425ZM24 24Z"
+            />
+          </svg>
+        </span>
+      </button>
+      
+    </div>
+  </div>
+  
+  
+  <div class="collapse" id="FlexSearchCollapse">
+    <div class="flexsearch-container">
+      <div class="flexsearch-keymap">
+        <li>
+          <kbd class="flexsearch-button-cmd-key"
+            ><svg width="15" height="15" aria-label="Arrow down" role="img">
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.2"
+              >
+                <path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path>
+              </g></svg
+          ></kbd>
+          <kbd class="flexsearch-button-cmd-key"
+            ><svg width="15" height="15" aria-label="Arrow up" role="img">
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.2"
+              >
+                <path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path>
+              </g></svg
+          ></kbd>
+          <span class="flexsearch-key-label"
+            >to navigate</span
+          >
+        </li>
+        <li>
+          <kbd class="flexsearch-button-cmd-key"
+            ><svg width="15" height="15" aria-label="Enter key" role="img">
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.2"
+              >
+                <path
+                  d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"
+                ></path>
+              </g></svg
+          ></kbd>
+          <span class="flexsearch-key-label"
+            >to select</span
+          >
+        </li>
+        <li>
+          <kbd class="flexsearch-button-cmd-key"
+            ><svg width="15" height="15" aria-label="Escape key" role="img">
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.2"
+              >
+                <path
+                  d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"
+                ></path>
+              </g></svg
+          ></kbd>
+          <span class="flexsearch-key-label"
+            >to close</span
+          >
+        </li>
+      </div>
+      <form class="flexsearch position-relative flex-grow-1 ms-2 me-2">
+        <div class="d-flex flex-row">
+          <input id="flexsearch" class="form-control" type="search"
+          placeholder="Search" aria-label="Search" autocomplete="off">
+          <button id="hideFlexsearch" type="button" class="ms-2 btn btn-soft">
+            cancel
+          </button>
+        </div>
+        <div id="suggestions" class="shadow rounded-1 d-none"></div>
+      </form>
+    </div>
+  </div>
+   
+  
+</div>
+
+
+                            <div class="container-fluid">
+                                <div class="layout-spacing">
+                                    
+                                        <div class="d-md-flex justify-content-between align-items-center"><nav aria-label="breadcrumb" class="d-inline-block pb-2 mt-1 mt-sm-0">
+    <ul id="breadcrumbs" class="breadcrumb bg-transparent mb-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+        
+            <li class="breadcrumb-item text-capitalize active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <i class="material-icons size-20 align-text-bottom" itemprop="name">Home</i>
+                <meta itemprop="position" content='1' />
+            </li>
+        
+    </ul>
+</nav></div>
+                                    
+                                    <div class="row flex-xl-nowrap">
+                                        
+                                        <div class="docs-toc col-xl-3 visually-hidden visually-hidden  d-xl-block"><toc>
+    <div class="fw-bold text-uppercase mb-2">On this page</div>
+    <nav id="toc"></nav>
+    </toc></div>
+                                        
+                                        
+                                        <div class="docs-toc-mobile visually-hidden visually-hidden  d-print-none d-xl-none">
+                                            <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
+                                                Table of Contents
+                                            </button>
+<nav id="toc-mobile"></nav></div>
+                                        <div class="docs-content col-12  mt-0">
+                                            <div class="mb-0 d-flex">
+                                                
+                                                <i class="material-icons title-icon me-2">menu_book</i>
+                                                
+                                                <h1 class="content-title mb-0">
+                                                    Jaringan Komputer Dasar
+                                                    
+                                                </h1>
+                                            </div>
+                                            
+                                                <p class="lead mb-3">Dokumentasi dari semua bab yang akan dipelajari pada Laboratorium Lanjut Gunadarma.</p>
+                                            
+                                            <div id="content" class="main-content" data-bs-spy="scroll" data-bs-root-margin="0px 0px -65%" data-bs-target="#toc-mobile">
+                                                
+    <div class="row flex-xl-wrap">
+        
+        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
+            <a class="text-decoration-none text-reset" href="/docs/sop/">
+                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+                    <span class="icon-color d-flex my-3">
+                        <i class="material-icons align-middle">description</i>
+                        
+                        
+                    </span>
+                    <div class="card-body p-0 content">
+                        <p class="fs-5 fw-semibold card-title mb-1">Standar Operasional Prosedure</p>
+                        <p class="para card-text mb-0">Standard Operating Procedure (SOP) - Jaringan Komputer Dasar</p>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
+            <a class="text-decoration-none text-reset" href="/docs/briefing/">
+                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+                    <span class="icon-color d-flex my-3">
+                        <i class="material-icons align-middle">article</i>
+                        
+                        <i class="material-icons icon-faint align-middle ms-auto" title="Directory">folder</i>
+                    </span>
+                    <div class="card-body p-0 content">
+                        <p class="fs-5 fw-semibold card-title mb-1">Briefing</p>
+                        <p class="para card-text mb-0">Pada bab ini, praktikan akan mempelajari sejarah perkembangan jaringan komputer, memahami tujuan …</p>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
+            <a class="text-decoration-none text-reset" href="/docs/babone/">
+                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+                    <span class="icon-color d-flex my-3">
+                        <i class="material-icons align-middle">pin</i>
+                        
+                        <i class="material-icons icon-faint align-middle ms-auto" title="Directory">folder</i>
+                    </span>
+                    <div class="card-body p-0 content">
+                        <p class="fs-5 fw-semibold card-title mb-1">Tutorial Bab 1</p>
+                        <p class="para card-text mb-0">(IPv4, IPv6 dan subnetting)</p>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+        
+    </div>
+
+                                            </div>
+                                            <div><hr class="doc-hr" />
+<div id="doc-nav" class="d-print-none">
+  </div>
+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<footer class="shadow py-3 d-print-none">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="text-sm-start text-center mx-md-2">
+          <p class="mb-0">
+            
+            © 2025 <a href="https://gunadarma.ac.id">Advanced Computer System Laboratory</a>. Built with <a href="https://github.com/colinwilson/lotusdocs">LotusDocs</a>
+          </p>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</footer>
+
+
+</main>
+            </div>
+        </div>
+
+        
+        
+        <button onclick="topFunction()" id="back-to-top" aria-label="Back to Top Button" class="back-to-top fs-5"><svg width="24" height="24"><path d="M12,10.224l-6.3,6.3L4.32,15.152,12,7.472l7.68,7.68L18.3,16.528Z" style="fill:#fff"/></svg></button>
+        
+        
+
+        
+        
+            <script>(()=>{var e=document.getElementById("mode");e!==null&&(window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{e.matches?(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")):(localStorage.setItem("theme","light"),document.documentElement.removeAttribute("data-dark-mode"))}),e.addEventListener("click",()=>{document.documentElement.toggleAttribute("data-dark-mode"),localStorage.setItem("theme",document.documentElement.hasAttribute("data-dark-mode")?"dark":"light")}),localStorage.getItem("theme")==="dark"?document.documentElement.setAttribute("data-dark-mode",""):document.documentElement.removeAttribute("data-dark-mode"))})()</script>
+        
+
+
+
+
+    
+        
+        
+    
+    
+
+
+
+
+
+
+    
+
+    <script src="/docs/js/bootstrap.c7927bdd82eceb076739257add3f4b0e11379da037c07d5c7110daeb6de0e3edcb2de867604550f88815157e4ec4ddb7.js" integrity="sha384-x5J73YLs6wdnOSV63T9LDhE3naA3wH1ccRDa623g4&#43;3LLehnYEVQ&#43;IgVFX5OxN23"defer></script>
+
+
+    <script type="text/javascript" src="/docs/js/bundle.min.109ccba7d519ca1b675cc8a5399ad4d2e4485e0aeefe870ce572a197b699763c6b7d7899482743dd4fa6f416c5cc8292.js" integrity="sha384-EJzLp9UZyhtnXMilOZrU0uRIXgru/ocM5XKhl7aZdjxrfXiZSCdD3U&#43;m9BbFzIKS" crossorigin="anonymous" defer></script>
+
+        
+
+        
+        <script type="module">
+    var suggestions = document.getElementById('suggestions');
+    var search = document.getElementById('flexsearch');
+
+    const flexsearchContainer = document.getElementById('FlexSearchCollapse');
+
+    const hideFlexsearchBtn = document.getElementById('hideFlexsearch');
+
+    const configObject = { toggle: false }
+    const flexsearchContainerCollapse = new Collapse(flexsearchContainer, configObject) 
+
+    if (search !== null) {
+        document.addEventListener('keydown', inputFocus);
+        flexsearchContainer.addEventListener('shown.bs.collapse', function () {
+            search.focus();
+        });
+        
+        var topHeader = document.getElementById("top-header");
+        document.addEventListener('click', function(elem) {
+            if (!flexsearchContainer.contains(elem.target) && !topHeader.contains(elem.target))
+                flexsearchContainerCollapse.hide();
+        });
+    }
+
+    hideFlexsearchBtn.addEventListener('click', () =>{
+        flexsearchContainerCollapse.hide()
+    })
+
+    function inputFocus(e) {
+        if (e.ctrlKey && e.key === '/') {
+            e.preventDefault();
+            flexsearchContainerCollapse.toggle();
+        }
+        if (e.key === 'Escape' ) {
+            search.blur();
+            
+            flexsearchContainerCollapse.hide();
+        }
+    };
+
+    document.addEventListener('click', function(event) {
+
+    var isClickInsideElement = suggestions.contains(event.target);
+
+    if (!isClickInsideElement) {
+        suggestions.classList.add('d-none');
+    }
+
+    });
+
+    
+
+
+    document.addEventListener('keydown',suggestionFocus);
+
+    function suggestionFocus(e) {
+    const suggestionsHidden = suggestions.classList.contains('d-none');
+    if (suggestionsHidden) return;
+
+    const focusableSuggestions= [...suggestions.querySelectorAll('a')];
+    if (focusableSuggestions.length === 0) return;
+
+    const index = focusableSuggestions.indexOf(document.activeElement);
+
+    if (e.key === "ArrowUp") {
+        e.preventDefault();
+        const nextIndex = index > 0 ? index - 1 : 0;
+        focusableSuggestions[nextIndex].focus();
+    }
+    else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const nextIndex= index + 1 < focusableSuggestions.length ? index + 1 : index;
+        focusableSuggestions[nextIndex].focus();
+    }
+
+    }
+
+    
+
+
+    (function(){
+
+    var index = new FlexSearch.Document({
+        
+        tokenize: "forward",
+        minlength:  0 ,
+        cache:  100 ,
+        optimize:  true ,
+        document: {
+        id: 'id',
+        store: [
+            "href", "title", "description"
+        ],
+        index: ["title", "description", "content"]
+        }
+    });
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
+
+    index.add(
+            {
+                id:  0 ,
+                href: "\/docs\/sop\/",
+                title: "Standar Operasional Prosedure",
+                description: "Standard Operating Procedure (SOP) - Jaringan Komputer Dasar",
+                content: " Selamat Datang di Mata Kuliah Praktikum Jaringan Komputer Lanjut Gunadarma.\nPersyaratan linkPada SOP ini, praktikan akan mempraktekan beberapa bab pada website ini. Agar praktikum berjalan sesuai prosedur maka Asisten Mengajar Shift atau Praktikan dapat membaca persyaratan praktikum ini sebelum memulai ke bab praktikum. Ada beberapa point yang harus Asisten ketahui yaitu:\nKetua Materi wajib membuat grup WhatsApp kelompok belajar sebagai fasilitator kegiatan belajar mengajar. Asisten Mengajar Shift wajib melakukan live config dengan materi modul yang sudah tersedia di repository utama Advanced Computer System. Asisten Mengajar Shift wajib melakukan interaksi secara langsung ke praktikan dengan menyebutkan secara verbal langkah-langkah penyelesaian modul dan siap untuk menerima interupsi jika ada praktikan yang bertanya. Sedangkan pada praktikan ada beberapa point yang harus diketahui yaitu:\nPraktikan wajib mengerjakan Laporan Pendahuluan serta Laporan Akhir sebagai syarat untuk mengikuti praktikum.Laporan Pendahuluan dan Laporan Akhir harus diserahkan sebelum praktikum dimulai. Praktikan dapat mendownload file dokumen Modul Laporan yang berisikan Laporan Pendahuluan dan Laporan Akhir pada link disamping ini: Download Modul Laporan Praktikan diusahakan mencetak berwarna, dan memakai kertas berukuran A4 pada Modul Laporan yang berisikan Laporan Pendahuluan dan Laporan Akhir. Praktikan wajib mencetak dan menjilid Modul Laporan yang berisikan Laporan Pendahuluan dan Laporan Akhir dengan warna sampul depan dan belakang bebas. Praktikan wajib menyerahkan hasil tugas ke Asisten Mengajar Shift pada saat praktikum diakhir sesi. Praktikan wajib memberi tahu Asisten Mengajar Shift apabila terjadi kendala teknis pada saat praktikum. Praktikan wajib menyimak dan tidak mengganggu kondusifitas kegiatan belajar mengajar. Keterlambatan maksimum Praktikan adalah 15-30 menit, selebihnya praktikan boleh diperkenankan mengikuti praktikum akan tetapi nilai praktikum bab tersebut dikurangin 50%, kecuali : memberi tahu Asisten Mengajar Shift melalui chat langsung atau grup whatsapp dengan keterangan terlambat karena keperluan mendadak, terlambat karena macet, dan hal-hal mendesak lainnya (disertai bukti foto). Praktikan diperbolehkan untuk tidak hadir pada praktikum maksimal 1 (satu) kali. Adapun izin yang diterima adalah sebagai berikut : Sakit dengan foto obat/surat dokter atau izin keluarga terdekat meninggal maka praktikan WAJIB mengulang pada minggu pengulangan dan jumlah ketidakhadiran praktikan tidak bertambah. Jika praktikan tidak hadir praktikum dengan alasan diluar dari poin pertama, maka jumlah ketidakhadiran praktikan bertambah. Praktikan yang tidak hadir dalam praktikum lebih dari 1 kali dinyatakan gugur DELETE. Silabus linkSilabus praktikum merupakan dokumen bab yang berisi panduan terperinci untuk pelaksanaan praktikum. Dokumen ini dirancang untuk membantu praktikan untuk memahami tujuan, teori, dan metode praktikum. Silabus praktikum yang baik akan membantu praktikan dalam mencapai tujuan pembelajaran yang diharapkan. Beberapa bab yang akan dipelajari pada semester ini yaitu:\nNO.BAB TEMA BAB 1 Cara Membuat dan Mengghitung Pengalamatan IP (IPv4, IPv6, dan Subnetting). BAB 2 Cara Membuat Kabel Jaringan Teori dan Praktikum (Straight, Cross, Rollover, dan Implementasi Switch). BAB 3 Cara Membuat Virtual LAN (VLAN), Trunking dan Inter-VLAN Routing. BAB 4 Cara Membuat Jaringan Nirkabel (Wireless) dan Implementasi Keamanannya. BAB 5 Cara Membuat Konfigurasi Routing Jaringan Komputer Static dan Dynamic Routing (RIP V2 dan EIGRP). BAB 6 Cara Membuat Konfigruasi DHCP dan Routing Jaringan Komputer Dynamic Routing (OSPF dan BGP). BAB 7 Cara Membuat Network Address Translation (NAT). BAB 8 Cara Membuat Wireless Sensor Network (WSN) dan Implementasi Mikrokontroler. Laporan Pendahuluan dan Akhir linkDalam setiap kegiatan praktikum, Laporan Pendahuluan (LP) dan Laporan Akhir (LA) memegang peran penting dalam dokumentasi dan evaluasi atas proses hasil yang telah dicapai pada praktikum. JENIS LAPORAN DESKRIPSI Laporan Pendahuluan Cara Membuat dan Mengghitung Pengalamatan IP (IPv4, IPv6, dan Subnetting). Laporan Akhir Cara Membuat Kabel Jaringan Teori dan Praktikum (Straight, Cross, Rollover, dan Implementasi Switch). Dengan adanya Laporan Pendahuluan dan Laporan Akhir praktikum, diharapkan manfaat dari kegiatan praktikum agar dapat lebih maksimal dan dapat memberikan kontribusi positif bagi pengetahuan dan keterampilan praktikan.\nBerikut adalah beberapa tips untuk mendapatkan hasil Laporan Pendahuluan dan Laporan Akhir yang maksimal:\nTulis jawaban Laporan Pendahuluan dan Laporan Akhir praktikum dengan rapih. Jawaban ditulis menggunakan Pulpen/Pena (Warna Hitam/Biru). Dikerjakan secara individu (tidak berkelompok). Tulis jawaban Laporan Pendahuluan dan Laporan Akhir praktikum dengan detail dan spesifik. info\rDownload file Modul Laporan untuk gabungan dari Laporan Pendahuluan dan Laporan Akhir.\rTugas linkTugas praktikum adalah menyelesaikan tugas yang telah di praktekan oleh Asisten Mengajar. Selain itu, terdapat beberapa pertanyaan pada penjelasan sesi dari Asisten Mengajar Shift yang dapat dijawab kepada praktikan untuk menambah nilai. Di akhir sesi, terdapat pula tugas pertanyaan yang perlu diselesaikan untuk menambah nilai.\nTerdapat tiga format tugas yang digunakan dalam penilaian:\nTugas praktikum adalah menyelesaikan tugas yang telah di praktekan oleh Asisten Mengajar Shift. Ada beberapa pertanyaan pada penjelasan sesi dari Asisten Mengajar Shift (untuk penambahan nilai). Tugas pertanyaan pada selesai sesi praktikum (untuk penambahan nilai). Berikut adalah beberapa tips untuk mendapatkan hasil tugas yang maksimal:\nIkutilah Asisten Mengajar Shift saat praktikum berlangsung. Beri tahu Asisten Mengajar Shift apabila terjadi kendala teknis pada saat praktikum. Persiapkan alat dan bahan yang diperlukan untuk tugas praktikum. Ujian linkUjian praktikum adalah bagian penting dari proses pembelajaran praktikum. Ujian ini bertujuan untuk menilai kemampuan praktikan dalam memahami materi praktikum dan menerapkannya dalam praktek.\nTerdapat dua format ujian yang digunakan dalam penilaian:\nPilihan Ganda: Jawablah pertanyaan dengan memilih jawaban yang benar. Pastikan memilih jawaban yang sesuai dengan pertanyaannya. Essay: Jawablah pertanyaan dengan singkat dan tepat. Jawaban yang panjang tidak selalu berarti jawaban yang benar. Pastikan jawaban fokus pada poin-poin penting dalam menjawab soal. Proyek linkProyek Praktikum adalah salah satu komponen penting dalam pembelajaran praktikum. Proyek ini bertujuan untuk memberikan kesempatan kepada praktikan untuk menerapkan pengetahuan dan keterampilan yang telah diperolehnya dalam selama praktikum untuk menyelesaikan masalah nyata.\nUjian Praktikum kali ini terdiri dari tiga komponen penilaian:\nPresentasi: Setiap praktikan diharuskan untuk mempresentasikan tugas praktikumnya secara individu. Presentasi ini bertujuan untuk menjelaskan tugas yang telah dikerjakan dan hasil yang diperoleh. Teori: Praktikan diuji kemampuannya dalam memahami teori yang terkait dengan praktikum. Penguasaan teori diuji melalui pertanyaan-pertanyaan dari penguji. Hasil: Praktikan diharuskan untuk menunjukkan hasil proyeknya kepada penguji. Hasil proyek dapat dipresentasikan dalam bentuk video atau live. Kesimpulannya, untuk mendapatkan hasil yang maksimal dalam ujian praktikum ini, Praktikan wajib:\nMemahami dengan baik materi praktikum dan teori yang terkait. Menyelesaikan proyek praktikum dengan baik dan benar. Mampu menjelaskan proyek dan hasil praktikum dengan baik dan jelas. Mampu menjawab pertanyaan penguji dengan benar dan jelas. Menunjukkan hasil proyek yang baik dan menarik. Dengan memenuhi semua kriteria tersebut, Praktikan dapat meningkatkan peluang untuk mendapatkan nilai yang maksimal.\nPenilaian linkNilai Mingguan (Mn) : Terdiri dari nilai Laporan Pendahuluan (LP), Laporan Akhir (LA), dan Tugas (T). Nilai mingguan praktikan pada minggu ke-n (Mn) didapat dari persamaan berikut :\nMn = LP (30%) + LA (30%) + T (40%)\nNilai Akhir Praktikan (A) : Terdiri dari rata-rata nilai mingguan (M), nilai proyek akhir (P), dan nilai ujian tulis (U). Nilai akhir praktikan didapat dari persamaan berikut :\nA = M (40%) + P (30%) + U (30%)\n"
+            }
+        );
+    index.add(
+            {
+                id:  1 ,
+                href: "\/docs\/briefing\/",
+                title: "Briefing",
+                description: "Pada bab ini, praktikan akan mempelajari sejarah perkembangan jaringan komputer, memahami tujuan utama dari pembentukan jaringan, serta mengenal berbagai perangkat yang digunakan dalam jaringan.",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  2 ,
+                href: "\/docs\/briefing\/sejarahdanevolusi\/",
+                title: "Sejarah Dan Evolusi Jaringan",
+                description: "Pada Briefing ini, praktikan akan diperkenal sejarah, distro, filesystem pada linux. Agar praktikum berjalan sesuai prosedur maka Asisten Mengajar Shift atau Praktikan dapat membaca tujuan praktikum bab ini sebelum memulai ke bab teori.\nTujuan link\rTUJUAN PENJELASAN Memahami sejarah jaringan komputer Brefing ini membahas perkembangan jaringan komputer dari masa ke masa, bagaimana konsepnya terbentuk, dan pengaruh pentingnya dalam dunia teknologi saat ini. Memahami tujuan dari jaringan komputer Brefing ini membahas tujuan pentingnya jaringan komputer. Memahami OSI Layer Brefing ini membahas model OSI, sebuah kerangka kerja yang digunakan untuk memamahami bagaimana komunikasi data terjadi melalui berbagai lapisan, mulai dari pengiriman hingga penerimaan dalam jaringan. Memahami konversi bilangan Brefing ini akan mempelajari cara melakukan konversi bilangan dari desimal ke biner, biner ke desimal, serta basis bilangan lainnya yang sering digunakan dalam sistem jaringan komputer. Mengetahui perangkat-perangkat jaringan komputer Praktikan akan mempelajari berbagai perangkat yang digunakan dalam jaringan komputer, termasuk router, switch, dan server, serta bagaimana masing-masing perangkat berperan dalam mengelola dan menghubungkan jaringan. Memahami cara kerja jaringan Bab ini membahas cara kerja jaringan komputer, termasuk bagaimana data dikirim dari satu perangkat ke perangkat lain, bagaimana perangkat terhubung, serta bagaimana protokol komunikasi bekerja dalam jaringan. Sejarah Jaringan link Gagasan jaringan komputer pertama kali muncul pada 1940-an di Amerika Serikat, berawal dari proyek penelitian di Harvard University yang dipimpin oleh Profesor H. Aiken. Proyek ini bertujuan mengembangkan komputer MODEL I di laboratorium Bell. Pada awalnya penelitian ini hanya ingin mengggunakan perangkat komputer yang dapat digunakan bersama. Proses beruntun, atau yang dikenal sebagai batch processing, dirancang untuk menjalankan banyak proses secara efisien dalam satu waktu tanpa membuang waktu. Dengan standar antrian, beberapa program dapat dijalankan secara bersamaan pada sebuah komputer.\n",
+                content: "Pada Briefing ini, praktikan akan diperkenal sejarah, distro, filesystem pada linux. Agar praktikum berjalan sesuai prosedur maka Asisten Mengajar Shift atau Praktikan dapat membaca tujuan praktikum bab ini sebelum memulai ke bab teori.\nTujuan link\rTUJUAN PENJELASAN Memahami sejarah jaringan komputer Brefing ini membahas perkembangan jaringan komputer dari masa ke masa, bagaimana konsepnya terbentuk, dan pengaruh pentingnya dalam dunia teknologi saat ini. Memahami tujuan dari jaringan komputer Brefing ini membahas tujuan pentingnya jaringan komputer. Memahami OSI Layer Brefing ini membahas model OSI, sebuah kerangka kerja yang digunakan untuk memamahami bagaimana komunikasi data terjadi melalui berbagai lapisan, mulai dari pengiriman hingga penerimaan dalam jaringan. Memahami konversi bilangan Brefing ini akan mempelajari cara melakukan konversi bilangan dari desimal ke biner, biner ke desimal, serta basis bilangan lainnya yang sering digunakan dalam sistem jaringan komputer. Mengetahui perangkat-perangkat jaringan komputer Praktikan akan mempelajari berbagai perangkat yang digunakan dalam jaringan komputer, termasuk router, switch, dan server, serta bagaimana masing-masing perangkat berperan dalam mengelola dan menghubungkan jaringan. Memahami cara kerja jaringan Bab ini membahas cara kerja jaringan komputer, termasuk bagaimana data dikirim dari satu perangkat ke perangkat lain, bagaimana perangkat terhubung, serta bagaimana protokol komunikasi bekerja dalam jaringan. Sejarah Jaringan link Gagasan jaringan komputer pertama kali muncul pada 1940-an di Amerika Serikat, berawal dari proyek penelitian di Harvard University yang dipimpin oleh Profesor H. Aiken. Proyek ini bertujuan mengembangkan komputer MODEL I di laboratorium Bell. Pada awalnya penelitian ini hanya ingin mengggunakan perangkat komputer yang dapat digunakan bersama. Proses beruntun, atau yang dikenal sebagai batch processing, dirancang untuk menjalankan banyak proses secara efisien dalam satu waktu tanpa membuang waktu. Dengan standar antrian, beberapa program dapat dijalankan secara bersamaan pada sebuah komputer.\nPada tahun 1950-an, ketika ukuran komputer semakin besar sehingga terciptanya super komputer, muncul kebutuhan agar satu komputer dapat mendukung beberapa perangkat sekaligus (lihat Gambar B.1). Dari sini lahirlah konsep distribusi proses berbasis waktu yang dikenal sebagai TSS (Time Sharing System), yang menjadi awal penerapan jaringan komputer (network). Dalam sistem TSS, beberapa terminal dihubungkan secara seri ke satu host komputer. Konsep ini memperlihatkan awal perpaduan antara teknologi komputer dan telekomunikasi, yang sebelumnya berkembang secara terpisah.\nSource Gambar\nEvolusi Jaringan linkKomputer besar (Mainframe) Pada Periode 1960-1970an linkPada sekitar tahun 1940-an, komputer masih berupa mesin besar yang mudah mengalami kesalahan atau error. Penemuan transistor semikonduktor pada tahun 1947 memberikan peluang untuk menciptakan komputer yang lebih mini dan lebih andal. Di tahun 1950-an, institusi besar mulai memanfaatkan komputer mainframe yang dijalankan dengan program berbasis punched card. Menjelang akhir dekade 1950-an, ditemukan Integrated Circuit (IC), yang menggabungkan beberapa transistor dalam satu semikonduktor kecil. Di tahun 1960-an, penggunaan mainframe yang terhubung dengan terminal dan IC mulai tersebar luas.\nLocal Area Network (LAN) Pada Periode 1970-1980an linkDi akhir tahun 1960-an hingga 1970-an, minikomputer, yaitu komputer yang lebih kecil bermunculan, walaupun masih tergolong besar jika dibandingkan dengan standar masa kini. Di tahun 1977, perusahaan Apple Computer Company menghadirkan mikrokomputer, yang dikenal sebagai MAC. Di tahun 1981, IBM menampilkan PC pertama mereka. Kesuksesan MAC yang mudah digunakan oleh pengguna dan PC IBM yang cenderung terbuka, ditambah dengan kemajuan dalam miniaturisasi IC, mendorong penggunaan PC secara luas seperti dalam rumah dan kantor. Pada masa ini, pengembangan jaringan lokal mulai dilakukan dengan berbagai teknologi.\nWide Area Network (WAN) Pada Periode 1980-1990an linkDi pertengahan tahun 1980-an, pengguna PC mulai memanfaatkan modem untuk membagikan file antar komputer, yang biasa disebut sebagai komunikasi titik- ke-titik(dial-up). Konsep ini berkembang dengan adanya penggunaan bulletin boards, tempat pengguna dapat terhubung, meninggalkan pesan, dan mengunggah/mengunduh file. Tetapi, ada keterbatasan seperti komunikasi real-time yang aksesnya yang terbatas. Sejalan dengan meningkatnya jumlah pengguna, bulletin boards tidak lagi mampu mengimbangi peningkatan permintaan. Sebagai gambaran, bila 500 orang ingin tersambung secara bersamaan, maka diperlukan lima modem yang terhubung ke lima jalur telepon yang berbeda.\nInternet Pada Era 1990 an linkPada tahun 1960-an sampai 1990-an, Departemen Pertahanan Amerika Serikat (DoD) merancang WANs (Wide-Area Networks) yang luas dan handal untuk kepentingan militer serta penelitian ilmiah. Teknologi ini memilik perbedaan mendasar dengan komunikasi titik ke titik yang dipakai dalam bulletin boards, karena memberikan peluang beberapa komputer terhubung secara bersamaan melalui berbagai jalur berbeda Jaringan tersebut mampu menentukan metode pengiriman data antara komputer, sehingga satu koneksi dapat digunakan untuk melayani banyak komputer sekaligus. Pada akhirnya, jaringan yang dikembangkan oleh Departemen Pertahanan AS ini berevolusi menjadi jaringan global yang saat ini dikenal sebagai Internet.\n"
+            }
+        );
+    index.add(
+            {
+                id:  3 ,
+                href: "\/docs\/briefing\/definisidancarakerja\/",
+                title: "Definisi Dan Cara Kerja Jaringan",
+                description: "Definisi jaringan linkDefinisi jaringan komputer itu sendiri merupakan dua atau lebih perangkat komputer yang saling terhubung untuk berbagi sumber daya, bertukar informasi, serta serta menggunakan perangkat lunak atau aplikasi secara bersama-sama. Perangkat dalam jaringan ini memanfaatkan aturan standar yang dikenal sebagai protokol komunikasi untuk mengirimkan data melalui media fisik atau teknologi nirkabel.\nManfaat jaringan linkJaringan komputer pertama kali dikembangkan pada akhir 1950-an oleh militer dan Departemen Pertahanan Amerika Serikat. Awalnya, jaringan ini dirancang untuk mentransmisikan data melalui saluran telepon, dengan aplikasi yang terbatas pada bidang ilmiah dan komersial. Seiring waktu, teknologi ini berkembang menjadi internet yang kini dikenal luas oleh masyarakat. Di era modern, internet digunakan untuk berbagai kebutuhan, seperti pekerjaan, hiburan, pendidikan, dan banyak lagi. Perkembangan ini didukung oleh sejumlah faktor berikut:\n",
+                content: "Definisi jaringan linkDefinisi jaringan komputer itu sendiri merupakan dua atau lebih perangkat komputer yang saling terhubung untuk berbagi sumber daya, bertukar informasi, serta serta menggunakan perangkat lunak atau aplikasi secara bersama-sama. Perangkat dalam jaringan ini memanfaatkan aturan standar yang dikenal sebagai protokol komunikasi untuk mengirimkan data melalui media fisik atau teknologi nirkabel.\nManfaat jaringan linkJaringan komputer pertama kali dikembangkan pada akhir 1950-an oleh militer dan Departemen Pertahanan Amerika Serikat. Awalnya, jaringan ini dirancang untuk mentransmisikan data melalui saluran telepon, dengan aplikasi yang terbatas pada bidang ilmiah dan komersial. Seiring waktu, teknologi ini berkembang menjadi internet yang kini dikenal luas oleh masyarakat. Di era modern, internet digunakan untuk berbagai kebutuhan, seperti pekerjaan, hiburan, pendidikan, dan banyak lagi. Perkembangan ini didukung oleh sejumlah faktor berikut:\nBekerja secara virtual\nJaringan komputer mengirimkan dan menerima informasi berupa sinyal, baik sinyal listrik seperti kabel ethernet, sinyal Cahaya seperti fiber optic, atau sinyal radio seperti wifi. Artinya informasi tidak perlu dibuat secara fisik seperti ditulis seperti surat, diukirseperti prasasti, atau metode fisik lainnya, melainkan dapat dibuat secara virtual melalaui perangkat yang terbuhung jaringan komputer.\nIntegrasi Jaringan yang dapat diukur\nJaringan komputer bersifat fleksibel dan dapat diskalakan sesuai kebutuhan. Contohnya, saat ini banyak penyedia layanan internet atau biasa disebut ISP (Internet Service Provider) yang menawarkan akses internet dengan berbagai pilihan harga dan performa, sehingga pelanggan dapat menyesuaikannya sesuai dengan kebutuhan dan anggaran mereka.\nRespon yang cepat\nJaringan komputer dapat merespon dengan cepat karena bekerja secara virtual, dimana perangkat yang terkoneksi ke jaringan mampu mengirim atau menerima data secara langsung dan cepat.\nKeamanan data yang terjamin\rJaringan komputer dapat mengamankan data yang disalurkan karena terdapat kontrol akses dan enkripsi data pada perangkat jaringan yang memungkinkan integritas data tetap terjaga.\nCara Kerja Jaringan link\rSource Gambar\nTautan (Link) dan Simpul (Node) merupakan elemen dasar dalam jaringan komputer. Sebuah node dalam jaringan bisa berupa perangkat komunikasi data (DCE), seperti modem, router, switch, atau perangkat terminal data (DTE), seperti komputer dan printer. Lalu link adalah media yang menghubungkan dua node, yang bisa berupa jalur fisik seperti kabel atau fiber optik, atau ruang bebas yang digunakan oleh jaringan nirkabel.\nPada jaringan komputer, setiap node mengikuti serangkaian standar atau sistem yang mengatur cara pengiriman dan penerimaan data elektronik melalui link yang telah ditentukan. Desain jaringan komputer, baik dari segi komponen fisik maupun logis, diatur oleh arsitektur jaringan tersebut.\n"
+            }
+        );
+    index.add(
+            {
+                id:  4 ,
+                href: "\/docs\/briefing\/perangkatjaringan\/",
+                title: "Perangkat Jaringan",
+                description: "Pengertian dari perangkat jaringan yaitu perangkat lunak maupun perangkat keras yang berfungsi untuk menyambungkan, mengatur, dan mengelola komunikasi antar komputer, perangkat, atau sistem pada sebuah jaringan komputer. Tugas perangkat ini meliputi pengiriman, penerimaan, dan pemrosesan data, serta memastikan kelancaran fungsi jaringan.\nSwitch Source Gambar\n",
+                content: "Pengertian dari perangkat jaringan yaitu perangkat lunak maupun perangkat keras yang berfungsi untuk menyambungkan, mengatur, dan mengelola komunikasi antar komputer, perangkat, atau sistem pada sebuah jaringan komputer. Tugas perangkat ini meliputi pengiriman, penerimaan, dan pemrosesan data, serta memastikan kelancaran fungsi jaringan.\nSwitch Source Gambar\nSwitch merupakan perangkat yang berfungsi menghubungkan berbagai perangkat dalam jaringan lokal (LAN). Alat ini mengarahkan paket data langsung ke perangkat tujuan, sehingga memastikan komunikasi antar perangkat dalam jaringan berlangsung secara efisien.\nRouter Source Gambar\nRouter adalah perangkat yang digunakan untuk menghubungkan dua atau lebih jaringan, sekaligus mengatur pengiriman paket data di antara jaringan tersebut. Router memutuskan rute terbaik untuk paket data berdasarkan alamat tujuan mereka. Router juga dapat memberikan fungsi firewall dan keamanan jaringan.\nHub\rSource Gambar\nLalu ada Hub perangkat yang berfungsi menghubungkan beberapa perangkat dalam sebuah jaringan. Berbeda dengan switch, hub mengirimkan data ke seluruh perangkat yang terhubung, meskipun data tersebut hanya ditujukan untuk satu perangkat tertentu. Hal ini dapat menyebabkan lalu lintas jaringan menjadi kurang efisien.\nBridge\rSource Gambar\nBridge adalah perangkat yang digunakan untuk menghubungkan dua segmen jaringan LAN yang terpisah. Perangkat ini hanya meneruskan paket data jika diperlukan, berdasarkan identifikasi alamat MAC, sehingga membantu mengelola lalu lintas jaringan dengan lebih efisien.\nAccess Point (AP)\rSource Gambar\nAccess point adalah perangkat yang berfungsi menyediakan koneksi ke jaringan nirkabel (Wi-Fi). Perangkat ini memungkinkan perangkat-perangkat berbasis Wi-Fi, seperti laptop, smartphone, atau tablet, untuk terhubung ke jaringan kabel atau internet.\nNIC (Network Interface Card)\rSource Gambar\nNIC (Network Interface Card) adalah perangkat keras yang dipasang pada komputer atau perangkat lain, berfungsi untuk menghubungkan perangkat tersebut ke jaringan. NIC memiliki peran penting dalam mengirim dan menerima data melalui jaringan.\nFirewall\rSource Gambar\nFirewall yaitu perangkat keras atau perangkat lunak yang berfungsi untuk melindungi jaringan dari ancaman eksternal atau akses yang tidak diizinkan. Selain itu, Firewall memantau lalu lintas data di jaringan dan menjalankan kebijakan keamanan untuk mengatur aliran informasi.\nModem\rSource Gambar\nModem adalah perangkat yang mengonversi sinyal digital menjadi sinyal analog (untuk mengirimkan data melalui saluran telepon atau kabel) atau mengubah sinyal analog kembali menjadi sinyal digital. Perangkat ini digunakan untuk menyambungkan jaringan komputer ke jaringan yang lebih luas, yaitu internet.\nRepeater\rSource Gambar\nRepeater adalah perangkat yang berfungsi untuk memperkuat sinyal jaringan. Perangkat ini digunakan ketika jarak antar perangkat dalam jaringan melebihi batas maksimal atau saat sinyal melemah karena penghalang.\n"
+            }
+        );
+    index.add(
+            {
+                id:  5 ,
+                href: "\/docs\/briefing\/arsitekturdantopologijaringan\/",
+                title: "Arsitektur, Topologi Dan Tipe Jaringan",
+                description: "Arsitektur Jaringan linkArsitektur jaringan mengacu pada cara penyusunan atau struktur jaringan komputer yang dirancang untuk mengatur dan mengelola aliran data, sumber daya, serta komunikasi antara perangkat dalam jaringan. Beberapa tipe arsitektur jaringan yang sering digunakan antara lain:\nArsitektur klien-server\rSource Gambar\n",
+                content: "Arsitektur Jaringan linkArsitektur jaringan mengacu pada cara penyusunan atau struktur jaringan komputer yang dirancang untuk mengatur dan mengelola aliran data, sumber daya, serta komunikasi antara perangkat dalam jaringan. Beberapa tipe arsitektur jaringan yang sering digunakan antara lain:\nArsitektur klien-server\rSource Gambar\nDalam arsitektur ini, terdapat dua jenis perangkat utama: server dan klien. Server memiliki peran untuk menyediakan layanan dan sumber daya, seperti file, printer, atau aplikasi, kepada klien. Sebaliknya, klien adalah perangkat yang meminta layanan atau sumber daya tersebut dari server. Komunikasi dalam arsitektur client- server terjadi secara terpusat, di mana klien mengirim permintaan kepada server, dan server memberikan respons.\nArsitektur peer-to-peer\rSource Gambar\nArsitektur P2P tidak melibatkan server terpusat. Sebaliknya, setiap perangkat dalam jaringan dapat berfungsi sebagai klien sekaligus server, tergantung pada peran yang dijalankannya dalam komunikasi tersebut. Ini berarti setiap perangkat dapat berbagi sumber daya dengan perangkat lainnya tanpa ketergantungan pada server tunggal.\nTopologi Jarigan linkTopologi jaringan mengacu pada cara perangkat-perangkat dalam jaringan komputer diatur dan terhubung, baik secara fisik maupun logis. Ini mencakup susunan fisik kabel, titik-titik koneksi, serta aliran data di antara perangkat-perangkat tersebut. Topologi jaringan mempengaruhi cara komunikasi dan pertukaran data antara perangkat dalam jaringan.\nTopologi bus\rSource Gambar\nTopologi bus adalah jenis topologi jaringan yang menggunakan satu kabel utama yang menghubungkan semua perangkat di jaringan. Keuntungan dari topologi bus adalah kemudahan dalam memperluas jaringan dengan menambahkan host baru tanpa mengganggu perangkat lainnya. Namun, kekurangannya adalah jika kabel utama rusak atau terputus, maka seluruh jaringan akan mengalami gangguan.\nTopologi cincin (ring)\rSource Gambar\nTopologi cincin (Ring) terbentuk ketika semua perangkat dalam jaringan terhubung membentuk pola lingkaran. Dalam topologi ini, data akan mengalir dari satu perangkat ke perangkat lainnya secara berurutan. Keuntungan dari topologi ring adalah tidak terjadinya tabrakan data (collision). Namun, kelemahan utama dari topologi ini adalah jika salah satu perangkat mengalami masalah, maka seluruh jaringan dapat terpengaruh dan mengalami gangguan.\nTopologi bintang (star)\rSource Gambar\nTopologi bintang (Star) adalah topologi di mana setiap perangkat terhubung langsung ke server atau hub. Keuntungan dari topologi ini adalah jika salah satu perangkat mengalami masalah, jaringan lainnya tidak akan terpengaruh, karena setiap perangkat memiliki jalur atau kabel terpisah. Namun, kelemahan dari topologi ini adalah memerlukan biaya yang cukup tinggi, karena membutuhkan banyak kabel dan sumber daya untuk koneksi antar perangkat.\nTopologi bus\rSource Gambar\nTopologi mesh atau jala digunakan ketika diperlukan konektivitas yang tidak terputus antara semua perangkat dalam jaringan komputer. Setiap perangkat akan terhubung langsung dengan perangkat lainnya selama masih berada dalam jaringan yang sama. Keuntungan dari topologi mesh adalah komunikasi antar perangkat yang lebih cepat dan tingkat keamanan yang lebih tinggi. Namun, kelemahannya adalah biaya yang lebih tinggi untuk penyediaan kabel karena jumlah koneksi yang lebih banyak antara perangkat.\nTipe Jaringan linkTipe jaringan merujuk pada klasifikasi jaringan komputer berdasarkan cakupan geografis, teknologi yang digunakan, dan tujuan penggunaan. Terdapat beberapa tipe jaringan yang umum digunakan, antara lain:\nTUJUAN PENJELASAN JANGKAUAN PAN Personal Area Network (PAN) adalah jaringan kecil yang dirancang untuk menghubungkan perangkat pribadi dalam area terbatas, seperti di sekitar satu individu atau satu lokasi kerja. 1-10M LAN Local Area Network (LAN) adalah jaringan yang mengaitkan beberapa komputer atau perangkat dalam area terbatas, seperti di kantor, sekolah, atau gedung. 10-100M CAN Campus Area Network (CAN) adalah jaringan yang meliputi wilayah yang lebih luas dibandingkan LAN, seperti area kampus universitas atau kawasan besar lainnya. 100-1000M MAN Metropolitan Area Network (MAN) adalah jaringan yang meliputi area geografis lebih luas dibandingkan dengan LAN dan CAN, sering kali menghubungkan beberapa wilayah dalam satu kota atau metropolitan. Kota WAN Wide Area Network (WAN) adalah jaringan yang meliputi area geografis yang sangat besar, menghubungkan berbagai lokasi yang terpisah oleh jarak jauh, seperti antar kota, negara, atau bahkan benua. Negara INTERNET Internet merupakan jaringan global yang terdiri dari sejumlah jaringan WAN yang saling terhubung di seluruh dunia. Internet memberikan akses ke berbagai layanan dan sumber daya, seperti situs web, email, dan aplikasi daring. Antar Negara "
+            }
+        );
+    index.add(
+            {
+                id:  6 ,
+                href: "\/docs\/briefing\/datadigital\/",
+                title: "Data Digital",
+                description: "Data digital adalah representasi dari informasi dalam bentuk yang terdiri dari angka-angka biner (1 dan 0) yang banyak dikenalsebagai bit atau binary digit. Di dunia komputer, data digital adalah bentuk yang paling umum dari data, dan hampir semua perangkat elektronik modern menggunakan data digital. Setiap bit dalam data digital merepresentasikan satu dari dua keadaan, biasanya disebut sebagai “0” atau “1”. Dengan menggabungkan sejumlah besar bit ini, kita dapat merepresentasikan informasi yang lebih kompleks, termasuk teks, gambar, suara, video, dan lainnya. Proses pengkodean dan penguraian (encoding dan decoding) digunakan untuk mengubah informasi dari bentuk aslinya menjadi data digital dan sebaliknya. Proses ini melibatkan penggunaan metode khusus untuk mewakili informasi dalam bentuk serangkaian bit yang dapat dipahami oleh komputer atau perangkat elektronik lainnya.\n",
+                content: "Data digital adalah representasi dari informasi dalam bentuk yang terdiri dari angka-angka biner (1 dan 0) yang banyak dikenalsebagai bit atau binary digit. Di dunia komputer, data digital adalah bentuk yang paling umum dari data, dan hampir semua perangkat elektronik modern menggunakan data digital. Setiap bit dalam data digital merepresentasikan satu dari dua keadaan, biasanya disebut sebagai “0” atau “1”. Dengan menggabungkan sejumlah besar bit ini, kita dapat merepresentasikan informasi yang lebih kompleks, termasuk teks, gambar, suara, video, dan lainnya. Proses pengkodean dan penguraian (encoding dan decoding) digunakan untuk mengubah informasi dari bentuk aslinya menjadi data digital dan sebaliknya. Proses ini melibatkan penggunaan metode khusus untuk mewakili informasi dalam bentuk serangkaian bit yang dapat dipahami oleh komputer atau perangkat elektronik lainnya.\nJenis Sistem Bilangan linkJenis sistem bilangan merujuk pada cara berbeda untuk merepresentasikan dan memahami angka. Berikut adalah beberapa contoh sistem bilangan yang sering digunakan:\nDesimal : Desimal adalah yang paling sering digunakan dalam kehidupan sehari-hari. Sistem ini berbasis 10, dengan angka-angka yang terdiri dari 0 hingga 9. Setiap digit memiliki nilai yang bervariasi tergantung pada posisinya dalam bilangan tersebut.\nBiner : Biner adalah sistem bilangan yang digunakan dalam teknologi digital dan komputer. Berbasis 2, dengan hanya dua angka: 0 dan 1. Setiap digit merepresentasikan keadaan saklar elektronik (on/off) dalam perangkat digital.\nOktal : Oktal adalah sistem bilangan yang kurang umum, namun digunakan dalam beberapa aplikasi komputer. Berbasis 8, dengan angka-angka dari 0 hingga 7. Setiap digit merepresentasikan kombinasi dari tiga bit biner.\nHeksadesimal : Heksadesimal adalah sistem bilangan yang umum dipakai dalam pemrograman komputer dan representasi warna. Berbasis 16, menggunakan angka 0 hingga 9 dan huruf A hingga F (yang mewakili nilai 10 hingga 15). Setiap digit merepresentasikan kombinasi dari empat bit biner.\nKonversi Bilangan linkPada dasarnya perangkat elektronik tidak dapat menerima peritah begitu saja, karena perangkat elektronik hanya mengerti perintah dalam bit. Semisal bila pengguna ingin mengetikan huruf pada keyboard maka, perintah tersebut harus diubah dulu dari huruf menjadi angka yang terdapat pada kode ASCII, lalu dikirimkan ke prosesor yang sudah dalam bentuk bit. Sebagai contoh angka 42(desimal) akan dikonversikan ke berbagai jenis sistem bilangan.\ninfo\rbila bilangan dari desimal ke jenis sitem lain maka bagi dengan jumlah basisnya dan bila biner ke oktal ataupun heksadesimal lihat representasi bitnya.\rDesimal ke Biner : Angka 42(desimal) akan diubah ke biner dengan cara membagi angka tersebut dengan angka 2.\nJUMLAH HASIL SISA 42/2 21 0 21/2 10 1 10/2 5 0 5/2 2 1 2/2 1 0 1/2 0 1 Hasil yang didapat adalah = 101010(biner).\nBiner ke Desimal : Angka 101010(biner) akan diubah ke decimal\nANKA BINER 1 0 1 0 1 0 Pangakat 2 2^5 2^4 2^3 2^2 2^1 2^0 Hasil 1(2^5) 0(2^4) 1(2^3) 0(2^2) 1(2^1) 0(2^0) Hasil yang didapat adalah = 32+0+8+0+2+0 42(desimal).\nTugas link\rassignmentTugas Praktikum\rKerjakan tugas berikut untuk memahami konversi bilangan:\n1\rTugas 1:\nUbah angka 64(desimal) ke:\nHeksadesimal\rOktal\r2\rTugas 2:\nUbah angka 110011(biner) ke:\nHeksadesimal\rOktal\rinfoGunakan metode pembagian untuk konversi dari desimal, dan gunakan representasi bit untuk konversi dari biner.\r"
+            }
+        );
+    index.add(
+            {
+                id:  7 ,
+                href: "\/docs\/babone\/",
+                title: "Tutorial Bab 1",
+                description: "(IPv4, IPv6 dan subnetting)",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  8 ,
+                href: "\/docs\/babone\/pengelamatan\/",
+                title: "Pengalamatan IP",
+                description: "Pengalamatan IP pada IPV4 dan IPV6 ",
+                content: "Pada bab pengelamatan ini, praktikan akan mempelajari tentang sejarah perkembangan IPv4 dan IPv6, konsep dasar dari kedua protokol ini, serta cara kerja subnetting dalam jaringan komputer. Asisten praktikum atau praktikan dapat membaca tujuan dan persyaratan praktikum bab ini agar praktikum dapat berjalan sesuai prosedur.\nTUJUAN PENJELASAN Memahami konsep dasar IPv4 dan IPv6 Bab ini menjelaskan perbedaan antara IPv4 dan IPv6, fungsi masing-masing, serta cara kerjanya dalam jaringan komputer. Memahami proses subnetting, CIDR, dan VLSM Bab ini memandu praktikan memahami konsep subnetting, termasuk Classless Inter-Domain Routing (CIDR) dan Variable Length Subnet Mask (VLSM), serta cara menghitung subnet mask dan membagi jaringan menjadi subnet yang lebih efisien. Meningkatkan pengetahuan tentang cara kerja protocol Meningkatkan pengetahuan tentang cara kerja protokol jaringan dan bagaimana mengoptimalkan alokasi alamat IP menggunakan teknik subnetting yang tepat. #% Pendahuluan\nPengalamatan IP (Internet Protocol Addressing) adalah proses pemberian alamat numerik unik yang digunakan untuk mengidentifikasi perangkat dalam jaringan komputer. Alamat IP berperan sebagai identitas untuk perangkat (seperti komputer, server, ponsel, atau perangkat IoT) dalam jaringan, yang memungkinkan perangkat tersebut untuk berkomunikasi dan bertukar data. Setiap alamat IP terdiri dari dua komponen utama:\nNetwork ID: Menunjukkan jaringan tempat perangkat terhubung. Host ID: Menunjukkan perangkat spesifik dalam jaringan tersebut. Ada dua versi utama dari alamat IP: IPv4 dan IPv6.\n"
+            }
+        );
+    index.add(
+            {
+                id:  9 ,
+                href: "\/docs\/babone\/ipvfour\/",
+                title: "INTERNET PROTOCOL VERSION 4(IPv4)",
+                description: "Struktur, kelas, Alamat khusus dalam IPv4",
+                content: "IPv4 adalah metode pengalamatan dalam protokol TCP/IP versi 4, dikembangkan pada tahun 1981 dan telah menjadi standar utama untuk mengidentifikasi perangkat di jaringan komputer. Dengan panjang 32-bit, IPv4 mampu mengalamati sekitar 4 miliar perangkat di seluruh dunia. Masing -masing alamat IPv4 ditulis menggunakan format desimal dengan pemisah titik, yang terdiri dari empat oktet, dimana setiap oktet berukuran 8-bit dan memiliki nilai antara 0 hingga 255.\nMeskipun demikian, sejumlah alamat IPv4 memiliki fungsi khusus, seperti alamat untuk broadcast, yang dipakai untuk mengirim data ke setiap perangkat dalam jaringan, serta alamat jaringan, yang digunakan untuk mengidentifikasi jaringan itu sendiri. IPv4 juga memiliki beberapa keterbatasan, terutama dalam hal kapasitas alamat, yang menyebabkan pengembangan IPv6 untuk mengatasi kekurangan ini. Hierarki pengalamatan pada IPv4 seperti gambar dibawah ini :\nSource Gambar\nStruktur Alamat IPv4 link 32-bit Address: Alamat IPv4 dibentuk oleh 32 bit yang dibagi menjadi dua bagian utama: Network ID dan Host ID. Dalam gambar, 32 bit ini terbagi menjadi empat oktet, dengan masing - masing oktet memiliki panjang 8 bit. Nework ID: Network ID adalah komponen dalam alamat IP yang berfungsi untuk mengenali jaringan tempat perangkat terhubung. Pada gambar, Network ID mencakup tiga oktet pertama, yaitu “192.168.121”. Ini menunjukkan bahwa semua perangkat yang memiliki Network ID yang serupa terhubung dalam jaringan yang sama. Network ID ini krusial untuk menjamin bahwa data yang dikirimkan melalui jaringan dapat diteruskan ke jaringan yang tepat sebelum sampai ke perangkat yang dituju. Host ID: Host ID merupakan bagian dalam alamat IP yang mengidentifikasi perangkat tertentu dalam jaringan yang sama. Dalam gambar, Host ID adalah oktet terakhir “16”. Ini berarti perangkat yang bersangkutan memiliki alamat host “16” dalam jaringan “192.168.121”. Oktet: Setiap oktet terdiri dari 8 bit, dengan nilai yang dapat bervariasi antara 0 hingga 255 dalam notasi desimal. Pada gambar, empat oktet adalah “192”, “168”, “121”, dan “16”, yang menunjukkan struktur standar dari alamat IPv4. Pembagian Network dan Host: Source Gambar\nGambar diatas menunjukkan pembagian Network dan Host dalam berbagai kelas IP:\nKelas A: Oktet pertama digunakan untuk Network, sementara tiga oktet sisanya dialokasikan untuk Host. Kelas B: Dua oktet pertama dialokasikan untuk Network, sementara dua oktet terakhir untuk Host. Kelas C: Tiga oktet pertama diperuntukkan bagi Network, sementara oktet terakhir digunakan untuk Host. Kelas D: Tidak ada pembagian antara Network dan Host, digunakan untuk multicast. Pembagian ini penting untuk routing dan pengalamatan IP, di mana router di jaringan lokal akan menggunakan Network ID untuk mengarahkan data ke jaringan yang tepat, dan Host ID untuk memastikan bahwa data mencapai perangkat yang benar di dalam jaringan.\nKelas - Kelas IP link\rSource Gambar\nkelas IP dibagi menjadi lima kategori utama berdasarkan rentang alamat yang tersedia, yang dikenal sebagai Kelas A, B, C, D, dan E. Dibawah ini penjelasan singkat tentang masing-masing kelas:\nKelas A:\nRange Alamat: 1.0.0.0 sampai 126.0.0.0 Pembagian: Oktet pertama untuk Network, tiga oktet berikutnya untuk Host. Penggunaan: Untuk jaringan besar dengan banyak host. Contoh: 10.0.0.1 (IP Address Kelas A menggunakan subnet mask 255.0.0.0) Kelas B:\nRange Alamat: 128.0.0.0 sampai 191.255.0.0 Pembagian: Dua oktet awal dialokasikan untuk Network, sedangkan dua oktet sisanya diperuntukkan bagi Host. Penggunaan: Untuk jaringan skala menengah, seperti pada perusahaan besar. Contoh: 172.16.0.1 (IP Address Kelas B menggunakan subnet mask 255.255.0.0) Kelas C:\nRange Alamat: 192.0.0.0 sampai 223.255.255.0 Pembagian: Tiga oktet awal dialokasikan untuk Network, sedangkan oktet terakhir ditujukan untuk Host. Penggunaan: Untuk jaringan kecil, seperti jaringan rumah atau kantor kecil. Contoh: 192.168.1.1 (IP Address Kelas C menggunakan subnet mask 255.255.255.0) Kelas D:\nRange Alamat: 224.0.0.0 sampai 239.255.255.255 Penggunaan: Untuk multicast, tidak dibagi antara Network dan Host. Contoh: 224.0.0.1 (Alamat multicast untuk protokol routing tertentu) Kelas E:\nRentang Alamat: 240.0.0.0 hingga 255.255.255.255 Penggunaan: Reserved untuk keperluan eksperimen serta jarang dipakai secara luas. Contoh: 250.0.0.1 (IP Address Kelas E, umumnya tidak digunakan dalam jaringan publik) Pembagian ini memungkinkan pengalokasian alamat IP yang efisien sesuai dengan kebutuhan jaringan. Alamat 127.x.x.x diperuntukkan bagi loopback, yang berfungsi untuk memungkinkan perangkat mengirim data ke dirinya sendiri. Alamat 127.0.0.1 adalah yang paling sering digunakan dan dikenal sebagai localhost. Ini berguna untuk menguji dan memvalidasi jaringan atau aplikasi lokal tanpa melibatkan jaringan eksternal.\nAlamat Khusus dalam IPv4 linkDalam IPv4, ada beberapa jenis alamat khusus yang memiliki fungsi dan penggunaan tertentu. Berikut adalah penjelasan untuk beberapa kategori utama:\nAlamat Pribadi (Private): Alamat pribadi adalah alamat IP yang khusus diperuntukkan bagi penggunaan di jaringan lokal dan tidak dapat diakses langsung melalui internet publik. Alamat ini digunakan untuk mengidentifikasi perangkat dalam jaringan lokal dan biasanya diterjemahkan ke alamat publik menggunakan teknik Network Address Translation (NAT). Contoh:\n192.168.1.1 10.0.0.5 172.16.0.10 Alamat publik: Alamat publik adalah alamat IP yang dapat dijangkau secara langsung melalui internet. Alamat ini digunakan untuk identifikasi global di internet dan harus unik di seluruh dunia. Alamat public biasanya diberikan oleh penyedia layanan internet (ISP). Contoh:\n8.8.8.8 (Alamat DNS Google) 172.217.1.14 (Alamat IP salah satu server Google) Alamat Boroadcast: Alamat broadcast diperuntukan untuk mentransmisikan paket ke semua perangkat di jaringan lokal. Ada dua jenis broadcast: broadcast terbatas dan broadcast global.\nBroadcast Terbatas: Alamat broadcast untuk jaringan tertentu, misalnya untuk subnet 192.168.1.0/24, alamat broadcast adalah 192.168.1.255. Broadcast Global: Biasanya tidak digunakan di IPv4 karena broadcast terbatas sudah mencakup sebagian besar kebutuhan. Broadcast global adalah 255.255.255.255 yang dapat mentransmisikan untuk mengirimkan pesan broadcast ke seluruh perangkat di jaringan lokal yang sama. Alamat Loopback: Alamat loopback adalah alamat yang dipakai oleh perangkat untuk mengirimkan data ke dirinya sendiri. Ini biasanya digunakan untuk pengujian dan debugging. Rentang Alamat Loopback di kelas A dari 127.0.0.0 hingga 127.255.255.255. Contoh:\n127.0.0.1 (Alamat loopback standar, sering disebut sebagai “localhost”) Alamat Multicast: Alamat multicast digunakan untuk mengirimkan paket ke sekelompok perangkat yang telah bergabung dalam grup multicast tertentu. Rentang Alamat Multicast di kelas D dari 224.0.0.0 sampai 239.255.255.255. Contoh:\n224.0.0.1 (Digunakan untuk semua host dalam jaringan lokal) Alamat Reserved: Alamat reserved adalah alamat yang dikhususkan untuk penggunaan tertentu dan tidak digunakan dalam jaringan umum. Contoh termasuk alamat untuk percobaan dan penelitian. Rentang Alamat Reserved di Kelas E dari 240.0.0.0 hingga 255.255.255.255.\n"
+            }
+        );
+    index.add(
+            {
+                id:  10 ,
+                href: "\/docs\/babone\/ipvsix\/",
+                title: "INTERNET PROTOCOL VERSION 6(IPv6)",
+                description: "Strukktur dalam IPv6",
+                content: "IPv6 merupakan sistem pengalamatan dalam protokol TCP/IP yang menggunakan panjang 128-bit, memungkinkan pengalamatan hingga 3,4 x 10^38 perangkat di seluruh dunia. Sebagai contoh, alamat IPv6 yang dapat digunakan adalah 2001:0DB8:AC10:FE01:0000:0000:0000:0001, menggunakan notasi heksadesimal kolom. Struktur ini terdiri dari 8 bagian, dengan total 32 digit heksadesimal yang dipisahkan oleh tanda kolon (:), di mana setiap bagian memiliki panjang 2 byte. Notasi ini dirancang untuk mendukung skala dan fleksibilitas jaringan modern.\nIPv6 memiliki beberapa keunggulan dibandingkan dengan IPv4, antara lain: IPv6 dikembangkan sebagai respons terhadap keterbatasan IPv4, yang hanya mendukung sekitar 4,3 miliar alamat IP. Dengan pertumbuhan pesat internet dan perangkat yang terhubung, kekurangan alamat IP mulai terasa saat awal tahun 1990an. Pada tahun 1994, IETF (Internet Engineering Task Force) mulai bekerja pada spesifikasi IPv6 sebagai pengganti IPv4.\nIPv6 secara resmi diperkenalkan pada tahun 1998 dengan tujuan mengatasi keterbatasan alamat IPv4, serta memperkenalkan peningkatan dalam routing, keamanan, dan konfigurasi otomatis. IPv6 dirancang untuk menjadi lebih efisien dan dapat mendukung perkembangan internet di masa depan melalui pemberian jumlah alamat yang hampir tidak terbatas. Hingga saat ini, IPv6 secara bertahap diadopsi di seluruh dunia, meskipun IPv4 masih banyak digunakan.\nStruktur Alamat IPv6 link\rSource Gambar\nPanjang Alamat 128-bit:\nAlamat IPv6 memiliki panjang total 128-bit, yang setara dengan 16 byte atau 32 digit heksadesimal. Setiap digit heksadesimal mewakili 4 bit dari alamat, sehingga keseluruhan alamat terdiri dari 32 digit. Penjelasan Hexadecimal Notation:\nAlamat IPv6 dituliskan dalam format notasi heksadesimal titik dua, di mana alamat 128-bit dibagi menjadi 8 kelompok, dan setiap segmen terdiri dari 4 digit heksadesimal, yang dipisahkan oleh tanda kolon (:). Contoh dari struktur alamat ini adalah FDEC:0074:0000:0000:0000:B0FF:0000. Notasi heksadesimal ini memungkinkan alamat IPv6 untuk lebih ringkas dan mudah dibaca dibandingkan dengan representasi biner yang panjang. Tipe Alamat IPv6\nUnicast: Alamat Unicast digunakan untuk mengidentifikasi satu perangkat unik dalam jaringan. Paket data akan dikirim ke alamat Unicast lalu dikirimkan langsung ke tujuan tertentu. Ini adalah tipe alamat yang paling umum digunakan dalam komunikasi satu-ke-satu. Multicast: Alamat Multicast diperuntukan mengirimkan paket data ke sejumlah perangkat sekaligus. Ketika sebuah paket dikirimkan ke alamat Multicast, itu akan diterima oleh semua perangkat dalam grup Multicast yang berlangganan alamat tersebut. Ini efisien untuk komunikasi satu-ke- banyak. Anycast: Alamat Anycast mengizinkan beberapa perangkat yang memiliki alamat yang sama untuk menerima paket. Namun, paket data akan dikirimkan ke perangkat yang paling dekat (dari sudut pandang routing) dengan pengirim. Ini digunakan untuk meningkatkan efisiensi dan kecepatan pengiriman data, terutama dalam layanan yang bersifat distribusi seperti DNS. Keunggulan IPv6 Dibanding IPv4\nRuang Alamat Lebih Besar: IPv6 menggunakan alamat 128-bit, yang memungkinkan dukungan hingga 3,4 × 10^38 alamat, jumlah yang jauh lebih besar dibandingkan dengan IPv4 yang hanya dapat mendukung sekitar 4,3 miliar alamat. Efsiensi Routing: IPv6 memiliki struktur header yang lebih sederhana, meningkatkan kinerja routing dan mengurangi ukuran tabel routing. Otomatisasi Konfigurasi: IPv6 mendukung SLAAC (Stateless Address Autoconfiguration), yang membuat perangkat menyediakan alamat IP sendiri tanpa server DHCP. Konektivitas Peer-to-Peer: IPv6 menghilangkan kebutuhan NAT, memungkinkan konektivitas langsung antar perangkat, yang meningkatkan efisiensi aplikasi seperti VoIP. Keamanan Lebih Baik: IPv6 mendukung IPsec secara default, menawarkan enkripsi dan otentikasi yang lebih kuat. Mobilitas yang Lebih Baik: IPv6 memungkinkan perangkat mempertahankan koneksi saat berpindah jaringan tanpa mengubah alamat IP. "
+            }
+        );
+    index.add(
+            {
+                id:  11 ,
+                href: "\/docs\/babone\/subnetting\/",
+                title: "Subnetting",
+                description: "Menghitung subnneting CIDR dan VLSM",
+                content: "Subnetting merupakan prosedur untuk membagi jaringan besar menjadi beberapa subnetwork yang lebih kecil, yang disebut sebagai subnet. Subnetting merupakan aspek penting dalam desain jaringan yang baik, karena memungkinkan pengoptimalan penggunaan alamat IP dengan meminimalkan alamat yang tidak terpakai atau terbuang. Selain itu, subnetting juga mempermudah pengelolaan dan meningkatkan kinerja jaringan.\nDalam melakukan perhitungan subnetting, terdapat dua metode utama yang dapat digunakan, yaitu Classless Inter-Domain Routing (CIDR) dan Variable Length Subnet Mask (VLSM). CIDR memungkinkan alokasi alamat IP yang lebih fleksibel tanpa terikat pada kelas IP tertentu, sedangkan VLSM memungkinkan penggunaan subnet mask dengan panjang yang bervariasi dalam satu jaringan. Pemahaman tentang konsep dan definisi subnetting sangat penting sebelum melakukan perhitungan dengan kedua metode ini. Untuk lebih mendalam, pembahasan mengenai CIDR dan VLSM dapat ditemukan dalam Modul Panduan Jaringan Komputer Dasar.\nClassless Inter-Domain Routing (CIDR) linkCIDR (Classless Inter-Domain Routing) merupakan metode alternatif untuk Mengelompokkan alamat-alamat IP yang berlawanan dengan sistem pengkelompokan tradisional yang membagi alamat IP didalam kelas A, B, C, D, dan E. Diperkenalkan pertama kali pada tahun 1992 oleh Internet Engineering Task Force (IETF), CIDR sering disebut juga sebagai supernetting. CIDR juga dikenal sebagai supernetting. CIDR menyediakan mekanisme routing yang lebih efisien dibandingkan dengan metode klasifikasi IP berbasis kelas yang lama.\nCIDR memakai penulisan prefix dengan panjang spesifik untuk menentukan Network ID, yang menunjukkan jumlah bit di sisi kiri yang digunakan untuk mengidentifikasi jaringan. Notasi ini memungkinkan pengalokasian alamat IP yang lebih fleksibel dan bisa digunakan untuk berbagai kelas alamat IP, sehingga mempermudah pengelolaan jaringan dan meningkatkan efisiensinya. Berikut adalah penerapan notasi CIDR pada alamat classful:\nKelas A mencakup rentang /8 hingga /15 Kelas B mencakup rentang /16 hingga /23 Kelas C mencakup rentang /24 hingga /28 Perhitungan Subnetting CIDR link\rinfo\rCATATAN\nN (Besar) adalah banyaknya jumlah Binari/Bit 1 pada oktet yang memiliki nilai 1 dan 0.\nn (Kecil) adalah banyaknya jumlah Binari/Bit 0 pada semua oktet yang memiliki nilai 0.\nMenghitung Jumlah Subnet 2^N = Jumlah Subnet\rMenghitung Jumlah Host Per-Subnet 2^n - 2 = Jumlah Host Per Subnet\rMenghitung Nilai Blok Subnet 2^n = Blok Subnet\rNilai oktet terakhir dari subnet mask adalah angka yang terletak pada bagian akhir subnet mask, contohnya: Subnet mask 255.128.0.0 memiliki nilai oktet terakhir 128 Subnet mask 255.255.192.0 memiliki nilai oktet terakhir 192 Subnet mask 255.255.255.252 memiliki nilai oktet terakhir 252 Menghitung Alamat Broadcast Ip Address Paling Akhir = Alamat Broadcast\rMerupakan alamat IP yang berada di ujung akhir dalam suatu jaringan. Alamat broadcast ini tidak boleh memiliki kesamaan dengan alamat subnet pada blok berikutnya atau dengan alamat host terakhir pada blok subnet tersebut. Sesudah memahami metode perhitungan subnetting CIDR, langkah berikutnya adalah menerapkan perhitungan subnetting pada setiap kelas IP menggunakan CIDR.\nSubnetting CIDR kelas C\rAlamat IP kelas C memiliki subnet mask default 255.255.255.0 atau prefix /24. Nilai CIDR untuk kelas C dapat dilihat pada Tabel 1.2 di bawah ini.\nSubnet Mask CIDR Jumlah IP Host Bisa Dipakai 255.255.255.0 /24 256 254 255.255.255.128 /25 128 126 255.255.255.192 /26 64 62 255.255.255.224 /27 32 30 255.255.255.240 /28 16 14 255.255.255.248 /29 8 6 255.255.255.252 /30 4 2 255.255.255.254 /31 2 0 (Point-to-Point) 255.255.255.255 /32 1 0 (Host tunggal) info\rContoh Soal\nDiberikan Network address 192.168.2.0/27, tetukanlah\na. Jumlah Subnet\nb. Jumlah Host Per-Subnet\nC. Nilai Blok Subnet\nd. Alamat Broadcast \u0026 Subnet Map\nLangkah - Langkah Penyelesaian\nDari soal diatas Network address dari 192.168.2.0 adalah ip address kelas C dengan Subnet Mask /27. Yang artinya memiliki Subnet Mask\n1111 1111 1111 1111 1111 1111 1100 0000 Oktet 1 Oktet 2 Oktet 3 Oktet 4 Menghitung Jumlah Subnet 2^N = Jumlah Subnet -\u003e 2^3 = 8 Subnet\rMenghitung Jumlah Host Per-Subnet 2^n - 2 = Jumlah Host Per-Subnet -\u003e (2^5) - 2 = 30 Host Per-Subnet\rMenghitung Nilai Blok Subnet 2^n = Blok Subnet -\u003e 2^5 = 32 Blok Subnet\rJadi, total subnetnya adalah 0, 32, 64, 96, 128, 160, 192, 224\nAlamat Broadcast \u0026 Subnet Map Blok Subnet Subnet Range Host Broadcast 1 192.168.2.0 192.168.2.1 - 192.168.2.30 192.168.2.31 2 192.168.2.32 192.168.2.33 - 192.168.2.62 192.168.2.63 3 192.168.2.64 192.168.2.65 - 192.168.2.94 192.168.2.95 4 192.168.2.96 192.168.2.97 - 192.168.2.126 192.168.2.127 5 192.168.2.128 192.168.2.129 - 192.168.2.158 192.168.2.159 6 192.168.2.160 192.168.2.161 - 192.168.2.190 192.168.2.191 7 192.168.2.192 192.168.2.193 - 192.168.2.222 192.168.2.223 8 192.168.2.224 192.168.2.225 - 192.168.2.254 192.168.2.255 Subnetting CIDR kelas B\rAlamat IP kelas B memiliki subnet mask default 255.255.0.0 atau prefix /16.\rNilai CIDR untuk kelas B dapat ditemukan pada tabel 1.4 di bawah ini.\rSubnet Mask CIDR Jumlah IP Host Bisa Dipakai 255.255.0.0 /16 65,536 65,534 255.255.128.0 /17 32,768 32,766 255.255.192.0 /18 16,384 16,382 255.255.224.0 /19 8,192 8,190 255.255.240.0 /20 4,096 4,094 255.255.248.0 /21 2,048 2,046 255.255.252.0 /22 1,024 1,022 255.255.254.0 /23 512 510 info\rContoh Soal\nDiberikan Network address 172.25.0.0 /19, tetukanlah\na. Jumlah Subnet\nb. Jumlah Host Per-Subnet\nC. Nilai Blok Subnet\nd. Alamat Broadcast \u0026 Subnet Map\nLangkah - Langkah Penyelesaian\nDari soal diatas Network address dari 172.25.0.0 adalah ip address kelas B dengan Subnet Mask /19. Yang artinya memiliki Subnet Mask\n1111 1111 1111 1111 1110 0000 0000 0000 Oktet 1 Oktet 2 Oktet 3 Oktet 4 Menghitung Jumlah Subnet 2^N = Jumlah Subnet -\u003e 2^3 = 8 Subnet\rMenghitung Jumlah Host Per-Subnet 2^n - 2 = Jumlah Host Per-Subnet -\u003e (2^13) - 2 = 8192 - 2 = 8190 Host Per-Subnet\rMenghitung Nilai Blok Subnet 2^n = Blok Subnet -\u003e 2^5 = 32 Blok Subnet\rJadi, total subnetnya adalah 0, 32, 64, 96, 128, 160, 192, 224\nAlamat Broadcast \u0026 Subnet Map Blok Subnet Subnet Range Host Broadcast 1 172.25.0.0 172.25.0.1 - 172.25.31.254 172.25.31.255 2 172.25.32.0 172.25.32.1 - 172.25.63.254 172.25.63.255 3 172.25.64.0 172.25.64.1 - 172.25.95.254 172.25.95.255 4 172.25.96.0 172.25.96.1 - 172.25.127.254 172.25.127.255 5 172.25.128.0 172.25.128.1 - 172.25.159.254 172.25.159.255 6 172.25.160.0 172.25.160.1 - 172.25.191.254 172.25.191.255 7 172.25.192.0 172.25.192.1 - 172.25.223.254 172.25.223.255 8 172.25.224.0 172.25.224.1 - 172.25.255.254 172.25.255.255 Variable Length Subnet Mask (VLSM) linkVariable Length Subnet Mask (VLSM) adalah metode dalam subnetting yang memungkinkan penggunaan subnet mask dengan panjang yang bervariasi dalam satu alamat jaringan, sehingga sebuah jaringan dapat dibagi menjadi beberapa subnet dengan ukuran yang berbeda sesuai kebutuhan. Dengan VLSM, administrator jaringan dapat mengalokasikan alamat IP secara lebih efisien dan fleksibel, meminimalkan pemborosan alamat IP, dan memungkinkan pembuatan subnet yang lebih kecil dalam satu jaringan. Contohnya, sebuah network address bisa menggunakan subnet mask yang lebih besar (/24) untuk jaringan dengan banyak host, dan subnet mask yang lebih kecil (/28) untuk jaringan dengan sedikit host.\nVLSM (Variable Length Subnet Mask) diperkenalkan pada akhir tahun 1980an dan awal tahun 1990an sebagai solusi untuk mengatasi keterbatasan dari metode subnetting konvensional, yang hanya mengizinkan satu subnet mask per network address. Teknologi ini menjadi penting dalam pengembangan jaringan karena mendukung desain jaringan yang lebih kompleks dan efisien. VLSM juga memungkinkan desain jaringan hierarkis, di mana beberapa subnet dapat digabungkan menjadi satu rute agregasi, sehingga mengurangi jumlah entri dalam tabel routing dan menyederhanakan pengelolaan jaringan.\nPerhitungan Subnetting VLSM linkVLSM (Variable Length Subnet Mask) menggunakan pendekatan yang berbeda dengan memberikan lebih dari satu subnet mask pada satu network address. Network address yang menggunakan berbagai subnet mask ini disebut sebagai VLSM. Berikut adalah contoh yang lebih jelas untuk menggambarkan konsep ini.\ninfo\rContoh Soal\nDiketahui network address 192.168.9.0, yang memiliki beberapa subnet dengan kebutuhan jumlah host yang berbeda-beda. Jumlah host untuk masing-masing subnet adalah sebagai berikut: Net A memiliki 28 Host Net B memiliki 60 Host Net C memiliki 20 Host Net D memiliki 20 Host Net E memiliki 2 Host Langkah - Langkah Penyelesaian\nDari soal diatas Network address dari 192.168.9.0, yang memiliki beberapa subnet.\nMenentukan urutan jaringan berdasarkan jumlah host, yang terbesar hingga yang terkecil:\nNet B = 60 Host Net A = 28 Host Net C = 20 Host Net D = 20 Host Net E = 2 Host Menetapkan rentang host sesuai jumlah kebutuhan host.\nNet B membutuhkan 60 host : 2^n − 2 ≥ 60 host → 2^6 – 2 = 62 host (n = 6) Net A membutuhkan 28 host : 2^n − 2 ≥ 28 host → 2^5 – 2 = 30 host (n = 5) Net C membutuhkan 20 host : 2^n − 2 ≥ 29 host → 2^5 – 2 = 30 host (n = 5) Net D membutuhkan 20 host : 2^n − 2 ≥ 20 host → 2^5 – 2 = 30 host (n = 5) Net E membutuhkan 2 host : 2^n − 2 ≥ 2 host → 2^2 – 2 = 2 host (n = 2) Keterangan : 2^n - 2 ≥ kebutuhan host berarti jumlah alamat yang dihitung harus cukup untuk memenuhi kebutuhan host yang diinginkan, tetapi tidak boleh terlalu besar sehingga membuang alamat IP yang tidak diperlukan.\rMenetapkan Bit Network\nNet B = 60 host : 32 - n → 32-6 = /26 Net A = 28 host : 32 - n → 32-5 = /27 Net C = 20 host : 32 - n → 32-5 = /27 Net D = 20 host : 32 - n → 32-5 = /27 Net E = 2 host : 32 - n → 32-2 = /30 Keterangan : Angka 32 merupakan jumlah bit dari IPv4 address. Dan ( n ) adalah nilai untuk mencari jumlah host.\rMenetapkan Blok Subnet\nNet B = 60 host : 2^n → 2^6 = 64 Net A = 28 host : 2^n → 2^5 = 32 Net C = 20 host : 2^n → 2^5 = 32 Net D = 20 host : 2^n → 2^5 = 32 Net E = 2 host : 2^n → 2^2 = 4 Keterangan : Untuk mencari hitung (n) kecil adalah banyaknya jumlah Binari/Bit 0 pada semua oktet yang memiliki nilai 0 Subnet Map Blok Subnet Subnet Range Host Broadcast 1 (60 host) 192.168.9.0/26 192.168.9.1 - 192.168.9.62 192.168.9.63 2 (28 host) 192.168.9.64/27 192.168.9.65 - 192.168.9.94 192.168.9.95 3 (20 host) 192.168.9.96/27 192.168.9.97 - 192.168.9.126 192.168.9.127 4 (20 host) 192.168.9.128/27 192.168.9.129 - 192.168.9.158 192.168.9.159 5 (2 host) 192.168.9.160/30 192.168.9.161 - 192.168.9.162 192.168.9.163 info\rContoh Soal\nDiketahui network address 25.11.15.0/18, yang memiliki beberapa subnet dengan kebutuhan jumlah host yang berbeda-beda. Jumlah host untuk masing-masing subnet adalah sebagai berikut: Net F membutuhkan 225 host Net G membutuhkan 150 host Net H membutuhkan 180 host Net I membutuhkan 30 host Net J membutuhkan 90 host Langkah - Langkah Penyelesaian\nDari soal diatas Network address dari 25.11.15.0 /18, yang memiliki beberapa subnet.\nMenentukan urutan jaringan berdasarkan jumlah host, yang terbesar hingga yang terkecil:\nNet F = 225 Host Net H = 180 Host Net G = 150 Host Net J = 90 Host Net I = 30 Host Menetapkan rentang host sesuai jumlah kebutuhan host.\nNet F membutuhkan 225 host : 2^n − 2 ≥ 225 host → 2^8 – 2 = 254 host (n = 8) Net H membutuhkan 180 host : 2^n − 2 ≥ 180 host → 2^8 – 2 = 254 host (n = 8) Net G membutuhkan 150 host : 2^n − 2 ≥ 150 host → 2^8 – 2 = 254 host (n = 8) Net J membutuhkan 90 host : 2^n − 2 ≥ 90 host → 2^7 – 2 = 126 host (n = 7) Net I membutuhkan 30 host : 2^n − 2 ≥ 30 host → 2^5 – 2 = 30 host (n = 5) Keterangan : 2^n - 2 ≥ kebutuhan host berarti jumlah alamat yang dihitung harus cukup untuk memenuhi kebutuhan host yang diinginkan, tetapi tidak boleh terlalu besar sehingga membuang alamat IP yang tidak diperlukan.\rMenetapkan Bit Network\nNet F = 225 host : 32 - n → 32-8 = /24 Net H = 180 host : 32 - n → 32-8 = /24 Net G = 150 host : 32 - n → 32-8 = /24 Net J = 90 host : 32 - n → 32-7 = /25 Net I = 30 host : 32 - n → 32-5 = /27 Keterangan : Angka 32 merupakan jumlah bit dari IPv4 address. Dan ( n ) adalah nilai untuk mencari jumlah host.\rMenetapkan Blok Subnet\nNet F = 225 host : 2^n → 2^8 = 256 Net H = 180 host : 2^n → 2^8 = 256 Net G = 150 host : 2^n → 2^8 = 256 Net J = 90 host : 2^n → 2^7 = 128 Net I = 30 host : 2^n → 2^5 = 32 Keterangan : Untuk mencari hitung (n) kecil adalah banyaknya jumlah Binari/Bit 0 pada semua oktet yang memiliki nilai 0 Subnet Map Blok Subnet Subnet Range Host Broadcast 1 (225 host) 25.11.0.0/24 25.11.0.1 - 25.11.0.254 25.11.0.255 2 (180 host) 25.11.1.0/24 25.11.1.1 - 25.11.1.254 25.11.1.255 3 (150 host) 25.11.2.0/24 25.11.2.1 - 25.11.2.254 25.11.2.255 4 (90 host) 25.11.3.0/25 25.11.3.1 - 25.11.3.126 25.11.3.127 5 (30 host) 25.11.3.128/27 25.11.3.129 - 25.11.3.158 25.11.3.159 Tugas link\rassignmentTugas Praktikum\rKerjakanlah soal latihan berikut ini:\n1\rSoal 1:\nDiberikan network address 192.168.20.0/24, tentukan:\nBerapa Jumlah Subnet\rBerapa Jumlah Host Per-Subnet\rNilai dari Blok Subnet\rAlamat Broadcast \u0026 Subnet Map\r2\rSoal 2:\nDiberikan network address 172.16.0.0/18, tentukan:\nIP kelas apakah dan berapa jumlah subnetnya?\rBerapa jumlah host per subnet?\rApa saja blok-blok subnetnya?\rHost pertama, Host terakhir, Network address, Alamat broadcast\r3\rSoal 3:\nPerusahaan layanan keuangan dengan network address 192.188.128.0/25 terbagi menjadi 5 departemen:\nDepartemen Keuangan: 160 host\rDepartemen Operasional: 120 host\rDepartemen Teknologi: 140 host\rDepartemen SDM: 75 host\rDepartemen Penjualan: 5 host\rBuatlah subnetting menggunakan metode VLSM\n4\rSoal 4:\nPerusahaan dengan network address 30.12.20.0/23 perlu dibagi menggunakan VLSM dengan kebutuhan:\nNet X: 200 host\rNet Y: 100 host\rNet Z: 150 host\rNet W: 60 host\rSusun subnet map lengkap dengan range host dan broadcast address\ninfoGunakan metode CIDR untuk soal 1-2, dan metode VLSM untuk soal 3-4. Urutkan subnet berdasarkan kebutuhan host terbesar untuk VLSM.\r"
+            }
+        );
+    index.add(
+            {
+                id:  12 ,
+                href: "\/docs\/",
+                title: "Jaringan Komputer Dasar",
+                description: "Dokumentasi dari semua bab yang akan dipelajari pada Laboratorium Lanjut Gunadarma.",
+                content: ""
+            }
+        );
+    search.addEventListener('input', show_results, true);
+
+    function show_results(){
+        const maxResult =  5 ;
+        const minlength =  0 ;
+        var searchQuery = sanitizeHTML(this.value);
+        var results = index.search(searchQuery, {limit: maxResult, enrich: true});
+
+        
+        const flatResults = new Map(); 
+        for (const result of results.flatMap(r => r.result)) {
+        if (flatResults.has(result.doc.href)) continue;
+        flatResults.set(result.doc.href, result.doc);
+        }
+
+        suggestions.innerHTML = "";
+        suggestions.classList.remove('d-none');
+
+        
+        if (searchQuery.length < minlength) {
+            const minCharMessage = document.createElement('div')
+            minCharMessage.innerHTML = `Please type at least <strong>${minlength}</strong> characters`
+            minCharMessage.classList.add("suggestion__no-results");
+            suggestions.appendChild(minCharMessage);
+            return;
+        } else {
+            
+            if (flatResults.size === 0 && searchQuery) {
+                const noResultsMessage = document.createElement('div')
+                noResultsMessage.innerHTML = "No results for" + ` "<strong>${searchQuery}</strong>"`
+                noResultsMessage.classList.add("suggestion__no-results");
+                suggestions.appendChild(noResultsMessage);
+                return;
+            }
+        }
+
+        
+        for(const [href, doc] of flatResults) {
+            const entry = document.createElement('div');
+            suggestions.appendChild(entry);
+
+            const a = document.createElement('a');
+            a.href = href;
+            entry.appendChild(a);
+
+            const title = document.createElement('span');
+            title.textContent = doc.title;
+            title.classList.add("suggestion__title");
+            a.appendChild(title);
+
+            const description = document.createElement('span');
+            description.textContent = doc.description;
+            description.classList.add("suggestion__description");
+            a.appendChild(description);
+
+            suggestions.appendChild(entry);
+
+            if(suggestions.childElementCount == maxResult) break;
+        }
+    }
+    }());
+</script>
+        
+    </body>
+</html>
