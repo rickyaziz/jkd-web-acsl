@@ -2,7 +2,7 @@
 weight: 10
 title: 'INTERNET PROTOCOL VERSION 4(IPv4)'
 description: 'Struktur, kelas, Alamat khusus dalam IPv4'
-icon: 'article'
+icon: 'settings_ethernet'
 date: '2025-09-07T17:46:03+07:00'
 lastmod: '2025-09-07T17:46:03+07:00'
 toc: true

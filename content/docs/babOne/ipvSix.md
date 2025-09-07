@@ -2,7 +2,7 @@
 weight: 11
 title: 'INTERNET PROTOCOL VERSION 6(IPv6)'
 description: 'Strukktur dalam IPv6'
-icon: 'article'
+icon: 'settings_ethernet'
 date: '2025-09-07T17:46:03+07:00'
 lastmod: '2025-09-07T17:46:03+07:00'
 toc: true

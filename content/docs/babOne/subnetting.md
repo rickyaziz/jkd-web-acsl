@@ -2,7 +2,7 @@
 weight: 12
 title: 'Subnetting'
 description: 'Menghitung subnneting CIDR dan VLSM'
-icon: 'article'
+icon: 'account_tree'
 date: '2025-09-07T19:22:58+07:00'
 lastmod: '2025-09-07T19:22:58+07:00'
 toc: true

@@ -2,7 +2,7 @@
 weight: 9
 title: 'Pengalamatan IP'
 description: 'Pengalamatan IP pada IPV4 dan IPV6 '
-icon: 'article'
+icon: 'language'
 date: '2025-09-07T17:46:03+07:00'
 lastmod: '2025-09-07T17:46:03+07:00'
 toc: true
