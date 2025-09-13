@@ -6,7 +6,7 @@
     <description>Recent content on ACSL | Jaringan Komputer Dasar</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Sep 2025 19:22:58 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 13 Sep 2025 20:31:16 +0700</lastBuildDate>
     <atom:link href="http://192.168.100.63/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Standar Operasional Prosedure</title>
@@ -77,6 +77,20 @@
       <pubDate>Sun, 07 Sep 2025 19:22:58 +0700</pubDate>
       <guid>http://192.168.100.63/docs/babone/subnetting/</guid>
       <description>&lt;p&gt;Subnetting merupakan prosedur untuk membagi jaringan besar menjadi&#xA;beberapa subnetwork yang lebih kecil, yang disebut sebagai subnet. Subnetting&#xA;merupakan aspek penting dalam desain jaringan yang baik, karena memungkinkan&#xA;pengoptimalan penggunaan alamat IP dengan meminimalkan alamat yang tidak&#xA;terpakai atau terbuang. Selain itu, subnetting juga mempermudah pengelolaan dan&#xA;meningkatkan kinerja jaringan.&lt;/p&gt;&#xA;&lt;p&gt;Dalam melakukan perhitungan subnetting, terdapat dua metode utama yang&#xA;dapat digunakan, yaitu Classless Inter-Domain Routing (CIDR) dan Variable Length&#xA;Subnet Mask (VLSM). CIDR memungkinkan alokasi alamat IP yang lebih fleksibel tanpa&#xA;terikat pada kelas IP tertentu, sedangkan VLSM memungkinkan penggunaan subnet&#xA;mask dengan panjang yang bervariasi dalam satu jaringan. Pemahaman tentang&#xA;konsep dan definisi subnetting sangat penting sebelum melakukan perhitungan&#xA;dengan kedua metode ini. Untuk lebih mendalam, pembahasan mengenai CIDR dan&#xA;VLSM dapat ditemukan dalam Modul Panduan Jaringan Komputer Dasar.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kabel Jaringan</title>
+      <link>http://192.168.100.63/docs/babtwo/kabeljaringan/</link>
+      <pubDate>Sat, 13 Sep 2025 16:54:24 +0700</pubDate>
+      <guid>http://192.168.100.63/docs/babtwo/kabeljaringan/</guid>
+      <description>&lt;h2 id=&#34;tujuan&#34;&gt;Tujuan &lt;a href=&#34;#tujuan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;table class=&#34;table table-striped&#34;&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;TUJUAN&lt;/th&gt;&#xA;          &lt;th&gt;PENJELASAN&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Membuat koneksi elektris yang stabil&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Mempelajari untuk menghubungkan kabel dengan konektor secara permanen, menghasilkan koneksi yang kuat dan stabil.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Praktikan dapat memahami tentang jenis kabel&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Bagian ini memandu praktikan untuk memahami berbagai jenis kabel.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Meningkatkan pengetahuan tentang cara kerja protocol&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;bagian ini membantu praktikan untuk mengerti cara proses crimping yang benar untuk menghubungkan kabel dengan konektor serta dapat memastikan bahwa koneksi yang dihasilkan aman, stabil, dan sesuai standar yang diharapkan .&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;h2 id=&#34;persyaratan&#34;&gt;Persyaratan &lt;a href=&#34;#persyaratan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Disarankan praktikan menggunakan alat crimping yang sesuai serta kabel yang tepat dan&#xA;memilih konektor yang cocok untuk kabel baik itu konektor RJ45 untuk jaringan atau&#xA;konektor lain untuk keperluan listrik. Berikut peralatan dan bahan yang dibutuhkan ketika&#xA;proses crimping:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Crimping</title>
+      <link>http://192.168.100.63/docs/babtwo/crimping/</link>
+      <pubDate>Sat, 13 Sep 2025 20:31:16 +0700</pubDate>
+      <guid>http://192.168.100.63/docs/babtwo/crimping/</guid>
+      <description>&lt;p&gt;Crimping merupakan istilah yang digunakan dalam dunia teknisi komputer&#xA;untuk menggambarkan proses pemasangan kabel LAN ke konektornya. Proses ini juga&#xA;dikenal sebagai teknik pembuatan kabel jaringan. Dalam modul ini, fokus&#xA;pembahasan akan diarahkan pada teknik crimping yang dilakukan pada kabel UTP&#xA;(Unshielded Twisted Pair).&lt;/p&gt;&#xA;&lt;h2 id=&#34;peralatan-dan-bahan-yang-dibutuhkan&#34;&gt;Peralatan Dan Bahan yang Dibutuhkan &lt;a href=&#34;#peralatan-dan-bahan-yang-dibutuhkan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tang Crimping:&lt;/strong&gt;&#xA;Tang crimping, juga dikenal sebagai crimping pliers atau crimping tool,&#xA;adalah alat yang digunakan untuk menghasilkan sambungan listrik yang&#xA;kuat dan aman dengan memampatkan atau menekan terminal kawat ke&#xA;dalam konektor kawat yang sesuai. Penggunaan tang crimping sering kali&#xA;lebih cepat, lebih efisien, dan menghasilkan sambungan yang lebih tahan&#xA;lama.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
