@@ -34,16 +34,11 @@
   />
   {{- end }}
   <!-- Dark Mode -->
-  {{ if eq .Site.Params.docs.darkMode true -}} {{ $darkModeInit := resources.Get
-  (printf "/%s/%s" ($.Scratch.Get "pathName") "js/darkmode-init.js") | js.Build
-  | minify -}}
-  <script>
-    {
-      {
-        $darkModeInit.Content | safeJS;
-      }
-    }
-  </script>
+  {{ if eq .Site.Params.docs.darkMode true -}}
+    {{ $darkModeInit := resources.Get (printf "/%s/%s" ($.Scratch.Get "pathName") "js/darkmode-init.js") | js.Build | minify -}}
+    <script>
+      {{ $darkModeInit.Content | safeJS }}
+    </script>
   {{ end -}}
   <!-- FlexSearch -->
   {{ if or (not (isset .Site.Params.flexsearch "enabled")) (eq
