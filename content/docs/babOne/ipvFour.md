@@ -23,9 +23,9 @@ sendiri. IPv4 juga memiliki beberapa keterbatasan, terutama dalam hal kapasitas
 alamat, yang menyebabkan pengembangan IPv6 untuk mengatasi kekurangan ini.
 Hierarki pengalamatan pada IPv4 seperti gambar dibawah ini :
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/babOne/bf-1.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 70%; max-width: 100%; height: auto;">
-</div>
+<center>
+<img src="/images/babOne/bf-1.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img">
+</center>
 
 [Source Gambar](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirxw1MttiQiY2Qul8eferTtLbNLRCkN6_acBtGlYzG7g65I-fqgwlBY9sXXKPnYY0iboPetzlxnzitg4wK5qRyBrJko9Quc4YvVy0ra3wB6s5PS4Rklf9ZNNnute88Z3KrzjbfImzs5Vk/s640/7.jpg)
 
@@ -54,9 +54,9 @@ Hierarki pengalamatan pada IPv4 seperti gambar dibawah ini :
    "168", "121", dan "16", yang menunjukkan struktur standar dari alamat IPv4.
 5. Pembagian Network dan Host:
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/babOne/bf-2.png" alt="Gambar B.2" class="img-fluid mb-3" style="width: 70%; max-width: 100%; height: auto;">
-</div>
+<center>
+<img src="/images/babOne/bf-2.png" alt="Gambar B.2" class="img-fluid mb-3 responsive-img">
+</center>
 
 [Source Gambar](https://findmytechome.wordpress.com/wp-content/uploads/2019/05/266db-image004.png?w=400&h=201)
 
@@ -75,9 +75,9 @@ perangkat yang benar di dalam jaringan.
 
 ## Kelas - Kelas IP
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/babOne/bf-3.png" alt="Gambar B.2" class="img-fluid mb-3" style="width: 70%; max-width: 100%; height: auto;">
-</div>
+<center>
+<img src="/images/babOne/bf-3.png" alt="Gambar B.2" class="img-fluid mb-3 responsive-img">
+</center>
 
 [Source Gambar](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUYGOR4TFIDFoylnOrz8KoJpN_dEqNU5fqPmuxRYEqZ2-XgPytrwhihUaWtSUdg_gtqiXNbADfBjlwwcF7QIfsUhjhF20ENtAhyphenhyphenAv9-5zWJaxc7rRr4cm4M_mEBInodHEL_QvyzxAzppeHYvq6Uz-3rKvLklgPSuh6z1uFb-dWou-TxKaLnzsXg_qymkoM/w640-h438-rw/ip-address-classes.webp)
 

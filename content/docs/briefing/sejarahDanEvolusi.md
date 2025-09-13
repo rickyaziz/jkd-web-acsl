@@ -38,7 +38,7 @@ memperlihatkan awal perpaduan antara teknologi komputer dan telekomunikasi,
 yang sebelumnya berkembang secara terpisah.
 
 <div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-1.png" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 100%; max-width: 100%; height: auto;">
+<img src="/images/briefing/bf-1.png" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img">
 </div>
 
 [Source Gambar](https://course-net.com/wp-content/uploads/2025/03/THUMBNAIL-ARTIKEL-24_12_11zon.jpg)

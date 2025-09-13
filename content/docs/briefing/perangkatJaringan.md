@@ -15,12 +15,14 @@ perangkat ini meliputi pengiriman, penerimaan, dan pemrosesan data, serta
 memastikan kelancaran fungsi jaringan.
 
 <h5>
-Switch 
+Switch
 </h5>
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-3.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
-</div>
+<center>
+
+<img src="/images/briefing/bf-3.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img-small">
+
+</center>
 
 [Source Gambar](https://id.pinterest.com/pin/342555115427531425/)
 
@@ -33,9 +35,9 @@ berlangsung secara efisien.
 Router 
 </h5>
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-4.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
-</div>
+<center>
+<img src="/images/briefing/bf-4.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img-small">
+</center>
 
 [Source Gambar](https://id.pinterest.com/pin/726064771150209362/)
 
@@ -49,7 +51,7 @@ Hub
 </h5>
 
 <div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-5.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
+<img src="/images/briefing/bf-5.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img-small">
 </div>
 
 [Source Gambar](https://id.pinterest.com/pin/547539267211726777/)
@@ -65,7 +67,7 @@ Bridge
 </h5>
 
 <div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-6.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
+<img src="/images/briefing/bf-6.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img-small">
 </div>
 
 [Source Gambar](https://secotechnologies.co.uk/pub/media/catalog/product/cache/18752bd50214f29d56281e5b89d6c3d2/a/i/air-cap1532e-e-k9.jpg)
@@ -80,7 +82,7 @@ Access Point (AP)
 </h5>
 
 <div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-7.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
+<img src="/images/briefing/bf-7.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img-small">
 </div>
 
 [Source Gambar](https://id.pinterest.com/pin/368591550772219492/)
@@ -95,7 +97,7 @@ NIC (Network Interface Card)
 </h5>
 
 <div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-8.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
+<img src="/images/briefing/bf-8.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img-small">
 </div>
 
 [Source Gambar](https://id.pinterest.com/pin/504262489499840267/)
@@ -110,7 +112,7 @@ Firewall
 </h5>
 
 <div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-9.png" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
+<img src="/images/briefing/bf-9.png" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img-small">
 </div>
 
 [Source Gambar](https://cdn.blueally.com/avfirewalls/images/fortigate/fortigate-200g/fortigate-201g.png)
@@ -125,7 +127,7 @@ Modem
 </h5>
 
 <div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-10.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
+<img src="/images/briefing/bf-10.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img-small">
 </div>
 
 [Source Gambar](https://cdn.blueally.com/avfirewalls/images/fortigate/fortigate-200g/fortigate-201g.png)
@@ -140,7 +142,7 @@ Repeater
 </h5>
 
 <div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-11.png" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
+<img src="/images/briefing/bf-11.png" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img-small">
 </div>
 
 [Source Gambar](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_wEP3YW6I7l8uSB_mw9zrww9FSccjXpJFDRnRbQUdVsUn0WDeJY7m2Z8CcxNhoUg98kQ&usqp=CAU)

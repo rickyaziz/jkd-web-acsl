@@ -21,7 +21,7 @@ praktikum bab ini agar praktikum dapat berjalan sesuai prosedur.
 | **Meningkatkan pengetahuan tentang cara kerja protocol** | Meningkatkan pengetahuan tentang cara kerja protokol jaringan dan bagaimana mengoptimalkan alokasi alamat IP menggunakan teknik subnetting yang tepat.|
 {{< /table >}}
 
-#% Pendahuluan
+## Pendahuluan
 
 Pengalamatan IP (Internet Protocol Addressing) adalah proses pemberian
 alamat numerik unik yang digunakan untuk mengidentifikasi perangkat dalam

@@ -136,8 +136,9 @@ dengan Subnet Mask /27. Yang artinya memiliki Subnet Mask
    Jadi, total subnetnya adalah 0, 32, 64, 96, 128, 160, 192, 224
 
 4. Alamat Broadcast & Subnet Map
-   {{< table "table-striped" >}}
-   | Blok Subnet | Subnet | Range Host | Broadcast |
+
+   {{< table "table-striped " >}}
+   | Blok | Subnet | Range Host | Broadcast |
    |-------------|---------------|----------------------|----------------|
    | 1 | 192.168.2.0 | 192.168.2.1 - 192.168.2.30 | 192.168.2.31 |
    | 2 | 192.168.2.32 | 192.168.2.33 - 192.168.2.62 | 192.168.2.63 |
@@ -204,7 +205,7 @@ dengan Subnet Mask /19. Yang artinya memiliki Subnet Mask
 
 4. Alamat Broadcast & Subnet Map
    {{< table "table-striped" >}}
-   | Blok Subnet | Subnet | Range Host | Broadcast |
+   | Blok | Subnet | Range Host | Broadcast |
    |-------------|----------------|--------------------------|-----------------|
    | 1 | 172.25.0.0 | 172.25.0.1 - 172.25.31.254 | 172.25.31.255 |
    | 2 | 172.25.32.0 | 172.25.32.1 - 172.25.63.254| 172.25.63.255 |
@@ -301,8 +302,8 @@ Dari soal diatas Network address dari 192.168.9.0, yang memiliki beberapa subnet
    {{< alert icon=" " context="info" text="<strong>Keterangan : Untuk mencari hitung (n) kecil adalah banyaknya jumlah Binari/Bit 0 pada semua oktet yang memiliki nilai 0 </strong>"/>}}
 
 5. Subnet Map
-   {{< table "table-striped" >}}
-   | Blok Subnet | Subnet | Range Host | Broadcast |
+   {{< table "table-striped " >}}
+   | Blok | Subnet | Range Host | Broadcast |
    |-------------|------------------|-----------------------------|------------------|
    | 1 (60 host) | 192.168.9.0/26 | 192.168.9.1 - 192.168.9.62 | 192.168.9.63 |
    | 2 (28 host) | 192.168.9.64/27 | 192.168.9.65 - 192.168.9.94 | 192.168.9.95 |
@@ -367,7 +368,7 @@ Dari soal diatas Network address dari 25.11.15.0 /18, yang memiliki beberapa sub
 
 5. Subnet Map
    {{< table "table-striped" >}}
-   | Blok Subnet | Subnet | Range Host | Broadcast |
+   | Blok | Subnet | Range Host | Broadcast |
    |-------------|------------------|-----------------------------|------------------|
    | 1 (225 host) | 25.11.0.0/24 | 25.11.0.1 - 25.11.0.254 | 25.11.0.255 |
    | 2 (180 host) | 25.11.1.0/24 | 25.11.1.1 - 25.11.1.254 | 25.11.1.255 |

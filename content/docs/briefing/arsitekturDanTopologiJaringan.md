@@ -19,9 +19,9 @@ yang sering digunakan antara lain:
 Arsitektur klien-server
 </h5>
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-12.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
-</div>
+<center>
+<img src="/images/briefing/bf-12.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img">
+</center>
 
 [Source Gambar](https://id.pinterest.com/pin/626070785729210483/)
 
@@ -36,9 +36,9 @@ server memberikan respons.
 Arsitektur peer-to-peer
 </h5>
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-13.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
-</div>
+<center>
+<img src="/images/briefing/bf-13.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img">
+</center>
 
 [Source Gambar](https://id.pinterest.com/pin/297870962872923443/)
 
@@ -60,9 +60,9 @@ antara perangkat dalam jaringan.
 Topologi bus
 </h5>
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-14.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
-</div>
+<center>
+<img src="/images/briefing/bf-14.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img">
+</center>
 
 [Source Gambar](https://www.sekawanmedia.co.id/wp-content/uploads/2024/01/Bus-Topology-1024x512-1.webp)
 
@@ -76,9 +76,9 @@ utama rusak atau terputus, maka seluruh jaringan akan mengalami gangguan.
 Topologi cincin (ring)
 </h5>
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-15.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
-</div>
+<center>
+<img src="/images/briefing/bf-15.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img">
+</center>
 
 [Source Gambar](hhttps://www.sekawanmedia.co.id/wp-content/uploads/2024/01/topologi-ring.webp)
 
@@ -93,9 +93,9 @@ jaringan dapat terpengaruh dan mengalami gangguan.
 Topologi bintang (star)
 </h5>
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-16.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
-</div>
+<center>
+<img src="/images/briefing/bf-16.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img">
+</center>
 
 [Source Gambar](https://www.sekawanmedia.co.id/wp-content/uploads/2024/01/Topologi-Star-.webp)
 
@@ -110,9 +110,9 @@ dan sumber daya untuk koneksi antar perangkat.
 Topologi bus
 </h5>
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-17.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 50%; max-width: 100%; height: auto;">
-</div>
+<center>
+<img src="/images/briefing/bf-17.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img">
+</center>
 
 [Source Gambar](https://www.sekawanmedia.co.id/wp-content/uploads/2024/01/Mesh-Topology-1024x512.webp)
 

@@ -33,9 +33,9 @@ masih banyak digunakan.
 
 ## Struktur Alamat IPv6
 
-<div class="d-flex justify-content-center w-100">
-<img src="/images/babOne/bf-4.png" alt="Gambar B.2" class="img-fluid mb-3" style="width: 90%; max-width: 100%; height: auto;">
-</div>
+<center>
+<img src="/images/babOne/bf-4.png" alt="Gambar B.2" class="img-fluid mb-3 responsive-img">
+</center>
 
 [Source Gambar](https://www.computernetworkingnotes.com/wp-content/uploads/networking-tutorials/images/it04-01-ipv-6-structure-and-format.PNG)
 

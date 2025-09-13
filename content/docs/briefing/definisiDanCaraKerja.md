@@ -72,7 +72,7 @@ integritas data tetap terjaga.
 ## Cara Kerja Jaringan
 
 <div class="d-flex justify-content-center w-100">
-<img src="/images/briefing/bf-2.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3" style="width: 70%; max-width: 100%; height: auto;">
+<img src="/images/briefing/bf-2.jpg" alt="Gambar B.1 - Time Sharing System" class="img-fluid mb-3 responsive-img">
 </div>
 
 [Source Gambar](https://www.socialsciencespace.com/wp-content/uploads/Network-links-nodes.jpg)
