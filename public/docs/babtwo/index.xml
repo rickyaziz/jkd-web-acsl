@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial Bab 2 on ACSL | Jaringan Komputer Dasar</title>
+    <link>/docs/babtwo/</link>
+    <description>Recent content in Tutorial Bab 2 on ACSL | Jaringan Komputer Dasar</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 13 Sep 2025 20:31:16 +0700</lastBuildDate>
+    <atom:link href="/docs/babtwo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kabel Jaringan</title>
+      <link>/docs/babtwo/kabeljaringan/</link>
+      <pubDate>Sat, 13 Sep 2025 16:54:24 +0700</pubDate>
+      <guid>/docs/babtwo/kabeljaringan/</guid>
+      <description>&lt;h2 id=&#34;tujuan&#34;&gt;Tujuan &lt;a href=&#34;#tujuan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;table class=&#34;table table-striped&#34;&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;TUJUAN&lt;/th&gt;&#xA;          &lt;th&gt;PENJELASAN&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Membuat koneksi elektris yang stabil&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Mempelajari untuk menghubungkan kabel dengan konektor secara permanen, menghasilkan koneksi yang kuat dan stabil.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Praktikan dapat memahami tentang jenis kabel&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Bagian ini memandu praktikan untuk memahami berbagai jenis kabel.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Meningkatkan pengetahuan tentang cara kerja protocol&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;bagian ini membantu praktikan untuk mengerti cara proses crimping yang benar untuk menghubungkan kabel dengan konektor serta dapat memastikan bahwa koneksi yang dihasilkan aman, stabil, dan sesuai standar yang diharapkan .&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;h2 id=&#34;persyaratan&#34;&gt;Persyaratan &lt;a href=&#34;#persyaratan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Disarankan praktikan menggunakan alat crimping yang sesuai serta kabel yang tepat dan&#xA;memilih konektor yang cocok untuk kabel baik itu konektor RJ45 untuk jaringan atau&#xA;konektor lain untuk keperluan listrik. Berikut peralatan dan bahan yang dibutuhkan ketika&#xA;proses crimping:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Crimping</title>
+      <link>/docs/babtwo/crimping/</link>
+      <pubDate>Sat, 13 Sep 2025 20:31:16 +0700</pubDate>
+      <guid>/docs/babtwo/crimping/</guid>
+      <description>&lt;p&gt;Crimping merupakan istilah yang digunakan dalam dunia teknisi komputer&#xA;untuk menggambarkan proses pemasangan kabel LAN ke konektornya. Proses ini juga&#xA;dikenal sebagai teknik pembuatan kabel jaringan. Dalam modul ini, fokus&#xA;pembahasan akan diarahkan pada teknik crimping yang dilakukan pada kabel UTP&#xA;(Unshielded Twisted Pair).&lt;/p&gt;&#xA;&lt;h2 id=&#34;peralatan-dan-bahan-yang-dibutuhkan&#34;&gt;Peralatan Dan Bahan yang Dibutuhkan &lt;a href=&#34;#peralatan-dan-bahan-yang-dibutuhkan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tang Crimping:&lt;/strong&gt;&#xA;Tang crimping, juga dikenal sebagai crimping pliers atau crimping tool,&#xA;adalah alat yang digunakan untuk menghasilkan sambungan listrik yang&#xA;kuat dan aman dengan memampatkan atau menekan terminal kawat ke&#xA;dalam konektor kawat yang sesuai. Penggunaan tang crimping sering kali&#xA;lebih cepat, lebih efisien, dan menghasilkan sambungan yang lebih tahan&#xA;lama.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
