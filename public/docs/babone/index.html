@@ -52,12 +52,8 @@
   />
   
   <script>
-    {
-      {
-        $darkModeInit.Content | safeJS;
-      }
-    }
-  </script>
+      (()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()
+    </script>
   
   
    
@@ -72,8 +68,8 @@
 
   <link
     rel="stylesheet"
-    href="/docs/scss/style.min.bd0423993e90b8ff724c0ed61cea69eacd047712e1e1b0e7d1d156b15012abd9845cace92e2b08fe06fba68e033b9b3e.css"
-    integrity="sha384-vQQjmT6QuP9yTA7WHOpp6s0EdxLh4bDn0dFWsVASq9mEXKzpLisI/gb7po4DO5s&#43;"
+    href="/docs/scss/style.min.d0ffe61209ede7ccab01102fa79adf0415f4e76eadd710a030d122e4644473f00149af1f3fc69d4e9b52822860e29bbc.css"
+    integrity="sha384-0P/mEgnt58yrARAvp5rfBBX0526t1xCgMNEi5GREc/ABSa8fP8adTptSgihg4pu8"
     crossorigin="anonymous"
   />
   
