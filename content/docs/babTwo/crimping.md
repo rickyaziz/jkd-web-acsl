@@ -106,27 +106,55 @@ antara Switch ke Printer atau Switch ke Infocus.
 <img src="/images/babTwo/bt-13.jpg" alt="Gambar B.1 - Jenis Kabel Jaringan" class="img-fluid mb-3 responsive-img">
 </center>
 
-<h4>Cara Kerja</h4>
+## Cara crimping kabel
 
-1. Pertama, kupas kedua ujung kabel UTP untuk mengungkpakan kabel tembaga didalamnya.
+1.  Siapkan alat crimping dan kabel
+    <center>
+    <img src="/images/babTwo/bt-14.jpg" alt="Gambar B.1 - Jenis Kabel Jaringan" class="img-fluid mb-3 responsive-img-small">
+    </center>
 
-2. Rapikan seluruh kabel dengan hati-hati, pastikan urutan pin tetap terjaga tanpa ada perubahan posisi.
+2.  Pertama, kupas kedua ujung kabel UTP untuk mengungkpakan kabel tembaga didalamnya.
+    <center>
+    <img src="/images/babTwo/bt-15.jpg" alt="Gambar B.1 - Jenis Kabel Jaringan" class="img-fluid mb-3 responsive-img-small">
+    </center>
 
-3. Selanjutnya, rapikan ujung kabel dengan memotong sedikit menggunakan pemotong pada tang crimping, sehingga ujung-ujung kabel sejajar dan memiliki panjang yang sama.
+3.  Rapikan seluruh kabel dengan hati-hati, pastikan urutan warna pin tetap terjaga tanpa ada perubahan posisi.
+    <center>
+    <img src="/images/babTwo/bt-16.jpg" alt="Gambar B.1 - Jenis Kabel Jaringan" class="img-fluid mb-3 responsive-img-small">
+    </center>
 
-4. Maka ujung-ujung kabel akan terlihat rapi, sejajar, dan memiliki panjang yang sama.
+4.  Selanjutnya, rapikan ujung kabel dengan memotong sedikit menggunakan pemotong pada tang crimping, sehingga ujung-ujung kabel sejajar dan memiliki panjang yang sama.
+    <center>
+    <img src="/images/babTwo/bt-17.jpg" alt="Gambar B.1 - Jenis Kabel Jaringan" class="img-fluid mb-3 responsive-img-small">
+    </center>
 
-5. Lalu berikutnya, masukkan kedua ujung kabel ke dalam konektor RJ-45.
+5.  Maka ujung-ujung kabel akan terlihat rapi, sejajar, dan memiliki panjang yang sama.
+    <center>
+    <img src="/images/babTwo/bt-18.jpg" alt="Gambar B.1 - Jenis Kabel Jaringan" class="img-fluid mb-3 responsive-img-small">
+    </center>
 
-6. Tempatkan konektor ke dalam ruang yang sesuai pada alat crimping.
+6.  Lalu berikutnya, masukkan kedua ujung kabel ke dalam konektor RJ-45.
+    <center>
+    <img src="/images/babTwo/bt-19.jpg" alt="Gambar B.1 - Jenis Kabel Jaringan" class="img-fluid mb-3 responsive-img-small">
+    </center>
 
-7. Kemudian, tekan konektor RJ-45 dengan alat crimping hingga kedua gagangnya terjepit rapat, dan terdengar bunyi "klik".
+7.  Tempatkan konektor ke dalam ruang yang sesuai pada alat crimping.
 
-8. Periksa kembali apakah semua ujung kabel telah sejajar dan menyentuh dasar konektor, serta pastikan setiap pin tembaga pada konektor telah menembus ujung kabel secara merata. Jika semua langkah ini telah terpenuhi, maka kabel siap digunakan.
+8.  Kemudian, tekan konektor RJ-45 dengan alat crimping hingga kedua gagangnya terjepit rapat, dan terdengar bunyi "klik".
+    <center>
+    <img src="/images/babTwo/bt-20.jpg" alt="Gambar B.1 - Jenis Kabel Jaringan" class="img-fluid mb-3 responsive-img-small">
+    </center>
 
-9. Ulangi langkah yang sama pada ujung kabel yang satunya (berikutnya).
+9.  Periksa kembali apakah semua ujung kabel telah sejajar dan menyentuh dasar konektor, serta pastikan setiap pin tembaga pada konektor telah menembus ujung kabel secara merata. Jika semua langkah ini telah terpenuhi, maka kabel siap digunakan.
 
-10. Setelah kedua ujung kabel terpasang konektor, langkah berikutnya adalah memeriksa kabel tersebut menggunakan alat LAN Tester.
+10. Ulangi langkah yang sama pada ujung kabel yang satunya (berikutnya).
+
+11. Setelah kedua ujung kabel terpasang konektor, langkah berikutnya adalah memeriksa kabel tersebut menggunakan alat LAN Tester.
+    <center>
+    <img src="/images/babTwo/bt-21.jpg" alt="Gambar B.1 - Jenis Kabel Jaringan" class="img-fluid mb-3 responsive-img-small">
+    </center>
+
+{{< alert context="info" text="<strong>Perhatian: penyusunan salah atau penjepitan yang salah menyebabkan RJ-45 Connector tidak bisa dipakai lagi.</strong>"/>}}
 
 ## Tugas
 
