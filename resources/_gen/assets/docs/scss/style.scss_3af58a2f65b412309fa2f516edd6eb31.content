@@ -9700,7 +9700,7 @@ i.title-icon {
     position: relative;
     padding-left: 32px; }
   .docs-content .main-content ul > li::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 6px;
     height: 6px;
@@ -9708,13 +9708,17 @@ i.title-icon {
     top: 10px;
     border-radius: 30%;
     background: var(--gray-500); }
+  .docs-content .main-content ul + .alert {
+    margin-top: 1rem; }
+  .docs-content .main-content ul:last-child {
+    margin-bottom: 1rem; }
 
 .docs-content .main-content ol {
   counter-reset: listitem; }
   .docs-content .main-content ol > li {
     counter-increment: listitem;
     position: relative;
-    padding-left: 32px; }
+    padding-left: 8px; }
   .docs-content .main-content ol > li::before {
     content: counter(listitem);
     background: var(--ordered-list-bg);
@@ -9728,7 +9732,7 @@ i.title-icon {
     height: 20px;
     border-radius: 5px;
     position: absolute;
-    left: 0;
+    left: -30px;
     top: 3px; }
 
 .docs-content .main-content ol,
@@ -9784,6 +9788,26 @@ i.title-icon {
 .docs-content figcaption {
   font-size: small; }
 
+.docs-content .main-content .responsive-img {
+  width: 70%;
+  max-width: 100%;
+  height: auto; }
+  @media (max-width: 768px) {
+    .docs-content .main-content .responsive-img {
+      width: 100%; } }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .docs-content .main-content .responsive-img {
+      width: 70%; } }
+.docs-content .main-content .responsive-img-small {
+  width: 50%;
+  max-width: 100%;
+  height: auto; }
+  @media (max-width: 768px) {
+    .docs-content .main-content .responsive-img-small {
+      width: 100%; } }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .docs-content .main-content .responsive-img-small {
+      width: 50%; } }
 .page-wrapper {
   height: 100vh; }
   .page-wrapper .sidebar-wrapper {
@@ -10707,11 +10731,13 @@ button:not(:disabled) {
 table td {
   border-top: 1px solid var(--card-border-color); }
 
-table td, table th {
+table td,
+table th {
   border-right: 1px solid var(--card-border-color);
   padding: 8px 12px; }
 
-table td:last-child, table th:last-child {
+table td:last-child,
+table th:last-child {
   border-right: 0; }
 
 .table {
@@ -10749,9 +10775,15 @@ table td:last-child, table th:last-child {
       border-bottom-left-radius: 4px; }
     .table tbody tr:last-child td:last-child {
       border-bottom-right-radius: 4px; }
-  .table td, .table th {
+  .table td,
+  .table th {
     border-right: 0; }
-  .table thead, .table tbody, .table tfoot, .table tr, .table td, .table th {
+  .table thead,
+  .table tbody,
+  .table tfoot,
+  .table tr,
+  .table td,
+  .table th {
     border-color: var(--card-border-color); }
   .table thead tr th {
     text-transform: uppercase;
