@@ -229,6 +229,14 @@
                 >Crimping</a
               >
             </li>
+               
+            <li
+              class=" "
+            >
+              <a class="sidebar-nested-link" href="http://192.168.100.63/docs/babtwo/swichcisco/"
+                >Swich Cisco</a
+              >
+            </li>
              
           </ul>
         </div>
@@ -574,6 +582,23 @@
             </a>
         </div>
         
+        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
+            <a class="text-decoration-none text-reset" href="http://192.168.100.63/docs/babtwo/swichcisco/">
+                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+                    <span class="icon-color d-flex my-3">
+                        <i class="material-icons align-middle">article</i>
+                        
+                        
+                    </span>
+                    <div class="card-body p-0 content">
+                        <p class="fs-5 fw-semibold card-title mb-1">Swich Cisco</p>
+                        <p class="para card-text mb-0">Percobaan melakukan ping antar komputer dengan swich cisco</p>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+        
     </div>
 
                                             </div>
@@ -858,6 +883,13 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
 
 
     
@@ -1006,6 +1038,15 @@
                 title: "Jaringan Komputer Dasar",
                 description: "Dokumentasi dari semua bab yang akan dipelajari pada Laboratorium Lanjut Gunadarma.",
                 content: ""
+            }
+        );
+    index.add(
+            {
+                id:  16 ,
+                href: "\/docs\/babtwo\/swichcisco\/",
+                title: "Swich Cisco",
+                description: "Percobaan melakukan ping antar komputer dengan swich cisco",
+                content: "Cara melakakukan ping link\rinfo\rPerhatian: Colok kabel jaringan patch panel 2 dengan sesuai anka anda colok pada patch panel 1\rSiapkan Kabel Jaringan\nHubungkan kabel jaringan kabel komputer dengan patch panel 1\nHubungkan kabel crimping anda ke patch panel 2\nLalu terakhir hubungkan kabel crimping anda ke swich cisco\nBuka control panel pada windows anda\nClick Network and Internet\nClick Network and Sharing Center\nClick Change Adapter Settings\nClick 2 kali pada Ethernet\nClick Properties\nClick 2 kali pada Internet Protocol Version 4 (TCP/IPv4)\nIsi ip address di kolom ip address dan subnet mask, lalu click oke\nbuka cmd\nketik ping ke jaringan anda\njika output ping anda muncul maka anda berhasil melakukan ping\n"
             }
         );
     search.addEventListener('input', show_results, true);
