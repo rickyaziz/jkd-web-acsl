@@ -228,7 +228,7 @@ RJ-45 Connector tidak bisa dipakai lagi.
 
 ## Tugas
 
-<div class="alert alert-success" role="alert">
+<div class="alert alert-info" role="alert">
 <h5 class="alert-heading"><i class="material-icons align-middle me-2">assignment</i>Tugas Praktikum</h5>
 <hr>
 <p class="mb-3"><strong>Kerjakanlah soal latihan berikut ini:</strong></p>

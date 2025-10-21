@@ -111,7 +111,7 @@ Pada dasarnya perangkat elektronik tidak dapat menerima peritah begitu saja, kar
 
 6. <p style="text-align: justify;"><b>Heksadesimal ke Biner  :</b> Angka 4C(Heksadesimal) akan diubah ke Biner.</p>
          <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
-           <tr style="background-color: #1b552341; border-radius: 12px;">
+           <tr style="background-color: #7928ca2e; border-radius: 12px;">
              <th style="border: none; padding: 12px;">ANGKA HEKSADESIMAL</th>
              <th colspan="4" style="border: none; padding: 12px;">ANGKA BINER</th>
            </tr>
@@ -122,7 +122,7 @@ Pada dasarnya perangkat elektronik tidak dapat menerima peritah begitu saja, kar
              <td style="border: none; padding: 6px; width: 25%;">0</td>
              <td style="border: none; padding: 6px; width: 25%;">0</td>
            </tr>
-           <tr style="background-color: #1b552341;">
+           <tr style="background-color: #7928ca2e;">
              <td style="border: none; padding: 6px;"><b>C</b></td>
              <td style="border: none; padding: 6px; width: 25%;">1</td>
              <td style="border: none; padding: 6px; width: 25%;">1</td>
@@ -137,7 +137,7 @@ Pada dasarnya perangkat elektronik tidak dapat menerima peritah begitu saja, kar
 
 ## Tugas
 
-<div class="alert alert-success" role="alert">
+<div class="alert alert-info" role="alert">
 <h5 class="alert-heading"><i class="material-icons align-middle me-2">assignment</i>Tugas Praktikum</h5>
 <hr>
 <p class="mb-3"><strong>Kerjakan tugas berikut untuk memahami konversi bilangan:</strong></p>

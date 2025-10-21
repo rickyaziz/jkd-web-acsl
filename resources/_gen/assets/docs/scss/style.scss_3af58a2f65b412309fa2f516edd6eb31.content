@@ -10475,10 +10475,10 @@ button:not(:disabled) {
   --alert-primary-color: var(--primary-50-hsl);
   --alert-primary-bg: hsl(var(--alert-primary-color), 0.5);
   --alert-primary-border-color: var(--alert-border-color);
-  --alert-info-color: 204, 45.5%, 97.8%;
+  --alert-info-color: 270, 45.5%, 97.8%;
   --alert-info-bg: hsl(var(--alert-info-color));
   --alert-info-border-color: var(--alert-border-color);
-  --alert-success-color: var(--purple-270-hsl);
+  --alert-success-color: var(--emerald-270-hsl);
   --alert-success-bg: hsl(var(--alert-success-color), 0.4);
   --alert-success-border-color: var(--alert-border-color);
   --alert-danger-color: var(--cardinal-50-hsl);
@@ -10499,12 +10499,12 @@ button:not(:disabled) {
   --alert-primary-bg: hsl(var(--primary-hsl), 0.1);
   --alert-primary-icon-color: var(--primary-200);
   --alert-primary-border-color: var(--primary-800);
-  --alert-info-bg: hsl(var(--blue-500-hsl), 0.1);
-  --alert-info-icon-color: var(--blue-200);
-  --alert-info-border-color: var(--blue-800);
-  --alert-success-bg: hsl(var(--purple-500-hsl), 0.1);
-  --alert-success-icon-color: var(--purple-200);
-  --alert-success-border-color: var(--purple-800);
+  --alert-info-bg: hsl(var(--purple-500-hsl), 0.1);
+  --alert-info-icon-color: var(--purple-200);
+  --alert-info-border-color: var(--purple-800);
+  --alert-success-bg: hsl(var(--emerald-500-hsl), 0.1);
+  --alert-success-icon-color: var(--emerald-200);
+  --alert-success-border-color: var(--emerald-800);
   --alert-danger-bg: hsl(var(--cardinal-500-hsl), 0.1);
   --alert-danger-icon-color: var(--cardinal-200);
   --alert-danger-border-color: var(--cardinal-800);
@@ -10554,14 +10554,6 @@ button:not(:disabled) {
   border-color: var(--alert-success-border-color);
   color: var(--text-default); }
   .alert-success > .alert-icon span {
-    color: var(--alert-success-icon-color);
-    margin-top: 0.15rem; }
-
-.alert-purple {
-  background-color: #7928ca;
-  border-color: var(--alert-success-border-color);
-  color: var(--text-default); }
-  .alert-purple > .alert-icon span {
     color: var(--alert-success-icon-color);
     margin-top: 0.15rem; }
 
