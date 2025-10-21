@@ -10,8 +10,8 @@ hero:
   backgroundImage:
     path: 'images/templates/hero'
     filename:
-      desktop: 'gradient-custome.webp'
-      mobile: 'gradient-custome.webp'
+      desktop: 'gradient-web.webp'
+      mobile: 'gradient-web.webp'
 
   badge:
     text: build v12.5.2025
@@ -19,11 +19,11 @@ hero:
     pill: false # boolean
     soft: true # boolean
 
-  # titleLogo:
-  #   path: "images/logos"
-  #   filename: "title_logo.png"
-  #   alt: "Lotus Docs Logo"
-  #   height: 80px
+  titleLogo:
+    path: "images/logos"
+    filename: "logo.svg"
+    alt: "Lotus Docs Logo"
+    height: 80px
 
   title: 'ACSL Docs'
   subtitle: Selamat datang di situs dokumentasi **Jaringan Komputer Dasar** Advanced Computer System Laboratory Universitas Gunadarma. Panduan ini dirancang untuk membantu **pemula IT, mahasiswa, dan penggemar teknologi** dalam memahami dan mengelola jaringan komputer dengan **efisien dan aman**.
@@ -117,7 +117,7 @@ imageCompare:
     - title: Custom Fonts
       config:
         {
-          controlColor: '#3C4257',
+          controlColor: '#7928ca',
           startingPoint: 25,
           addCircle: true,
           addCircleBlur: false,

@@ -14,19 +14,19 @@
   src: local("Material Symbols Outlined"), local("Material Icons"), local("MaterialIcons-Outlined"), url("../fonts/material-symbols-outlined.woff2") format("woff2"); }
 
 :root {
-  --primary: var(--green);
-  --primary-50: var(--green-50);
-  --primary-100: var(--green-100);
-  --primary-200: var(--green-200);
-  --primary-300: var(--green-300);
-  --primary-400: var(--green-400);
-  --primary-800: var(--green-800);
-  --primary-hsl: var(--green-500-hsl);
-  --primary-50-hsl: var(--green-50-hsl);
-  --primary-100-hsl: var(--green-100-hsl);
-  --primary-200-hsl: var(--green-200-hsl);
-  --primary-300-hsl: var(--green-300-hsl);
-  --primary-800-hsl: var(--green-800-hsl); }
+  --primary: var(--purple);
+  --primary-50: var(--purple-50);
+  --primary-100: var(--purple-100);
+  --primary-200: var(--purple-200);
+  --primary-300: var(--purple-300);
+  --primary-400: var(--purple-400);
+  --primary-800: var(--purple-800);
+  --primary-hsl: var(--purple-500-hsl);
+  --primary-50-hsl: var(--purple-50-hsl);
+  --primary-100-hsl: var(--purple-100-hsl);
+  --primary-200-hsl: var(--purple-200-hsl);
+  --primary-300-hsl: var(--purple-300-hsl);
+  --primary-800-hsl: var(--purple-800-hsl); }
 
 /*!
    * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -9339,16 +9339,16 @@ textarea.form-control-lg {
   --cardinal-200-hsl: 343, 100%, 75%;
   --cardinal-100-hsl: 340, 100%, 83%;
   --cardinal-50-hsl: 338, 100%, 96%;
-  --magenta-900-hsl: 297, 63%, 21%;
-  --magenta-800-hsl: 296, 62%, 29%;
-  --magenta-700-hsl: 295, 61%, 37%;
-  --magenta-600-hsl: 294, 58%, 45%;
-  --magenta-500-hsl: 293, 63%, 53%;
-  --magenta-400-hsl: 292, 84%, 61%;
-  --magenta-300-hsl: 291, 100%, 69%;
-  --magenta-200-hsl: 292, 100%, 75%;
-  --magenta-100-hsl: 293, 100%, 84%;
-  --magenta-50-hsl: 293, 100%, 94%;
+  --purple-900-hsl: 270, 63%, 21%;
+  --purple-800-hsl: 269, 62%, 29%;
+  --purple-700-hsl: 268, 61%, 37%;
+  --purple-600-hsl: 267, 58%, 45%;
+  --purple-500-hsl: 262, 63%, 53%;
+  --purple-400-hsl: 261, 84%, 61%;
+  --purple-300-hsl: 260, 100%, 69%;
+  --purple-200-hsl: 261, 100%, 75%;
+  --purple-100-hsl: 262, 100%, 84%;
+  --purple-50-hsl: 262, 100%, 94%;
   --emerald-900-hsl: 165, 97%, 13%;
   --emerald-800-hsl: 164, 96%, 18%;
   --emerald-700-hsl: 163, 93%, 23%;
@@ -9419,16 +9419,16 @@ textarea.form-control-lg {
   --cardinal-200: hsl(var(--cardinal-200-hsl));
   --cardinal-100: hsl(var(--cardinal-100-hsl));
   --cardinal-50: hsl(var(--cardinal-50-hsl));
-  --magenta-900: hsl(var(--magenta-900-hsl));
-  --magenta-800: hsl(var(--magenta-800-hsl));
-  --magenta-700: hsl(var(--magenta-700-hsl));
-  --magenta-600: hsl(var(--magenta-600-hsl));
-  --magenta-500: hsl(var(--magenta-500-hsl));
-  --magenta-400: hsl(var(--magenta-400-hsl));
-  --magenta-300: hsl(var(--magenta-300-hsl));
-  --magenta-200: hsl(var(--magenta-200-hsl));
-  --magenta-100: hsl(var(--magenta-100-hsl));
-  --magenta-50: hsl(var(--magenta-50-hsl));
+  --purple-900: hsl(var(--purple-900-hsl));
+  --purple-800: hsl(var(--purple-800-hsl));
+  --purple-700: hsl(var(--purple-700-hsl));
+  --purple-600: hsl(var(--purple-600-hsl));
+  --purple-500: hsl(var(--purple-500-hsl));
+  --purple-400: hsl(var(--purple-400-hsl));
+  --purple-300: hsl(var(--purple-300-hsl));
+  --purple-200: hsl(var(--purple-200-hsl));
+  --purple-100: hsl(var(--purple-100-hsl));
+  --purple-50: hsl(var(--purple-50-hsl));
   --emerald-900: hsl(var(--emerald-900-hsl));
   --emerald-800: hsl(var(--emerald-800-hsl));
   --emerald-700: hsl(var(--emerald-700-hsl));
@@ -9445,11 +9445,11 @@ textarea.form-control-lg {
   --yellow: var(--yellow-500);
   --cyan: var(--cyan-500);
   --cardinal: var(--cardinal-500);
-  --magenta: var(--magenta-500);
+  --purple: var(--purple-500);
   --emerald: var(--emerald-500);
   --secondary: var(--gray-600);
   --success: var(--green);
-  --info: var(--cyan);
+  --info: var(--purple);
   --warning: var(--yellow);
   --danger: var(--red);
   --light: var(--gray-100);
@@ -9468,22 +9468,22 @@ textarea.form-control-lg {
   --gray-800: #343a40;
   --gray-900: #212529;
   --black: #000000;
-  --link-color:                              var(--primary);
-  --link-decoration:                         underline;
-  --link-shade-percentage:                   20%;
-  --link-hover-decoration:                   null;
+  --link-color: var(--primary);
+  --link-decoration: underline;
+  --link-shade-percentage: 20%;
+  --link-hover-decoration: null;
   --text-default: var(--text-dark);
   --text-default-inv: var(--text-light);
   --text-muted: var(--gray-600);
   --bs-secondary-color: var(--gray-600);
   --body-color: var(--text-default);
   --body-bg: var(--white);
-  --text-dark: #3C4257;
+  --text-dark: #3c4257;
   --text-light: #dee2e6;
   --fw-medium: 600;
-  --shadow-sm: 0 .125rem .25rem rgba(var(--dark), .15);
-  --shadow: 0 0 3px rgba(var(--dark), .15);
-  --shadow-md: 0 5px 13px rgba(var(--dark), .2);
+  --shadow-sm: 0 0.125rem 0.25rem rgba(var(--dark), 0.15);
+  --shadow: 0 0 3px rgba(var(--dark), 0.15);
+  --shadow-md: 0 5px 13px rgba(var(--dark), 0.2);
   --shadow-lg: 0 10px 25px rgba(var(--dark), 0.15);
   --overlay: rgba(var(--dark), 0.7);
   --bg-overlay-white: rgba(var(--white), 0.5);
@@ -9515,7 +9515,7 @@ textarea.form-control-lg {
   --card-border-hover-color: var(--primary);
   --sidebar-primary: var(--primary);
   --sidebar-bg: var(--white);
-  --top-header-bg: hsla(255,100%,100%,0.8);
+  --top-header-bg: hsla(255, 100%, 100%, 0.8);
   --sidebar-text-color: #606770;
   --sidebar-border-color: var(--gray-200);
   --sidebar-dropdown-hover-bg: #eff1f4;
@@ -9548,7 +9548,7 @@ textarea.form-control-lg {
   --card-border-hover-color: var(--primary-200);
   --sidebar-primary: var(--primary-300);
   --sidebar-bg: var(--dark);
-  --top-header-bg: hsla(233,16%,11%,0.8);
+  --top-header-bg: hsla(233, 16%, 11%, 0.8);
   --sidebar-text-color: #b6bbc9;
   --sidebar-border-color: var(--gray-900);
   --sidebar-dropdown-hover-bg: #2b303b;
@@ -10473,19 +10473,19 @@ button:not(:disabled) {
   --alert-default-bg: hsl(var(--alert-default-color));
   --alert-default-border-color: var(--alert-border-color);
   --alert-primary-color: var(--primary-50-hsl);
-  --alert-primary-bg: hsl(var(--alert-primary-color),0.5);
+  --alert-primary-bg: hsl(var(--alert-primary-color), 0.5);
   --alert-primary-border-color: var(--alert-border-color);
   --alert-info-color: 204, 45.5%, 97.8%;
   --alert-info-bg: hsl(var(--alert-info-color));
   --alert-info-border-color: var(--alert-border-color);
-  --alert-success-color: var(--emerald-50-hsl);
-  --alert-success-bg: hsl(var(--alert-success-color),0.4);
+  --alert-success-color: var(--purple-270-hsl);
+  --alert-success-bg: hsl(var(--alert-success-color), 0.4);
   --alert-success-border-color: var(--alert-border-color);
   --alert-danger-color: var(--cardinal-50-hsl);
-  --alert-danger-bg: hsl(var(--alert-danger-color),0.5);
+  --alert-danger-bg: hsl(var(--alert-danger-color), 0.5);
   --alert-danger-border-color: var(--alert-border-color);
   --alert-warning-color: var(--yellow-50-hsl);
-  --alert-warning-bg: hsl(var(--alert-warning-color),0.5);
+  --alert-warning-bg: hsl(var(--alert-warning-color), 0.5);
   --alert-warning-border-color: var(--alert-border-color);
   --alert-light-bg: var(--gray-200);
   --alert-light-border-color: var(--alert-border-color);
@@ -10494,21 +10494,21 @@ button:not(:disabled) {
 
 [data-dark-mode] {
   --alert-border-color: var(--gray-800);
-  --alert-default-bg: hsl(var(--alert-default-color),0.05);
+  --alert-default-bg: hsl(var(--alert-default-color), 0.05);
   --alert-default-border-color: var(--alert-border-color);
-  --alert-primary-bg: hsl(var(--primary-hsl),0.1);
+  --alert-primary-bg: hsl(var(--primary-hsl), 0.1);
   --alert-primary-icon-color: var(--primary-200);
   --alert-primary-border-color: var(--primary-800);
-  --alert-info-bg: hsl(var(--blue-500-hsl),0.1);
+  --alert-info-bg: hsl(var(--blue-500-hsl), 0.1);
   --alert-info-icon-color: var(--blue-200);
   --alert-info-border-color: var(--blue-800);
-  --alert-success-bg: hsl(var(--emerald-500-hsl),0.1);
-  --alert-success-icon-color: var(--emerald-200);
-  --alert-success-border-color: var(--emerald-800);
-  --alert-danger-bg: hsl(var(--cardinal-500-hsl),0.1);
+  --alert-success-bg: hsl(var(--purple-500-hsl), 0.1);
+  --alert-success-icon-color: var(--purple-200);
+  --alert-success-border-color: var(--purple-800);
+  --alert-danger-bg: hsl(var(--cardinal-500-hsl), 0.1);
   --alert-danger-icon-color: var(--cardinal-200);
   --alert-danger-border-color: var(--cardinal-800);
-  --alert-warning-bg: hsl(var(--yellow-500-hsl),0.1);
+  --alert-warning-bg: hsl(var(--yellow-500-hsl), 0.1);
   --alert-warning-icon-color: var(--yellow-200);
   --alert-warning-border-color: var(--yellow-800);
   --alert-light-bg: var(--gray-900);
@@ -10554,6 +10554,14 @@ button:not(:disabled) {
   border-color: var(--alert-success-border-color);
   color: var(--text-default); }
   .alert-success > .alert-icon span {
+    color: var(--alert-success-icon-color);
+    margin-top: 0.15rem; }
+
+.alert-purple {
+  background-color: #7928ca;
+  border-color: var(--alert-success-border-color);
+  color: var(--text-default); }
+  .alert-purple > .alert-icon span {
     color: var(--alert-success-icon-color);
     margin-top: 0.15rem; }
 

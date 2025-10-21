@@ -1,4 +1,4 @@
-baseUrl = "https://jkd.danbildad.my.id/"
+baseUrl = "https://jkd.rickyaziz.my.id/"
 title = 'ACSL | Jaringan Komputer Dasar'
 
 # -------------------------------------------------------------------
@@ -23,7 +23,7 @@ title = 'ACSL | Jaringan Komputer Dasar'
 [params.docs]
   title = "ACSL Docs"
   darkMode = true
-  themeColor = "green"
+  themeColor = "magenta"
   favicon = "/images/favicon.png"
   titleIcon = true
   sidebarIcons = true
@@ -44,7 +44,7 @@ title = 'ACSL | Jaringan Komputer Dasar'
 # -------------------------------------------------------------------
 [params]
   logo = "/images/logo2.svg"
-  math = true   # ✅ aktifkan KaTeX
+  math = true   # 
 
 # -------------------------------------------------------------------
 # Footer Configuration

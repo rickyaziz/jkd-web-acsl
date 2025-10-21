@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "katex.css",
-	"sourceRoot": "E:/Gunadarma/Asleb/2025/websiteModul/lotusdocs",
+	"sourceRoot": "C:/Users/user/.ssh/Desktop/jkd/lotusdocs",
 	"sources": [
 		"assets/docs/scss/katex.scss",
 		"assets/docs/scss/custom/plugins/katex/_katex.scss"
