@@ -57,7 +57,7 @@ toc: true
   </p>
 
   <p style="text-align: justify;">
-  Berikut adalah konfigurasi routing statik pada aplikasi cisco packet tracer:
+  Berikut adalah konfigurasi routing static pada aplikasi cisco packet tracer:
   </p>
   <center>
   <img src="/images/babFive/b.8.PNG" alt="Gambar B.8 -  Konfig Router" class="img-fluid mb-3 responsive-img">
@@ -122,10 +122,3 @@ untuk RIPv2 dan EIGRP, sehingga terdapat tiga topologi yang sama, yakni untuk St
 
 <small class="text-muted"><i class="material-icons align-middle me-1">info</i>Jika bingung, silahkan bertanya ke Asisten shift mengajar.</small>
 {{% /alert %}}
-
-<p style="text-align: justify;">
-
-<p style="text-align: justify;">
-<p style="text-align: justify;">
-<p style="text-align: justify;">
-<p style="text-align: justify;">

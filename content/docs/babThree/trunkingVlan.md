@@ -2,7 +2,7 @@
 weight: 20
 title: "Trunking VLAN"
 description: "Konfigurasi Trunking VLAN Di Cisco Packet Tracer"
-icon: "build"
+icon: "device_hub"
 date: "2025-10-17T22:00:16+07:00"
 lastmod: "2025-10-18T10:19:16+07:00"
 toc: true

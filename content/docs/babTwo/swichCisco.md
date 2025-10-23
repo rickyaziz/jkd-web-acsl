@@ -2,7 +2,7 @@
 weight: 16
 title: "Praktek Ping Dengan Switch Cisco"
 description: "Percobaan Melakukan Ping Antar Komputer Dengan Switch Cisco"
-icon: "lan"
+icon: "settop_component"
 date: "2025-09-19T17:28:18+07:00"
 lastmod: "2025-09-19T17:28:18+07:00"
 toc: true

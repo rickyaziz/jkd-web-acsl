@@ -20,7 +20,7 @@
 
 <html lang="en"><head>
   <meta charset="utf-8" />
-  <title>Routing EIGRP (Ongoing) | ACSL Docs</title>
+  <title>Routing EIGRP | ACSL Docs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Topologi, Konfigurasi, Dan Tes Konektivitas Routing EIGRP" />
   <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
@@ -35,14 +35,14 @@
 <link rel="icon" type="image/png" sizes="32x32" href="https://jkd.rickyaziz.my.id/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jkd.rickyaziz.my.id/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="https://jkd.rickyaziz.my.id/site.webmanifest">
-<meta property="og:title" content="Routing EIGRP (Ongoing)" />
+<meta property="og:title" content="Routing EIGRP" />
 <meta property="og:description" content="Topologi, Konfigurasi, Dan Tes Konektivitas Routing EIGRP" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jkd.rickyaziz.my.id/docs/babfive/routingeigrp/" /><meta property="og:image" content="https://jkd.rickyaziz.my.id/opengraph/card-base-2_hu_92c9811311815b3a.png"/><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://jkd.rickyaziz.my.id/docs/babfive/routingeigrp/" /><meta property="og:image" content="https://jkd.rickyaziz.my.id/opengraph/card-base-2_hu_b1fec4d3da5f8628.png"/><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2025-10-20T18:07:58+07:00" />
 <meta property="article:modified_time" content="2025-10-20T18:07:58+07:00" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://jkd.rickyaziz.my.id/opengraph/card-base-2_hu_92c9811311815b3a.png"/>
-<meta name="twitter:title" content="Routing EIGRP (Ongoing)"/>
+<meta name="twitter:image" content="https://jkd.rickyaziz.my.id/opengraph/card-base-2_hu_b1fec4d3da5f8628.png"/>
+<meta name="twitter:title" content="Routing EIGRP"/>
 <meta name="twitter:description" content="Topologi, Konfigurasi, Dan Tes Konektivitas Routing EIGRP"/>
 
   
@@ -355,7 +355,7 @@
           <i class="material-icons me-2"
             >router</i
           >
-          Tutorial Bab 5 (Ongoing)
+          Tutorial Bab 5
         </button>
         <div class="sidebar-submenu d-block">
           <ul>
@@ -380,7 +380,7 @@
               class=" "
             >
               <a class="sidebar-nested-link" href="https://jkd.rickyaziz.my.id/docs/babfive/routingripv2/"
-                >Routing RIPv2 (Ongoing)</a
+                >Routing RIPv2</a
               >
             </li>
                
@@ -388,7 +388,7 @@
               class="current "
             >
               <a class="sidebar-nested-link" href="https://jkd.rickyaziz.my.id/docs/babfive/routingeigrp/"
-                >Routing EIGRP (Ongoing)</a
+                >Routing EIGRP</a
               >
             </li>
              
@@ -396,11 +396,28 @@
         </div>
       </li>
          
-      <li class="">
-        <a class="sidebar-root-link" href="https://jkd.rickyaziz.my.id/docs/babsix/">
-          <i class="material-icons me-2">router</i>
-           Tutorial Bab 6 (Ongoing)
-        </a>
+      <li
+        class="sidebar-dropdown  "
+      >
+        <button class="btn">
+          <i class="material-icons me-2"
+            >router</i
+          >
+          Tutorial Bab 6 (Ongoing)
+        </button>
+        <div class="sidebar-submenu ">
+          <ul>
+              
+            <li
+              class=" "
+            >
+              <a class="sidebar-nested-link" href="https://jkd.rickyaziz.my.id/docs/babsix/routinglanjutan/"
+                >Routing Lanjutan</a
+              >
+            </li>
+             
+          </ul>
+        </div>
       </li>
          
       <li class="">
@@ -687,14 +704,14 @@
             
                 <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                     <a itemprop="item" href="/docs/babfive/">
-                        <span itemprop="name">Tutorial Bab 5 (Ongoing)</span>
+                        <span itemprop="name">Tutorial Bab 5</span>
                     </a>
                     <meta itemprop="position" content='2' />
                 </li>
             
         
             <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">Routing EIGRP (Ongoing)</span>
+                <span itemprop="name">Routing EIGRP</span>
                 <meta itemprop="position" content='3' />
             </li>
         
@@ -703,24 +720,48 @@
                                     
                                     <div class="row flex-xl-nowrap">
                                         
-                                        <div class="docs-toc col-xl-3  visually-hidden  d-xl-block"><toc>
+                                        <div class="docs-toc col-xl-3    d-xl-block"><toc>
     <div class="fw-bold text-uppercase mb-2">On this page</div>
-    <nav id="toc"></nav>
+    <nav id="toc">
+  <ul>
+    <li><a href="#routing-eigrp">Routing EIGRP</a>
+      <ul>
+        <li><a href="#konfigurasi-routing-eigrp">Konfigurasi Routing EIGRP</a></li>
+        <li><a href="#uji-konektivitas-antar-pc">Uji Konektivitas Antar PC</a></li>
+        <li><a href="#ping-antar-pc">Ping Antar PC</a></li>
+        <li><a href="#pengecekan-pada-masing---masing-router">Pengecekan Pada Masing - Masing Router</a></li>
+      </ul>
+    </li>
+    <li><a href="#tugas">Tugas</a></li>
+  </ul>
+</nav>
     </toc></div>
                                         
                                         
-                                        <div class="docs-toc-mobile  visually-hidden  d-print-none d-xl-none">
+                                        <div class="docs-toc-mobile    d-print-none d-xl-none">
                                             <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
                                                 Table of Contents
                                             </button>
-<nav id="toc-mobile"></nav></div>
-                                        <div class="docs-content col-12  mt-0">
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li><a href="#routing-eigrp">Routing EIGRP</a>
+      <ul>
+        <li><a href="#konfigurasi-routing-eigrp">Konfigurasi Routing EIGRP</a></li>
+        <li><a href="#uji-konektivitas-antar-pc">Uji Konektivitas Antar PC</a></li>
+        <li><a href="#ping-antar-pc">Ping Antar PC</a></li>
+        <li><a href="#pengecekan-pada-masing---masing-router">Pengecekan Pada Masing - Masing Router</a></li>
+      </ul>
+    </li>
+    <li><a href="#tugas">Tugas</a></li>
+  </ul>
+</nav></div>
+                                        <div class="docs-content col-12 col-xl-9 mt-0">
                                             <div class="mb-0 d-flex">
                                                 
-                                                <i class="material-icons title-icon me-2">route</i>
+                                                <i class="material-icons title-icon me-2">bolt</i>
                                                 
                                                 <h1 class="content-title mb-0">
-                                                    Routing EIGRP (Ongoing)
+                                                    Routing EIGRP
                                                     
                                                 </h1>
                                             </div>
@@ -731,7 +772,154 @@
                                                 
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
-        
+        <h2 id="routing-eigrp">Routing EIGRP <a href="#routing-eigrp" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p style="text-align: justify;">
+Enhanced Interior Gateway Routing Protocol (EIGRP) merupakan protokol
+routing dinamis yang dikembangkan oleh Cisco sebagai peningkatan dari IGRP
+(Interior Gateway Routing Protocol). EIGRP meningkatkan efisiensi, kecepatan
+konvergensi, dan skalabilitas. Protokol ini disebut hybrid karena menggabungkan fitur
+dari routing distance-vector dan link-state, memberikan kinerja yang lebih baik dan
+fleksibilitas lebih tinggi dibandingkan protokol routing seperti RIP.
+</p>
+<h3 id="konfigurasi-routing-eigrp">Konfigurasi Routing EIGRP <a href="#konfigurasi-routing-eigrp" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p style="text-align: justify;">
+Berikut adalah konfigurasi EIGRP pada cisco packet tracer :
+</p>
+<center>
+<img src="/images/babFive/b.23.PNG" alt="Gambar B.14 - Konfig EIGRP" class="img-fluid mb-3 responsive-img">
+</center>
+<ol>
+<li>
+<p style="text-align: justify;">
+Router A.
+</p>
+<center>
+<img src="/images/babFive/b.24.PNG" alt="Gambar B.15 - Konfig Router" class="img-fluid mb-3 responsive-img">
+<img src="/images/babFive/b.25.PNG" alt="Gambar B.15 - Konfig Router" class="img-fluid mb-3 responsive-img">
+</center>
+</li>
+<li>
+<p style="text-align: justify;">
+Router B.
+</p>
+<center>
+<img src="/images/babFive/b.26.PNG" alt="Gambar B.16 - Konfig Router" class="img-fluid mb-3 responsive-img">
+</center>
+</li>
+<li>
+<p style="text-align: justify;">
+Router C.
+</p>
+<center>
+<img src="/images/babFive/b.27.PNG" alt="Gambar B.17 - Konfig Router" class="img-fluid mb-3 responsive-img">
+</center>
+</li>
+</ol>
+<h3 id="uji-konektivitas-antar-pc">Uji Konektivitas Antar PC <a href="#uji-konektivitas-antar-pc" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><center>
+<img src="/images/babFive/b.28.PNG" alt="Gambar B.18 - Uji Koneksi" class="img-fluid mb-3 responsive-img">
+</center>
+<h3 id="ping-antar-pc">Ping Antar PC <a href="#ping-antar-pc" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><ol>
+<li>
+<p style="text-align: justify;">
+Ping dari PC 0 ke PC 1
+</p>
+<center>
+<img src="/images/babFive/b.29.PNG" alt="Gambar B.19 - Ping PC" class="img-fluid mb-3 responsive-img">
+</center>
+</li>
+<li>
+<p style="text-align: justify;">
+Ping dari PC 1 ke PC 0.
+</p>
+<center>
+<img src="/images/babFive/b.30.PNG" alt="Gambar B.20 - Ping PC" class="img-fluid mb-3 responsive-img">
+</center>
+</li>
+</ol>
+<h3 id="pengecekan-pada-masing---masing-router">Pengecekan Pada Masing - Masing Router <a href="#pengecekan-pada-masing---masing-router" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><ul>
+<li>
+<p style="text-align: justify;">
+Untuk memastikan bahwa EIGRP telah diterapkan dengan benar, ketik perintah berikut pada masing-masing router:
+</p>
+<center>
+<img src="/images/babFive/b.31.PNG" alt="Gambar B.21 - Cek Router" class="img-fluid mb-3 responsive-img">
+</center>
+</li>
+</ul>
+<ol>
+<li>
+<p style="text-align: justify;">
+Contoh Router A saat pengecekan.
+</p>
+</li>
+</ol>
+  <center>
+  <img src="/images/babFive/b.32.PNG" alt="Gambar B.22 - Cek Router" class="img-fluid mb-3 responsive-img">
+  </center>
+<div class="alert alert-success d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  <span class="material-icons size-20 me-2">
+  check_circle
+  </span></div>
+  <div class="w-100">
+<p style="text-align: justify;">
+Jika PC 0 di ping ke PC 1 atau sebaliknya, kemudian menampilkan output <strong>Successful</strong> seperti di atas, maka routing berhasil dikonfigurasi dengan benar.
+</p>
+  </div>
+  </div>
+<div class="alert alert-danger d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  <span class="material-icons size-20 me-2">
+  report
+  </span></div>
+  <div class="w-100">
+<p style="text-align: justify;">
+Jika PC 0 di ping ke PC 1 atau sebaliknya, kemudian menampilkan output <strong>Failed</strong>, maka routing belum dikonfigurasi dengan benar.
+</p>
+  </div>
+  </div>
+<div class="alert alert-warning d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  <span class="material-icons size-20 me-2">
+  warning
+  </span></div>
+  <div class="w-100">
+<p style="text-align: justify;">
+Dalam Pengecekan status Routing yang digunakan pada EIGRP. Pastikan muncul huruf <strong>D</strong> di sebelah kanan seperti gambar di atas.
+</p>
+<small class="text-muted"><i class="material-icons align-middle me-1">info</i>Jika bingung, silahkan bertanya ke Asisten shift mengajar.</small>
+  </div>
+  </div>
+<h2 id="tugas">Tugas <a href="#tugas" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><div class="alert alert-info" role="alert">
+<h5 class="alert-heading"><i class="material-icons align-middle me-2">assignment</i>Tugas Praktikum</h5>
+<hr>
+<p class="mb-3"><strong>Kerjakanlah soal latihan berikut ini:</strong></p>
+<center>
+      <img src="/images/babFive/b.33.PNG" alt="Gambar B.33 - Soal" class="img-fluid mb-3 responsive-img">
+</center>
+<div class="row">
+<div class="col-md-6">
+<div class="badge bg-primary text-white mb-2">1</div>
+<p class="mb-2"><strong>Soal 1:</strong></p>
+<p style="text-align: justify;">Pada topologi yang telah diberikan, tambahkan 1 <strong>Switch</strong> dan 1 <strong>PC</strong> pada <strong>Router
+C</strong> dengan jaringan baru <strong>192.168.30.0/24</strong>.Lakukan konfigurasi protokol RIP v2
+pada seluruh router (Router A, B, dan C) agar semua jaringan dapat saling
+berkomunikasi. Pastikan setiap PC dapat melakukan <strong>ping</strong> ke PC lain di jaringan
+berbeda.</p>
+</div>
+<div class="col-md-6">
+<div class="badge bg-primary text-white mb-2">2</div>
+<p class="mb-2"><strong>Soal 2:</strong></p>
+<p style="text-align: justify;">Dengan topologi yang sama, tambahkan kembali <strong>Switch</strong> dan <strong>PC</strong> pada <strong>Router
+C</strong> dengan jaringan baru <strong>192.168.30.0/24</strong>. Lakukan konfigurasi protokol
+<strong>EIGRP(ASN 1)</strong> pada seluruh router (Router A, B, dan C) agar semua jaringan dapat
+saling berkomunikasi. Pastikan setiap PC dapat melakukan <strong>ping</strong> ke PC lain di
+jaringan berbeda.</p>
+</div>
+</div>
+<div class="mt-3">
+<small class="text-muted"><i class="material-icons align-middle me-1">info</i>Gunakan metode Routing RIPv2 untuk mengerjakan soal 1, dan gunakan metode Routing EIGRP untuk mengerjakan soal 2.</small>
+</div>
+</div>
+
     </div>
 
     
@@ -749,10 +937,26 @@
         <div class="card h-100 my-1">
           <div class="card-body py-2">
             <p class="card-title fs-5 fw-semibold lh-base mb-0">
-              <i class="material-icons align-middle">navigate_before</i> Routing RIPv2 (Ongoing)
+              <i class="material-icons align-middle">navigate_before</i> Routing RIPv2
             </p>
             <p class="card-text ms-2">
               Topologi, Konfigurasi, Dan Tes …
+            </p>
+            
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-6 pt-2 doc-prev">
+      <a class="ms-auto" href="/docs/babsix/routinglanjutan/">
+        <div class="card h-100 my-1 text-end">
+          <div class="card-body py-2">
+            <p class="card-title fs-5 fw-semibold lh-base mb-0">
+              Routing Lanjutan
+              <i class="material-icons align-middle">navigate_next</i>
+            </p>
+            <p class="card-text me-2">
+              Pengertian, Cara Kerja, Fungsi …
             </p>
             
           </div>
@@ -925,6 +1129,13 @@
     
 
 
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1432,7 +1643,7 @@
             {
                 id:  27 ,
                 href: "\/docs\/babfive\/",
-                title: "Tutorial Bab 5 (Ongoing)",
+                title: "Tutorial Bab 5",
                 description: "Routing (Hirarki jaringan + Static + RIP + EIGRP)",
                 content: ""
             }
@@ -1452,25 +1663,25 @@
                 href: "\/docs\/babfive\/routingstatic\/",
                 title: "Routing Static",
                 description: "Topologi, Konfigurasi, Dan Tes Konektivitas Routing Static",
-                content: "Topologi link Membuat Topologi\rDibawah ini adalah konfigurasi IP Address dan subnetmask untuk topologi jaringan.\rKonfigurasi Router link Menambahkan IP address pada router di CLI\rBerikut adalah konfigurasi pada cisco packet tracer :\rRouter0\nRouter1\nKonfigurasi Routing Static link Konfigurasi routing static pada router di CLI agar bisa terhubung\rBerikut adalah konfigurasi routing statik pada aplikasi cisco packet tracer:\rRouter0\nRouter1\nKonfigurasi PC link Masukan IP PC di IP Configuration\rPC 0\nPC 1\nUji Hasil link Lakukan uji konektivitas antar PC\rcheck_circle\rJika PC0 di ping ke PC 1 menampilkan Successful seperti di atas, maka routing berhasil dikonfigurasi dengan benar.\rreport\rJika PC0 di ping ke PC 1 menampilkan Failed, maka routing belum dikonfigurasi dengan benar.\rwarning\rSebelum lanjut, salin dan tempelkan topologi yang sudah dibuat\runtuk RIPv2 dan EIGRP, sehingga terdapat tiga topologi yang sama, yakni untuk Static, RIPv2, dan EIGRP!!!!\rinfoJika bingung, silahkan bertanya ke Asisten shift mengajar.\n"
+                content: "Topologi link Membuat Topologi\rDibawah ini adalah konfigurasi IP Address dan subnetmask untuk topologi jaringan.\rKonfigurasi Router link Menambahkan IP address pada router di CLI\rBerikut adalah konfigurasi pada cisco packet tracer :\rRouter0\nRouter1\nKonfigurasi Routing Static link Konfigurasi routing static pada router di CLI agar bisa terhubung\rBerikut adalah konfigurasi routing static pada aplikasi cisco packet tracer:\rRouter0\nRouter1\nKonfigurasi PC link Masukan IP PC di IP Configuration\rPC 0\nPC 1\nUji Hasil link Lakukan uji konektivitas antar PC\rcheck_circle\rJika PC0 di ping ke PC 1 menampilkan Successful seperti di atas, maka routing berhasil dikonfigurasi dengan benar.\rreport\rJika PC0 di ping ke PC 1 menampilkan Failed, maka routing belum dikonfigurasi dengan benar.\rwarning\rSebelum lanjut, salin dan tempelkan topologi yang sudah dibuat\runtuk RIPv2 dan EIGRP, sehingga terdapat tiga topologi yang sama, yakni untuk Static, RIPv2, dan EIGRP!!!!\rinfoJika bingung, silahkan bertanya ke Asisten shift mengajar.\n"
             }
         );
     index.add(
             {
                 id:  30 ,
                 href: "\/docs\/babfive\/routingripv2\/",
-                title: "Routing RIPv2 (Ongoing)",
+                title: "Routing RIPv2",
                 description: "Topologi, Konfigurasi, Dan Tes Konektivitas Routing RIPv2",
-                content: ""
+                content: "Routing RIPv2 link\rRIPv2 (Routing Information Protocol version 2) adalah salah satu protokol\rrouting dinamis yang digunakan untuk bertukar informasi routing antara router dalam\rsebuah jaringan. Protokol ini termasuk dalam kategori distance-vector yang memilih\rrute terbaik berdasarkan jumlah hop (lompatan) ke tujuan. Setiap hop mewakili satu\rrouter yang dilewati dalam perjalanan paket data. RIPv2 adalah pengembangan dari\rversi sebelumnya, RIPv1, yang menawarkan beberapa fitur tambahan dan perbaikan\ryang membuatnya lebih fleksibel dan aman dalam pengelolaan routing.\rKonfigurasi Routing RIPv2 link\rBerikut adalah konfigurasi RIPv2 pada cisco packet tracer :\rRouter A.\rRouter B.\rRouter C.\rUji Konektivitas Antar PC link\rPing Antar PC link Ping dari PC 0 ke PC 1\rPing dari PC 1 ke PC 0.\rPengecekan Pada Masing - Masing Router link Untuk memverifikasi bahwa RIPv2 telah diterapkan dengan benar, ketik perintah berikut pada masing-masing router:\rContoh Router A saat pengecekan.\rcheck_circle\rJika PC 0 di ping ke PC 1 atau sebaliknya, kemudian menampilkan output Successful seperti di atas, maka routing berhasil dikonfigurasi dengan benar.\rreport\rJika PC 0 di ping ke PC 1 atau sebaliknya, kemudian menampilkan output Failed, maka routing belum dikonfigurasi dengan benar.\rwarning\rDalam Pengecekan status Routing yang digunakan pada RIP. Pastikan muncul huruf R di sebelah kanan seperti gambar di atas.\rinfoJika bingung, silahkan bertanya ke Asisten shift mengajar.\n"
             }
         );
     index.add(
             {
                 id:  31 ,
                 href: "\/docs\/babfive\/routingeigrp\/",
-                title: "Routing EIGRP (Ongoing)",
+                title: "Routing EIGRP",
                 description: "Topologi, Konfigurasi, Dan Tes Konektivitas Routing EIGRP",
-                content: ""
+                content: "Routing EIGRP link\rEnhanced Interior Gateway Routing Protocol (EIGRP) merupakan protokol\rrouting dinamis yang dikembangkan oleh Cisco sebagai peningkatan dari IGRP\r(Interior Gateway Routing Protocol). EIGRP meningkatkan efisiensi, kecepatan\rkonvergensi, dan skalabilitas. Protokol ini disebut hybrid karena menggabungkan fitur\rdari routing distance-vector dan link-state, memberikan kinerja yang lebih baik dan\rfleksibilitas lebih tinggi dibandingkan protokol routing seperti RIP.\rKonfigurasi Routing EIGRP link\rBerikut adalah konfigurasi EIGRP pada cisco packet tracer :\rRouter A.\rRouter B.\rRouter C.\rUji Konektivitas Antar PC link\rPing Antar PC link Ping dari PC 0 ke PC 1\rPing dari PC 1 ke PC 0.\rPengecekan Pada Masing - Masing Router link Untuk memastikan bahwa EIGRP telah diterapkan dengan benar, ketik perintah berikut pada masing-masing router:\rContoh Router A saat pengecekan.\rcheck_circle\rJika PC 0 di ping ke PC 1 atau sebaliknya, kemudian menampilkan output Successful seperti di atas, maka routing berhasil dikonfigurasi dengan benar.\rreport\rJika PC 0 di ping ke PC 1 atau sebaliknya, kemudian menampilkan output Failed, maka routing belum dikonfigurasi dengan benar.\rwarning\rDalam Pengecekan status Routing yang digunakan pada EIGRP. Pastikan muncul huruf D di sebelah kanan seperti gambar di atas.\rinfoJika bingung, silahkan bertanya ke Asisten shift mengajar.\rTugas link\rassignmentTugas Praktikum\rKerjakanlah soal latihan berikut ini:\n1\rSoal 1:\nPada topologi yang telah diberikan, tambahkan 1 Switch dan 1 PC pada Router\rC dengan jaringan baru 192.168.30.0/24.Lakukan konfigurasi protokol RIP v2\rpada seluruh router (Router A, B, dan C) agar semua jaringan dapat saling\rberkomunikasi. Pastikan setiap PC dapat melakukan ping ke PC lain di jaringan\rberbeda.\n2\rSoal 2:\nDengan topologi yang sama, tambahkan kembali Switch dan PC pada Router\rC dengan jaringan baru 192.168.30.0/24. Lakukan konfigurasi protokol\rEIGRP(ASN 1) pada seluruh router (Router A, B, dan C) agar semua jaringan dapat\rsaling berkomunikasi. Pastikan setiap PC dapat melakukan ping ke PC lain di\rjaringan berbeda.\ninfoGunakan metode Routing RIPv2 untuk mengerjakan soal 1, dan gunakan metode Routing EIGRP untuk mengerjakan soal 2.\r"
             }
         );
     index.add(
@@ -1478,13 +1689,22 @@
                 id:  32 ,
                 href: "\/docs\/babsix\/",
                 title: "Tutorial Bab 6 (Ongoing)",
-                description: "Bab ini membahas Routing Lanjutan, termasuk protokol OSPF (Open Shortest Path First) dan BGP (Border Gateway Protocol), serta penerapan DHCP (Dynamic Host Configuration Protocol) pada router Cisco. Praktikan akan belajar cara mengatur dan mengonfigurasi protokol ini untuk mengelola jaringan. ",
+                description: "Routing Lanjutan (OSPF + BGP + DHCP + Redistribute)",
                 content: ""
             }
         );
     index.add(
             {
                 id:  33 ,
+                href: "\/docs\/babsix\/routinglanjutan\/",
+                title: "Routing Lanjutan",
+                description: "Pengertian, Cara Kerja, Fungsi dari DHCP, OSPF, BGP Dan Redistribution Routing",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  34 ,
                 href: "\/docs\/",
                 title: "Jaringan Komputer Dasar",
                 description: "Dokumentasi dari semua bab yang akan dipelajari pada Laboratorium Lanjut Gunadarma.",
@@ -1493,7 +1713,7 @@
         );
     index.add(
             {
-                id:  34 ,
+                id:  35 ,
                 href: "\/docs\/babseven\/",
                 title: "Tutorial Bab 7 (Ongoing)",
                 description: "Pada bab ini, praktikan akan belajar tentang NAT (Network Address Translation) dan jenis - jenisnya seperti SNAT, DNAT, dan PAT. Bab ini juga akan menjelaskan bagaimana NAT mengatasi kekurangan alamat IP publik dan meningkatkan keamanan jaringan. Selain itu, praktikan akan memahami cara kerja DNS server yang mengubah nama domain menjadi alamat IP untuk menghubungkan perangkat ke internet. ",
@@ -1502,7 +1722,7 @@
         );
     index.add(
             {
-                id:  35 ,
+                id:  36 ,
                 href: "\/docs\/babeight\/",
                 title: "Tutorial Bab 8 (Ongoing)",
                 description: "Bab 8 ini akan membahas praktikum tentang jaringan sensor nirkabel (WSN), yang mencakup instalasi sensor untuk membangun jaringan, serta konfigurasi seperti pengaturan alamat node, protokol komunikasi, dan topologi jaringan. ",

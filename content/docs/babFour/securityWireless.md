@@ -2,7 +2,7 @@
 weight: 27
 title: "Implementasi Metode Keamanan"
 description: "MAC Filtering Dan SSID Hiding Wireless"
-icon: "account_tree"
+icon: "key"
 date: "2025-10-18T21:46:58+07:00"
 lastmod: "2025-10-20T18:05:58+07:00"
 toc: true

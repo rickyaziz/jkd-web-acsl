@@ -2,7 +2,7 @@
 weight: 21
 title: "Inter-VLAN"
 description: "Konfigurasi Inter-VLAN Di Cisco Packet Tracer"
-icon: "build"
+icon: "settings_input_component"
 date: "2025-10-17T22:02:16+07:00"
 lastmod: "2025-10-17T22:02:16+07:00"
 toc: true

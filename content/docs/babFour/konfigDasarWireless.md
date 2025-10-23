@@ -2,7 +2,7 @@
 weight: 26
 title: "Konfigurasi Dasar Wireless"
 description: "Latar Belakang, Media, Dan Komponen Pada Wireless"
-icon: "account_tree"
+icon: "settings_input_antenna"
 date: "2025-10-18T21:46:58+07:00"
 lastmod: "2025-10-19T21:38:58+07:00"
 toc: true

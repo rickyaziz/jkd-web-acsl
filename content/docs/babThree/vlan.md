@@ -2,7 +2,7 @@
 weight: 18
 title: "VLAN"
 description: "Konsep VLAN, Trunking, dan Koneksi Intervlan"
-icon: "build"
+icon: "hub"
 date: "2025-10-17T21:48:16+07:00"
 lastmod: "2025-10-17T21:48:16+07:00"
 toc: true

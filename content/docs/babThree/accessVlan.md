@@ -2,7 +2,7 @@
 weight: 19
 title: "Access VLAN"
 description: "Konfigurasi VLAN Di Cisco Packet Tracer"
-icon: "build"
+icon: "cable"
 date: "2025-10-17T21:58:16+07:00"
 lastmod: "2025-10-17T21:58:16+07:00"
 toc: true

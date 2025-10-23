@@ -2,7 +2,7 @@
 weight: 24
 title: "Komponen Jaringan Wireless"
 description: "Access Point, Router, WiFi Adapter, Modem, Repeater dan Base Station"
-icon: ""
+icon: "devices"
 date: "2025-10-18T21:46:58+07:00"
 lastmod: "2025-10-18T21:46:58+07:00"
 toc: true

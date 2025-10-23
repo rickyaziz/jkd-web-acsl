@@ -6,7 +6,7 @@
     <description>Recent content on ACSL | Jaringan Komputer Dasar</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Oct 2025 22:28:58 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 22 Oct 2025 22:47:58 +0700</lastBuildDate>
     <atom:link href="https://jkd.rickyaziz.my.id/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Standar Operasional Prosedure</title>
@@ -177,17 +177,24 @@
       <description>&lt;h2 id=&#34;topologi&#34;&gt;Topologi &lt;a href=&#34;#topologi&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p style=&#34;text-align: justify;&#34;&gt;&#xD;&#xA;Membuat Topologi&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;https://jkd.rickyaziz.my.id/images/babFive/b.4.PNG&#34; alt=&#34;Gambar B.4 - Topologi&#34; class=&#34;img-fluid mb-3 responsive-img&#34;&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;p style=&#34;text-align: justify;&#34;&gt;&#xD;&#xA;Dibawah ini adalah konfigurasi IP Address dan subnetmask untuk topologi jaringan.&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;https://jkd.rickyaziz.my.id/images/babFive/b.34.PNG&#34; alt=&#34;Gambar B.34 - Tabel Konfig&#34; class=&#34;img-fluid mb-3 responsive-img&#34;&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;konfigurasi-router&#34;&gt;Konfigurasi Router &lt;a href=&#34;#konfigurasi-router&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p style=&#34;text-align: justify;&#34;&gt;&#xD;&#xA;Menambahkan IP address pada router di CLI&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&lt;p style=&#34;text-align: justify;&#34;&gt;&#xD;&#xA;Berikut adalah konfigurasi pada cisco packet tracer :&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;https://jkd.rickyaziz.my.id/images/babFive/b.5.PNG&#34; alt=&#34;Gambar B.5 -  Konfig Router&#34; class=&#34;img-fluid mb-3 responsive-img&#34;&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Router0&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;https://jkd.rickyaziz.my.id/images/babFive/b.6.PNG&#34; alt=&#34;Gambar B.6 -  Konfig Router0&#34; class=&#34;img-fluid mb-3 responsive-img&#34;&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Router1&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;https://jkd.rickyaziz.my.id/images/babFive/b.7.PNG&#34; alt=&#34;Gambar B.7 -  Konfig Router1&#34; class=&#34;img-fluid mb-3 responsive-img&#34;&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;konfigurasi-routing-static&#34;&gt;Konfigurasi Routing Static &lt;a href=&#34;#konfigurasi-routing-static&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p style=&#34;text-align: justify;&#34;&gt;&#xD;&#xA;Konfigurasi routing static pada router di CLI agar bisa terhubung&#xD;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Routing RIPv2 (Ongoing)</title>
+      <title>Routing RIPv2</title>
       <link>https://jkd.rickyaziz.my.id/docs/babfive/routingripv2/</link>
       <pubDate>Mon, 20 Oct 2025 22:27:58 +0700</pubDate>
       <guid>https://jkd.rickyaziz.my.id/docs/babfive/routingripv2/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;routing-ripv2&#34;&gt;Routing RIPv2 &lt;a href=&#34;#routing-ripv2&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p style=&#34;text-align: justify;&#34;&gt;&#xD;&#xA;RIPv2 (Routing Information Protocol version 2) adalah salah satu protokol&#xD;&#xA;routing dinamis yang digunakan untuk bertukar informasi routing antara router dalam&#xD;&#xA;sebuah jaringan. Protokol ini termasuk dalam kategori distance-vector yang memilih&#xD;&#xA;rute terbaik berdasarkan jumlah hop (lompatan) ke tujuan. Setiap hop mewakili satu&#xD;&#xA;router yang dilewati dalam perjalanan paket data. RIPv2 adalah pengembangan dari&#xD;&#xA;versi sebelumnya, RIPv1, yang menawarkan beberapa fitur tambahan dan perbaikan&#xD;&#xA;yang membuatnya lebih fleksibel dan aman dalam pengelolaan routing.&#xD;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Routing EIGRP (Ongoing)</title>
+      <title>Routing EIGRP</title>
       <link>https://jkd.rickyaziz.my.id/docs/babfive/routingeigrp/</link>
       <pubDate>Mon, 20 Oct 2025 18:07:58 +0700</pubDate>
       <guid>https://jkd.rickyaziz.my.id/docs/babfive/routingeigrp/</guid>
+      <description>&lt;h2 id=&#34;routing-eigrp&#34;&gt;Routing EIGRP &lt;a href=&#34;#routing-eigrp&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p style=&#34;text-align: justify;&#34;&gt;&#xD;&#xA;Enhanced Interior Gateway Routing Protocol (EIGRP) merupakan protokol&#xD;&#xA;routing dinamis yang dikembangkan oleh Cisco sebagai peningkatan dari IGRP&#xD;&#xA;(Interior Gateway Routing Protocol). EIGRP meningkatkan efisiensi, kecepatan&#xD;&#xA;konvergensi, dan skalabilitas. Protokol ini disebut hybrid karena menggabungkan fitur&#xD;&#xA;dari routing distance-vector dan link-state, memberikan kinerja yang lebih baik dan&#xD;&#xA;fleksibilitas lebih tinggi dibandingkan protokol routing seperti RIP.&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&lt;h3 id=&#34;konfigurasi-routing-eigrp&#34;&gt;Konfigurasi Routing EIGRP &lt;a href=&#34;#konfigurasi-routing-eigrp&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p style=&#34;text-align: justify;&#34;&gt;&#xD;&#xA;Berikut adalah konfigurasi EIGRP pada cisco packet tracer :&#xD;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Routing Lanjutan</title>
+      <link>https://jkd.rickyaziz.my.id/docs/babsix/routinglanjutan/</link>
+      <pubDate>Mon, 20 Oct 2025 18:07:58 +0700</pubDate>
+      <guid>https://jkd.rickyaziz.my.id/docs/babsix/routinglanjutan/</guid>
       <description></description>
     </item>
   </channel>
