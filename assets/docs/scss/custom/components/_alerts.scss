@@ -17,7 +17,7 @@
   --alert-info-border-color: var(--alert-border-color);
 
   // Success
-  --alert-success-color: var(--emerald-270-hsl);
+  --alert-success-color: var(--emerald-50-hsl);
   --alert-success-bg: hsl(var(--alert-success-color), 0.4);
   --alert-success-border-color: var(--alert-border-color);
 
@@ -90,6 +90,7 @@
 
   p {
     line-height: 1.525rem;
+    text-align: justify;
   }
 
   p:last-child {
@@ -137,17 +138,6 @@
     margin-top: 0.15rem;
   }
 }
-
-// .alert-purple {
-//   background-color: #7928ca;
-//   border-color: var(--alert-success-border-color);
-//   color: var(--text-default);
-
-//   > .alert-icon span {
-//     color: var(--alert-success-icon-color);
-//     margin-top: 0.15rem;
-//   }
-// }
 
 .alert-success a {
   font-weight: bold;

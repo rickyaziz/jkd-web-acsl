@@ -12,9 +12,7 @@ toc: true
 
 ### Topologi Jaringan
 
-- <p style="text-align: justify;">
-   Membuat Topologi
-   </p>
+- Membuat Topologi
 
    <center>
    <img src="/images/babThree/b.10.PNG" alt="Gambar B.10 - Topologi" class="img-fluid mb-3 responsive-img">
@@ -22,61 +20,43 @@ toc: true
 
 ### Konfigurasi VLAN Di Tiap Switch
 
-- <p style="text-align: justify;">
-  Berikan nama vlan tiap switch
-  </p>
+- Berikan nama vlan tiap switch
 
-  1.  <p style="text-align: justify;">
-      Switch0
-      </p>
+  1.  Switch0
 
-  <center>
-  <img src="/images/babThree/b.11.PNG" alt="Gambar B.11 - Konfig Switch" class="img-fluid mb-3 responsive-img">
-  </center>
+        <center>
+        <img src="/images/babThree/b.11.PNG" alt="Gambar B.11 - Konfig Switch" class="img-fluid mb-3 responsive-img">
+        </center>
 
-  2.  <p style="text-align: justify;">
-      Switch1
-      </p>
+  2.  Switch1
 
       <center>
       <img src="/images/babThree/b.12.PNG" alt="Gambar B.12 - Konfig Switch" class="img-fluid mb-3 responsive-img">
       </center>
 
-- <p style="text-align: justify;">
-   Konfigurasi Switchport Access Vlan tiap komputer
-  </p>
+- Konfigurasi Switchport Access Vlan tiap komputer
 
-  1.  <p style="text-align: justify;">
-      Switch0
-      </p>
+  1.  Switch0
 
       <center>
       <img src="/images/babThree/b.13.PNG" alt="Gambar B.13 - Konfig Switch" class="img-fluid mb-3 responsive-img">
       </center>
 
-  2.  <p style="text-align: justify;">
-      Switch1
-      </p>
+  2.  Switch1
 
       <center>
       <img src="/images/babThree/b.14.PNG" alt="Gambar B.14 - Konfig Switch" class="img-fluid mb-3 responsive-img">
       </center>
 
-- <p style="text-align: justify;">
-  Konfigurasi Switchport Trunking vlan tiap switch
-  </p>
+- Konfigurasi Switchport Trunking vlan tiap switch
 
-  1.  <p style="text-align: justify;">
-      Switch0
-      </p>
+  1.  Switch0
 
       <center>
       <img src="/images/babThree/b.15.PNG" alt="Gambar B.15 - Konfig Switch" class="img-fluid mb-3 responsive-img">
       </center>
 
-  2.  <p style="text-align: justify;">
-      Switch1
-      </p>
+  2.  Switch1
 
       <center>
       <img src="/images/babThree/b.16.PNG" alt="Gambar B.16 - Konfig Switch" class="img-fluid mb-3 responsive-img">
@@ -84,37 +64,27 @@ toc: true
 
 ### Konfigurasi PC
 
-- <p style="text-align: justify;">
-   Berikan IP Address pada setiap komputer
-   </p>
+- Berikan IP Address pada setiap komputer
 
-  1.  <p style="text-align: justify;">
-      PC 0 (192.168.10.1/24) 
-      </p>
+  1.  PC 0 (192.168.10.1/24)
 
       <center>
         <img src="/images/babThree/b.17.PNG" alt="Gambar B.17 - Konfig PC" class="img-fluid mb-3 responsive-img">
       </center>
 
-  2.  <p style="text-align: justify;">
-      PC 1 (192.168.20.1/24)
-      </p>
+  2.  PC 1 (192.168.20.1/24)
 
       <center>
       <img src="/images/babThree/b.18.PNG" alt="Gambar B.18 - Konfig PC" class="img-fluid mb-3 responsive-img">
       </center>
 
-  3.  <p style="text-align: justify;">
-      PC 2 (192.168.10.2/24)
-      </p>
+  3.  PC 2 (192.168.10.2/24)
 
       <center>
       <img src="/images/babThree/b.19.PNG" alt="Gambar B.19 - Konfig PC" class="img-fluid mb-3 responsive-img">
       </center>
 
-  4.  <p style="text-align: justify;">
-      PC 3 (192.168.20.2/24)
-      </p>
+  4.  PC 3 (192.168.20.2/24)
 
       <center>
       <img src="/images/babThree/b.20.PNG" alt="Gambar B.20 - Konfig PC" class="img-fluid mb-3 responsive-img">
@@ -122,21 +92,15 @@ toc: true
 
 ### Ping Antar PC
 
-- <p style="text-align: justify;">
-  Melakukan ping antar komputer
-  </p>
+- Melakukan ping antar komputer
 
-  1.  <p style="text-align: justify;">
-      Ping PC1 → PC3
-      </p>
+  1.  Ping PC1 → PC3
 
       <center>
       <img src="/images/babThree/b.21.PNG" alt="Gambar B.21 - Ping PC" class="img-fluid mb-3 responsive-img">
       </center>
 
-  2.  <p style="text-align: justify;">
-      Ping PC0 → PC3
-      </p>
+  2.  Ping PC0 → PC3
 
       <center>
       <img src="/images/babThree/b.22.PNG" alt="Gambar B.22 - Ping PC" class="img-fluid mb-3 responsive-img">
@@ -144,14 +108,14 @@ toc: true
 
 {{% alert context="success" %}}
 
-<p style="text-align: justify;">
-Jika PC 1 ping ke PC 3 menghasilkan output <b>Reply from</b> dan PC 0 ping ke PC 3 menghasilkan output <b>Request timed out</b> maka vlan berhasil dikonfigurasi dengan benar.
+<p>
+Jika PC 1 ping ke PC 3 menghasilkan output <strong>Reply from</strong> dan PC 0 ping ke PC 3 menghasilkan output <strong>Request timed out</strong> maka vlan berhasil dikonfigurasi dengan benar.
 </p>
 {{% /alert %}}
 
 {{% alert context="danger" %}}
 
-<p style="text-align: justify;">
-Jika PC 1 ping ke PC 3 menghasilkan output <b>Request timed out</b> dan PC 0 ping ke PC 3 menghasilkan output <b>Request timed out</b> maka vlan belum terkonfigurasi dengan benar.
+<p>
+Jika PC 1 ping ke PC 3 menghasilkan output <strong>Request timed out</strong> dan PC 0 ping ke PC 3 menghasilkan output <strong>Request timed out</strong> maka vlan belum terkonfigurasi dengan benar.
 </p>
 {{% /alert %}}

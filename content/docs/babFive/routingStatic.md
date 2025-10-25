@@ -8,19 +8,15 @@ lastmod: "2025-10-20T22:26:58+07:00"
 toc: true
 ---
 
-## Topologi
+### Topologi
 
-- <p style="text-align: justify;">
-  Membuat Topologi
-  </p>
+- Membuat Topologi
 
   <center>
   <img src="/images/babFive/b.4.PNG" alt="Gambar B.4 - Topologi" class="img-fluid mb-3 responsive-img">
   </center>
 
-  <p style="text-align: justify;">
   Dibawah ini adalah konfigurasi IP Address dan subnetmask untuk topologi jaringan.
-  </p>
 
   <center>
   <img src="/images/babFive/b.34.PNG" alt="Gambar B.34 - Tabel Konfig" class="img-fluid mb-3 responsive-img">
@@ -28,13 +24,9 @@ toc: true
 
 ## Konfigurasi Router
 
-- <p style="text-align: justify;">
-  Menambahkan IP address pada router di CLI
-  </p>
+- Menambahkan IP address pada router di CLI
 
-  <p style="text-align: justify;">
   Berikut adalah konfigurasi pada cisco packet tracer :
-  </p>
 
   <center>
   <img src="/images/babFive/b.5.PNG" alt="Gambar B.5 -  Konfig Router" class="img-fluid mb-3 responsive-img">
@@ -52,13 +44,10 @@ toc: true
 
 ## Konfigurasi Routing Static
 
-- <p style="text-align: justify;">
-  Konfigurasi routing static pada router di CLI agar bisa terhubung
-  </p>
+- Konfigurasi routing static pada router di CLI agar bisa terhubung
 
-  <p style="text-align: justify;">
   Berikut adalah konfigurasi routing static pada aplikasi cisco packet tracer:
-  </p>
+
   <center>
   <img src="/images/babFive/b.8.PNG" alt="Gambar B.8 -  Konfig Router" class="img-fluid mb-3 responsive-img">
   </center>
@@ -75,9 +64,7 @@ toc: true
 
 ## Konfigurasi PC
 
-- <p style="text-align: justify;">
-  Masukan IP PC di IP Configuration
-  </p>
+- Masukan IP PC di IP Configuration
 
   1.  <strong>PC 0</strong>
       <center>
@@ -91,9 +78,7 @@ toc: true
 
 ## Uji Hasil
 
-- <p style="text-align: justify;">
-  Lakukan uji konektivitas antar PC
-  </p>
+- Lakukan uji konektivitas antar PC
 
   <center>
   <img src="/images/babFive/b.13.PNG" alt="Gambar B.13 -  Ping PC" class="img-fluid mb-3 responsive-img">
@@ -101,24 +86,23 @@ toc: true
 
 {{% alert context="success"%}}
 
-<p style="text-align: justify;">
+<p>
 Jika PC0 di ping ke PC 1 menampilkan <strong>Successful</strong> seperti di atas, maka routing berhasil dikonfigurasi dengan benar.
 </p>
 {{% /alert %}}
 
 {{% alert context="danger"%}}
 
-<p style="text-align: justify;">
+<p>
 Jika PC0 di ping ke PC 1 menampilkan <strong>Failed</strong>, maka routing belum dikonfigurasi dengan benar.
 </p>
 {{% /alert %}}
 
 {{% alert context="warning"%}}
 
-<p style="text-align: justify;">
+<p>
 Sebelum lanjut, salin dan tempelkan topologi yang sudah dibuat
 untuk RIPv2 dan EIGRP, sehingga terdapat tiga topologi yang sama, yakni untuk Static, RIPv2, dan EIGRP!!!!
 </p>
-
 <small class="text-muted"><i class="material-icons align-middle me-1">info</i>Jika bingung, silahkan bertanya ke Asisten shift mengajar.</small>
 {{% /alert %}}

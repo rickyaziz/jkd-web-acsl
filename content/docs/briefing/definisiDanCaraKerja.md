@@ -16,47 +16,35 @@ toc: true
 
 <p style= "text-align: center;"><b>Gambar B.3</b> Jaringan Komputer</p>
 
-<p style= "text-align: justify;">
 Definisi jaringan komputer itu sendiri merupakan dua atau lebih perangkat komputer yang saling terhubung untuk berbagi sumber daya, bertukar informasi, serta serta menggunakan perangkat lunak atau aplikasi secara bersama-sama. Perangkat dalam jaringan ini memanfaatkan aturan standar yang dikenal sebagai protokol komunikasi untuk mengirimkan data melalui media fisik atau teknologi nirkabel.
-</p>
 
 ## Manfaat Jaringan
 
-<p style= "text-align: justify;">
-Jaringan komputer pertama kali dikembangkan pada akhir 1950-an oleh  militer dan Departemen Pertahanan Amerika Serikat. Awalnya, jaringan ini dirancang untuk mentransmisikan data melalui saluran telepon, dengan aplikasi yang terbatas pada bidang ilmiah dan komersial. Seiring waktu, teknologi ini berkembang menjadi internet yang kini dikenal luas oleh masyarakat. Di era modern, internet digunakan untuk berbagai kebutuhan, seperti pekerjaan, hiburan, pendidikan, dan banyak lagi. Perkembangan ini didukung oleh sejumlah faktor berikut:
-</p>
+Jaringan komputer pertama kali dikembangkan pada akhir 1950-an oleh militer dan Departemen Pertahanan Amerika Serikat. Awalnya, jaringan ini dirancang untuk mentransmisikan data melalui saluran telepon, dengan aplikasi yang terbatas pada bidang ilmiah dan komersial. Seiring waktu, teknologi ini berkembang menjadi internet yang kini dikenal luas oleh masyarakat. Di era modern, internet digunakan untuk berbagai kebutuhan, seperti pekerjaan, hiburan, pendidikan, dan banyak lagi. Perkembangan ini didukung oleh sejumlah faktor berikut:
 
 <h5>
 Bekerja Secara Virtual
 </h5>
 
-<p style= "text-align: justify;">
-Jaringan komputer mengirimkan dan menerima informasi berupa sinyal, baik sinyal listrik seperti kabel ethernet, sinyal Cahaya seperti fiber optic, atau sinyal radio seperti wifi. Artinya informasi tidak perlu dibuat secara fisik seperti ditulis seperti surat, diukir seperti prasasti, atau metode fisik  lainnya, melainkan dapat dibuat secara virtual melalaui perangkat yang terbuhung jaringan komputer. 
-</p>
+Jaringan komputer mengirimkan dan menerima informasi berupa sinyal, baik sinyal listrik seperti kabel ethernet, sinyal Cahaya seperti fiber optic, atau sinyal radio seperti wifi. Artinya informasi tidak perlu dibuat secara fisik seperti ditulis seperti surat, diukir seperti prasasti, atau metode fisik lainnya, melainkan dapat dibuat secara virtual melalaui perangkat yang terbuhung jaringan komputer.
 
 <h5>
 Integrasi Jaringan Yang Dapat Diukur
 </h5>
 
-<p style= "text-align: justify;">
-Jaringan komputer bersifat fleksibel dan dapat diskalakan sesuai kebutuhan. Contohnya, saat ini banyak penyedia layanan internet atau biasa disebut ISP (Internet Service Provider) yang menawarkan akses internet dengan berbagai pilihan harga dan performa, sehingga pelanggan dapat menyesuaikannya sesuai dengan kebutuhan dan anggaran mereka. 
-</p>
+Jaringan komputer bersifat fleksibel dan dapat diskalakan sesuai kebutuhan. Contohnya, saat ini banyak penyedia layanan internet atau biasa disebut ISP (Internet Service Provider) yang menawarkan akses internet dengan berbagai pilihan harga dan performa, sehingga pelanggan dapat menyesuaikannya sesuai dengan kebutuhan dan anggaran mereka.
 
 <h5>
 Respon Yang Cepat
 </h5>
 
-<p style= "text-align: justify;">
 Jaringan komputer dapat merespon dengan cepat karena bekerja secara virtual, dimana perangkat yang terkoneksi ke jaringan mampu mengirim atau menerima data secara langsung dan cepat.
-</p>
 
 <h5>
 Keamanan Data Yang Terjamin
 </h5>
 
-<p style= "text-align: justify;">
 Jaringan komputer dapat mengamankan data yang disalurkan karena terdapat kontrol akses dan enkripsi data pada perangkat jaringan yang memungkinkan integritas data tetap terjaga.
-</p>
 
 ## Cara Kerja Jaringan Komputer
 
@@ -68,10 +56,6 @@ Jaringan komputer dapat mengamankan data yang disalurkan karena terdapat kontrol
 
 <!-- [Source Gambar](https://www.socialsciencespace.com/wp-content/uploads/Network-links-nodes.jpg) -->
 
-<p style= "text-align: justify;">
-Tautan (Link) dan Simpul (Node) merupakan elemen dasar dalam jaringan  komputer. Sebuah node dalam jaringan bisa berupa perangkat komunikasi data (DCE), seperti modem, router, switch, atau perangkat terminal data (DTE), seperti komputer dan printer. Lalu link adalah media yang menghubungkan dua node, yang bisa berupa jalur fisik seperti kabel atau fiber optik, atau ruang bebas yang digunakan oleh jaringan nirkabel.
-</p>
+Tautan (Link) dan Simpul (Node) merupakan elemen dasar dalam jaringan komputer. Sebuah node dalam jaringan bisa berupa perangkat komunikasi data (DCE), seperti modem, router, switch, atau perangkat terminal data (DTE), seperti komputer dan printer. Lalu link adalah media yang menghubungkan dua node, yang bisa berupa jalur fisik seperti kabel atau fiber optik, atau ruang bebas yang digunakan oleh jaringan nirkabel.
 
-<p style= "text-align: justify;">
-Pada jaringan komputer, setiap node mengikuti serangkaian standar atau  sistem yang mengatur cara pengiriman dan penerimaan data elektronik melalui link yang telah ditentukan. Desain jaringan komputer, baik dari segi komponen fisik maupun logis, diatur oleh arsitektur jaringan tersebut. 
-</p>
+Pada jaringan komputer, setiap node mengikuti serangkaian standar atau sistem yang mengatur cara pengiriman dan penerimaan data elektronik melalui link yang telah ditentukan. Desain jaringan komputer, baik dari segi komponen fisik maupun logis, diatur oleh arsitektur jaringan tersebut.

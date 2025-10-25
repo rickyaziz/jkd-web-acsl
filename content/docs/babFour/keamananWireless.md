@@ -10,61 +10,53 @@ toc: true
 
 ### Keamanan Jaringan Wireless
 
-<p style="text-align: justify;">
 Pada jaringan wireless ada beberapa metode keamanan yang digunakan
 diantaranya:
-</p>
 
-1.  <p style="text-align: justify;">
-    <b>
+1.  <strong>
     WEP (Wired Equivalent Privacy):
-    </b>
+    </strong>
+
     Merupakan metode enkripsi jaringan
     wireless yang pertama kali diperkenalkan. Namun, WEP memiliki kelemahan
     keamanan yang signifikan dan mudah ditembus, sehingga penggunaannya
     sudah jarang disarankan.
-    </p>
 
-2.  <p style="text-align: justify;">
-    <b>
+2.  <strong>
     WPA (Wi-Fi Protected Access):
-    </b>
+    </strong>
+
     Dibuat untuk menggantikan WEP, WPA
     menawarkan enkripsi yang lebih baik dengan menggunakan TKIP (Temporal
     Key Integrity Protocol). Meskipun lebih aman daripada WEP, WPA masih
     memiliki beberapa kelemahan.
-    </p>
 
-3.  <p style="text-align: justify;">
-    <b>
+3.  <strong>
     WPA2:
-    </b>
+    </strong>
+
     Penyempurnaan dari WPA, menggunakan AES (Advanced Encryption
     Standard) sebagai metode enkripsi yang lebih kuat. WPA2 telah menjadi
     standar keamanan utama untuk jaringan wireless hingga diperkenalkannya
     WPA3.
-    </p>
 
-4.  <p style="text-align: justify;">
-    <b>
+4.  <strong>
     WPA3:
-    </b>
+    </strong>
+
     Versi terbaru dari standar keamanan jaringan wireless, yang menawarkan perlindungan lebih kuat terhadap brute-force attacks dan menyediakan keamanan yang lebih baik untuk jaringan yang tidak terjaga dengan baik.
-    </p>
 
-5.  <p style="text-align: justify;">
-    <b>
+5.  <strong>
     MAC Filtering:
-    </b>
-    Teknik ini membatasi perangkat yang bisa terhubung ke jaringan wireless dengan mengizinkan hanya Perangkat dengan identifikasi alamat MAC (Media Access Control) yang spesifik. Meskipun ini menambah lapisan keamanan, MAC Filtering dapat dengan mudah dilewati oleh penyerang yang berpengalaman.
-    </p>
+    </strong>
 
-6.  <p style="text-align: justify;">
-    <b>
+    Teknik ini membatasi perangkat yang bisa terhubung ke jaringan wireless dengan mengizinkan hanya Perangkat dengan identifikasi alamat MAC (Media Access Control) yang spesifik. Meskipun ini menambah lapisan keamanan, MAC Filtering dapat dengan mudah dilewati oleh penyerang yang berpengalaman.
+
+6.  <strong>
     SSID Hiding:
-    </b>
+    </strong>
+
     Menyembunyikan nama jaringan nirkabel (SSID) agar tidak
     terlihat oleh perangkat lain. Meskipun ini dapat menambah sedikit keamanan,
     teknik ini bukan pengganti metode enkripsi yang kuat karena SSID yang
     disembunyikan masih bisa dideteksi dengan alat khusus.
-    </p>

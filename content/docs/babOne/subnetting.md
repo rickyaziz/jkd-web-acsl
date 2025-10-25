@@ -8,65 +8,55 @@ lastmod: "2025-09-07T19:22:58+07:00"
 toc: true
 ---
 
-<p style="text-align: justify;">
-Subnetting merupakan prosedur untuk membagi jaringan besar menjadi 
-beberapa subnetwork yang lebih kecil, yang disebut sebagai subnet. Subnetting 
-merupakan aspek penting dalam desain jaringan yang baik, karena memungkinkan 
-pengoptimalan penggunaan alamat IP dengan meminimalkan alamat yang tidak 
-terpakai atau terbuang. Selain itu, subnetting juga mempermudah pengelolaan dan 
-meningkatkan kinerja jaringan. 
-</p>
+Subnetting merupakan prosedur untuk membagi jaringan besar menjadi
+beberapa subnetwork yang lebih kecil, yang disebut sebagai subnet. Subnetting
+merupakan aspek penting dalam desain jaringan yang baik, karena memungkinkan
+pengoptimalan penggunaan alamat IP dengan meminimalkan alamat yang tidak
+terpakai atau terbuang. Selain itu, subnetting juga mempermudah pengelolaan dan
+meningkatkan kinerja jaringan.
 
-<p style="text-align: justify;">
-Dalam melakukan perhitungan subnetting, terdapat dua metode utama yang 
-dapat digunakan, yaitu Classless Inter-Domain Routing (CIDR) dan Variable Length 
-Subnet Mask (VLSM). CIDR memungkinkan alokasi alamat IP yang lebih fleksibel tanpa 
-terikat pada kelas IP tertentu, sedangkan VLSM memungkinkan penggunaan subnet 
-mask dengan panjang yang bervariasi dalam satu jaringan. Pemahaman tentang 
-konsep dan definisi subnetting sangat penting sebelum melakukan perhitungan 
-dengan kedua metode ini. Untuk lebih mendalam, pembahasan mengenai CIDR dan 
+Dalam melakukan perhitungan subnetting, terdapat dua metode utama yang
+dapat digunakan, yaitu Classless Inter-Domain Routing (CIDR) dan Variable Length
+Subnet Mask (VLSM). CIDR memungkinkan alokasi alamat IP yang lebih fleksibel tanpa
+terikat pada kelas IP tertentu, sedangkan VLSM memungkinkan penggunaan subnet
+mask dengan panjang yang bervariasi dalam satu jaringan. Pemahaman tentang
+konsep dan definisi subnetting sangat penting sebelum melakukan perhitungan
+dengan kedua metode ini. Untuk lebih mendalam, pembahasan mengenai CIDR dan
 VLSM dapat ditemukan dalam Modul Panduan Jaringan Komputer Dasar.
-</p>
 
 ## Classless Inter-Domain Routing (CIDR)
 
-<p style="text-align: justify;">
-CIDR (Classless Inter-Domain Routing) merupakan metode alternatif untuk 
-Mengelompokkan alamat-alamat IP yang berlawanan dengan sistem 
-pengkelompokan tradisional yang membagi alamat IP didalam kelas A, B, C, D, dan E. 
-Diperkenalkan pertama kali pada tahun 1992 oleh Internet Engineering Task Force 
-(IETF), CIDR sering disebut juga sebagai supernetting. CIDR juga dikenal sebagai 
-supernetting. CIDR menyediakan mekanisme routing yang lebih efisien dibandingkan 
+CIDR (Classless Inter-Domain Routing) merupakan metode alternatif untuk
+Mengelompokkan alamat-alamat IP yang berlawanan dengan sistem
+pengkelompokan tradisional yang membagi alamat IP didalam kelas A, B, C, D, dan E.
+Diperkenalkan pertama kali pada tahun 1992 oleh Internet Engineering Task Force
+(IETF), CIDR sering disebut juga sebagai supernetting. CIDR juga dikenal sebagai
+supernetting. CIDR menyediakan mekanisme routing yang lebih efisien dibandingkan
 dengan metode klasifikasi IP berbasis kelas yang lama.
-</p>
 
-<p style="text-align: justify;">
-CIDR memakai penulisan prefix dengan panjang spesifik untuk menentukan 
-Network ID, yang menunjukkan jumlah bit di sisi kiri yang digunakan untuk 
-mengidentifikasi jaringan. Notasi ini memungkinkan pengalokasian alamat IP yang 
-lebih fleksibel dan bisa digunakan untuk berbagai kelas alamat IP, sehingga 
-mempermudah pengelolaan jaringan dan meningkatkan efisiensinya. Berikut adalah 
+CIDR memakai penulisan prefix dengan panjang spesifik untuk menentukan
+Network ID, yang menunjukkan jumlah bit di sisi kiri yang digunakan untuk
+mengidentifikasi jaringan. Notasi ini memungkinkan pengalokasian alamat IP yang
+lebih fleksibel dan bisa digunakan untuk berbagai kelas alamat IP, sehingga
+mempermudah pengelolaan jaringan dan meningkatkan efisiensinya. Berikut adalah
 penerapan notasi CIDR pada alamat classful:
-</p>
 
-- <p style="text-align: justify;">Kelas A mencakup rentang /8 hingga /15 </p>
+- Kelas A mencakup rentang /8 hingga /15
 
-- <p style="text-align: justify;">Kelas B mencakup rentang /16 hingga /23
-  </p>
+- Kelas B mencakup rentang /16 hingga /23
 
-- <p style="text-align: justify;">Kelas C mencakup rentang /24 hingga /28
-  </p>
+- Kelas C mencakup rentang /24 hingga /28
 
 ### Perhitungan Subnetting CIDR
 
 {{% alert context="info" %}}
 **CATATAN**
 
-- <p style="text-align: justify;">
-  N (Besar) adalah banyaknya jumlah Binary/Bit 1 pada oktet yang memiliki nilai 1 dan 0.
+- <p>
+  N (Besar) adalah banyaknya jumlah Binary/Bit 1 pada oktet yang memiliki nilai 1 dan 0.\
   </p>
 
-- <p style="text-align: justify;">
+- <p>
   n (Kecil) adalah banyaknya jumlah Binary/Bit 0 pada setiap oktet yang bernilai 0.
   </p>
 
@@ -81,32 +71,29 @@ penerapan notasi CIDR pada alamat classful:
 3. Menghitung Nilai Blok Subnet
    {{< alert icon=" " context="info" text="<strong>256 – Pada Oktet  Paling Kanan Yang Memiliki Nilai 1 = Blok Subnet</strong>"/>}}
 
-   <p style="text-align: justify;">Nilai oktet terakhir dari subnet mask adalah angka yang terletak pada bagian
-     akhir subnet mask, contohnya:</p>
+   Nilai oktet terakhir dari subnet mask adalah angka yang terletak pada bagian
+   akhir subnet mask, contohnya:
 
-   - <p style="text-align: justify;">Subnet mask 255.128.0.0 memiliki nilai oktet terakhir 128</p>
-   - <p style="text-align: justify;">Subnet mask 255.255.192.0 memiliki nilai oktet terakhir 192</p>
-   - <p style="text-align: justify;">Subnet mask 255.255.255.252 memiliki nilai oktet terakhir 252</p>
+   - Subnet mask 255.128.0.0 memiliki nilai oktet terakhir 128
+   - Subnet mask 255.255.192.0 memiliki nilai oktet terakhir 192
+   - Subnet mask 255.255.255.252 memiliki nilai oktet terakhir 252
 
 4. Menghitung Alamat Broadcast
    {{< alert icon=" " context="info" text="<strong>Ip Address Paling Akhir = Alamat Broadcast</strong>"/>}}
-   - <p style="text-align: justify;"> Merupakan alamat IP yang berada di ujung akhir dalam suatu jaringan. Alamat 
-     broadcast ini tidak boleh memiliki kesamaan dengan alamat subnet pada blok 
-     berikutnya atau dengan alamat host terakhir pada blok subnet tersebut. </p>
+   - Merupakan alamat IP yang berada di ujung akhir dalam suatu jaringan. Alamat
+     broadcast ini tidak boleh memiliki kesamaan dengan alamat subnet pada blok
+     berikutnya atau dengan alamat host terakhir pada blok subnet tersebut.
 
-<p style="text-align: justify;">
-Sesudah memahami metode perhitungan subnetting CIDR, langkah 
-berikutnya adalah menerapkan perhitungan subnetting pada setiap kelas IP 
-menggunakan CIDR.</p>
+Sesudah memahami metode perhitungan subnetting CIDR, langkah
+berikutnya adalah menerapkan perhitungan subnetting pada setiap kelas IP
+menggunakan CIDR.
 
 ### 1. Subnetting CIDR kelas C
 
-<p style="text-align: justify;">
-Alamat IP kelas C memiliki subnet mask default 255.255.255.0 atau prefix /24. 
+Alamat IP kelas C memiliki subnet mask default 255.255.255.0 atau prefix /24.
 Nilai CIDR untuk kelas C dapat dilihat pada tabel di bawah ini.
-</p>
 
-<p style="text-align: justify;"><b>Heksadesimal ke Biner  :</b> Angka 4C(Heksadesimal) akan diubah ke Biner.</p>
+<strong>Heksadesimal ke Biner :</strong> Angka 4C(Heksadesimal) akan diubah ke Biner.
 
    <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
            <tr style="background-color: #7928ca2e; border-radius: 12px;">
@@ -148,9 +135,8 @@ Nilai CIDR untuk kelas C dapat dilihat pada tabel di bawah ini.
 {{% alert context="info" %}}
 **Contoh Soal**
 
-- <p style="text-align: justify;">
-  Diberikan Network address 192.168.2.0/27, tentukanlah:
-  </p>
+- <p>
+    Diberikan Network address 192.168.2.0/27, tentukanlah:
 
   a. Jumlah Subnet
 
@@ -159,31 +145,27 @@ Nilai CIDR untuk kelas C dapat dilihat pada tabel di bawah ini.
   C. Nilai Blok Subnet
 
   d. Alamat Broadcast & Subnet Map
-
-{{% /alert %}}
+  </p>
+  {{% /alert %}}
 
 **Langkah - Langkah Penyelesaian**
 
-<p style="text-align: justify;">
-Untuk menjawab soal tersebut, langkah awal yang perlu dilakukan adalah 
+Untuk menjawab soal tersebut, langkah awal yang perlu dilakukan adalah
 melakukan analisis atau pemeriksaan secara mendalam.
-</p>
 
-<p style="text-align: justify;">
-Dari soal diatas Network address dari 192.168.2.0 adalah ip address kelas C 
-dengan Subnet Mask /27. Yang artinya memiliki Subnet Mask 
+Dari soal diatas Network address dari 192.168.2.0 adalah ip address kelas C
+dengan Subnet Mask /27. Yang artinya memiliki Subnet Mask
 255.255.225.224 (11111111.11111111.1111111.11100000).
-</p>
 
 <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
            <tr style="background-color: #7928ca2e; border-radius: 12px;">
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11100000</b></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11100000</strong></th>
            </tr>
            <tr style="border: 1px solid #ffffff21;">
              <td style="border: none; padding: 6px;">Oktet 1</td>
@@ -198,42 +180,48 @@ dengan Subnet Mask /27. Yang artinya memiliki Subnet Mask
 
 <span></span>
 
-- <b>Menghitung Jumlah Subnet</b>
+- <strong>Menghitung Jumlah Subnet</strong>
   {{% alert icon=" " context="info" %}}
-    <p style="text-align: center;">2^N = <b>Jumlah Subnet</b> → 2^3 = <b>8 Subnet</b>
-    </p>
+    <p style="text-align: center;">2^N = <strong>Jumlah Subnet</strong> → 2^3 = <strong>8 Subnet</strong></p>
+    
     {{% /alert %}}
-    <p style="text-align: justify;"><b>N (Besar)</b> merujuk pada jumlah bit 1 dalam oktet yang memiliki nilai kurang 
+    <strong>N (Besar)</strong> merujuk pada jumlah bit 1 dalam oktet yang memiliki nilai kurang 
   dari 255. Berdasarkan pembahasan subnet mask /27, dapat disimpulkan bahwa bit 1 
-  berada hingga <b>oktet ke-4</b>, yang menunjukkan bahwa jumlah bit 1 pada oktet 
-  terakhir subnet mask adalah <b>3 bit</b>. Oleh karena itu, <b>N = 3</b>. </p>
+  berada hingga <strong>oktet ke-4</strong>, yang menunjukkan bahwa jumlah bit 1 pada oktet 
+  terakhir subnet mask adalah <strong>3 bit</strong>. Oleh karena itu, <strong>N = 3</strong>.
 
-- <b>Menghitung Jumlah Host Per-Subnet</b>
+<span></span>
+
+- <strong>Menghitung Jumlah Host Per-Subnet</strong>
 {{% alert icon=" " context="info" %}}
-  <p style="text-align: center;">2^n - 2 = <b>Jumlah Host Per Subnet</b> → 2^5 - 2 = 32 - 2 = <b>30 Host</b>
-  </p>
+  <p style="text-align: center;">2^n - 2 = <strong>Jumlah Host Per Subnet</strong> → 2^5 - 2 = 32 - 2 = <strong>30 Host</strong></p>
+  
   {{% /alert %}}
-  <p style="text-align: justify;"><b>n (Kecil)</b>  merujuk pada jumlah <b>bit 0</b> yang terdapat di semua oktet. Berdasarkan 
+  <strong>n (Kecil)</strong>  merujuk pada jumlah <strong>bit 0</strong> yang terdapat di semua oktet. Berdasarkan 
   penjabaran subnet mask /27, dapat dilihat bahwa bit 0 pada oktet terakhir 
-  berjumlah 5. Oleh karena itu, <b>n = 5</b>. </p>
+  berjumlah 5. Oleh karena itu, <strong>n = 5</strong>.
 
-- <b>Menghitung Nilai Blok Subnet</b>
+<span></span>
+
+- <strong>Menghitung Nilai Blok Subnet</strong>
 {{% alert icon=" " context="info" %}}
-   <p style="text-align: center;"><b>256</b> – <b>Pada Oktet  Paling Kanan Yang Memiliki Nilai 1</b> = <b>Blok Subnet</b> 
-   </p>
+   <p style="text-align: center;"><strong>256</strong> – <strong>Pada Oktet  Paling Kanan Yang Memiliki Nilai 1</strong> = <strong>Blok Subnet</strong></p>
+   
    {{% /alert %}}
-   <p style="text-align: justify;">Nilai oktet terakhir dari subnet mask merujuk pada angka yang terletak pada 
-bagian akhir dari subnet mask tersebut. </p>
+   Nilai oktet terakhir dari subnet mask merujuk pada angka yang terletak pada 
+bagian akhir dari subnet mask tersebut.
+
+<span></span>
 
 <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
            <tr style="background-color: #7928ca2e; border-radius: 12px;">
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11100000</b></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11100000</strong></th>
            </tr>
            <tr style="border: 1px solid #ffffff21;">
              <td style="border: none; padding: 6px;">255</td>
@@ -248,18 +236,18 @@ bagian akhir dari subnet mask tersebut. </p>
 
 <span></span>
 
-<p style="text-align: justify;">Nilai oktet terakhir subnet mask adalah 224, yang berarti nilai blok subnet 
-dapat dihitung sebagai berikut:</p>
+Nilai oktet terakhir subnet mask adalah 224, yang berarti nilai blok subnet
+dapat dihitung sebagai berikut:
 
 {{% alert icon=" " context="info" %}}
 
-<p style="text-align: center;"><b>256</b> – <b>224</b> = <b>32 Blok Subnet</b></p>
+<p style="text-align: center;"><strong>256</strong> – <strong>224</strong> = <strong>32 Blok Subnet</strong></p>
 {{% /alert %}}
 
-<p style="text-align: justify;">Dengan demikian, total subnet yang diperoleh adalah<b> 0, 32, 64, 96, 128, 160, 
-192, dan 224. </b></p>
+Dengan demikian, total subnet yang diperoleh adalah<strong> 0, 32, 64, 96, 128, 160,
+192, dan 224. </strong>
 
-- <b>Alamat Broadcast & Subnet Map</b>
+- <strong>Alamat Broadcast & Subnet Map</strong>
 
 <span></span>
 
@@ -324,8 +312,8 @@ dapat dihitung sebagai berikut:</p>
 
 ### 2. Subnetting CIDR kelas B
 
-<p style="text-align: justify;">Alamat IP kelas B memiliki subnet mask default 255.255.0.0 atau prefix /16.
-Nilai CIDR untuk kelas B dapat ditemukan pada tabel di bawah ini.</p>
+Alamat IP kelas B memiliki subnet mask default 255.255.0.0 atau prefix /16.
+Nilai CIDR untuk kelas B dapat ditemukan pada tabel di bawah ini.
 
 <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
            <tr style="background-color: #7928ca2e; border-radius: 12px;">
@@ -371,9 +359,8 @@ Nilai CIDR untuk kelas B dapat ditemukan pada tabel di bawah ini.</p>
 {{% alert context="info" %}}
 **Contoh Soal**
 
-- <p style="text-align: justify;">
-  Diberikan Network address 172.25.0.0/19, tentukanlah:
-  </p>
+- <p>
+    Diberikan Network address 172.25.0.0/19, tentukanlah:
 
   a. Jumlah Subnet
 
@@ -382,29 +369,25 @@ Nilai CIDR untuk kelas B dapat ditemukan pada tabel di bawah ini.</p>
   C. Nilai Blok Subnet
 
   d. Alamat Broadcast & Subnet Map
-
-{{% /alert %}}
+  </p>
+  {{% /alert %}}
 
 **Langkah - Langkah Penyelesaian**
 
-<p style="text-align: justify;">
-Untuk menjawab soal tersebut, langkah awal yang perlu dilakukan adalah 
+Untuk menjawab soal tersebut, langkah awal yang perlu dilakukan adalah
 melakukan analisis atau pemeriksaan secara mendalam.
-</p>
 
-<p style="text-align: justify;">
-Dari soal diatas Network address dari 172.25.0.0 adalah ip address kelas B dengan Subnet Mask /19. Yang artinya memiliki Subnet Mask 255.255.224.0 (11111111.11111111.11100000.00000000). 
-</p>
+Dari soal diatas Network address dari 172.25.0.0 adalah ip address kelas B dengan Subnet Mask /19. Yang artinya memiliki Subnet Mask 255.255.224.0 (11111111.11111111.11100000.00000000).
 
 <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
            <tr style="background-color: #7928ca2e; border-radius: 12px;">
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11100000</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>00000000</b></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11100000</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>00000000</strong></th>
            </tr>
            <tr style="border: 1px solid #ffffff21;">
              <td style="border: none; padding: 6px;">Oktet 1</td>
@@ -419,40 +402,43 @@ Dari soal diatas Network address dari 172.25.0.0 adalah ip address kelas B denga
 
 <span></span>
 
-- <b>Menghitung Jumlah Subnet</b>
+- <strong>Menghitung Jumlah Subnet</strong>
   {{% alert icon=" " context="info" %}}
-    <p style="text-align: center;">2^N = <b>Jumlah Subnet</b> -> 2^3 = <b>8 Subnet</b>
-    </p>
+    <p style="text-align: center;">2^N = <strong>Jumlah Subnet</strong> -> 2^3 = <strong>8 Subnet</strong></p>
     {{% /alert %}}
-    <p style="text-align: justify;"><b>N (Besar)</b> merujuk pada jumlah bit 1 dalam oktet yang memiliki nilai kurang 
-  dari 255. Berdasarkan pembahasan subnet mask /19, <b>bit 1</b>terletak hingga <b>oktet ke-3</b>, yang berarti oktet terakhir subnet mask terdapat <b>3 bit bernilai 1</b>. Oleh karena itu, <b>N = 3</b>. </p>
 
-- <b>Menghitung Jumlah Host Per-Subnet</b>
-{{% alert icon=" " context="info" %}}
-  <p style="text-align: center;">2^n - 2 = <b>Jumlah Host Per Subnet</b> → 2^13 - 2 = 8192 - 2 = <b>8190 Host</b>
-  </p>
+  <strong>N (Besar)</strong> merujuk pada jumlah bit 1 dalam oktet yang memiliki nilai kurang
+  dari 255. Berdasarkan pembahasan subnet mask /19, <strong>bit 1</strong>terletak hingga <strong>oktet ke-3</strong>, yang berarti oktet terakhir subnet mask terdapat <strong>3 bit bernilai 1</strong>. Oleh karena itu, <strong>N = 3</strong>.
+
+- <strong>Menghitung Jumlah Host Per-Subnet</strong>
+  {{% alert icon=" " context="info" %}}
+  <p style="text-align: center;">2^n - 2 = <strong>Jumlah Host Per Subnet</strong> → 2^13 - 2 = 8192 - 2 = <strong>8190 Host</strong></p>
+
   {{% /alert %}}
-  <p style="text-align: justify;"><b>n (Kecil)</b>  merujuk pada jumlah <b>bit 0</b> yang terdapat di semua oktet. Berdasarkan 
-  penjabaran subnet mask /19, dapat dilihat bahwa bit 0 pada oktet terakhir 
-  berjumlah 13. Oleh karena itu, <b>n = 13</b>. </p>
 
-- <b>Menghitung Nilai Blok Subnet</b>
+  <strong>n (Kecil)</strong> merujuk pada jumlah <strong>bit 0</strong> yang terdapat di semua oktet. Berdasarkan
+  penjabaran subnet mask /19, dapat dilihat bahwa bit 0 pada oktet terakhir
+  berjumlah 13. Oleh karena itu, <strong>n = 13</strong>.
+
+- <strong>Menghitung Nilai Blok Subnet</strong>
 {{% alert icon=" " context="info" %}}
-   <p style="text-align: center;"><b>256</b> – <b>Pada Oktet  Paling Kanan Yang Memiliki Nilai 1</b> = <b>Blok Subnet</b> 
-   </p>
+   <p style="text-align: center;"><strong>256</strong> – <strong>Pada Oktet  Paling Kanan Yang Memiliki Nilai 1</strong> = <strong>Blok Subnet</strong></p>
+   
    {{% /alert %}}
-   <p style="text-align: justify;">Nilai oktet terakhir dari subnet mask merujuk pada angka yang terletak pada 
-bagian akhir dari subnet mask tersebut. </p>
+   Nilai oktet terakhir dari subnet mask merujuk pada angka yang terletak pada 
+bagian akhir dari subnet mask tersebut.
+
+<span></span>
 
 <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
            <tr style="background-color: #7928ca2e; border-radius: 12px;">
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11100000</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>00000000</b></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11100000</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>00000000</strong></th>
            </tr>
            <tr style="border: 1px solid #ffffff21;">
              <td style="border: none; padding: 6px;">255</td>
@@ -467,18 +453,18 @@ bagian akhir dari subnet mask tersebut. </p>
 
 <span></span>
 
-<p style="text-align: justify;">Nilai oktet terakhir dari subnet mask tersebut adalah 224, sehingga nilai Blok Subnet 
-menjadi:</p>
+Nilai oktet terakhir dari subnet mask tersebut adalah 224, sehingga nilai Blok Subnet
+menjadi:
 
 {{% alert icon=" " context="info" %}}
 
-<p style="text-align: center;"><b>256</b> – <b>224</b> = <b>32 Blok Subnet</b></p>
+<p style="text-align: center;"><strong>256</strong> – <strong>224</strong> = <strong>32 Blok Subnet</strong></p>
 {{% /alert %}}
 
-<p style="text-align: justify;">Dengan demikian, total subnet yang diperoleh adalah<b> 0, 32, 64, 96, 128, 160, 
-192, dan 224. </b></p>
+Dengan demikian, total subnet yang diperoleh adalah<strong> 0, 32, 64, 96, 128, 160,
+192, dan 224. </strong>
 
-- <b>Alamat Broadcast & Subnet Map</b>
+- <strong>Alamat Broadcast & Subnet Map</strong>
 
 <span></span>
 
@@ -543,8 +529,8 @@ menjadi:</p>
 
 ### 3. Subnetting CIDR kelas A
 
-<p style="text-align: justify;">Alamat IP kelas A memiliki subnet mask default 255.0.0.0 atau prefix /8. Nilai 
-CIDR untuk kelas A dapat dilihat pada tabel di bawah ini.</p>
+Alamat IP kelas A memiliki subnet mask default 255.0.0.0 atau prefix /8. Nilai
+CIDR untuk kelas A dapat dilihat pada tabel di bawah ini.
 
 <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
            <tr style="background-color: #7928ca2e; border-radius: 12px;">
@@ -590,9 +576,8 @@ CIDR untuk kelas A dapat dilihat pada tabel di bawah ini.</p>
 {{% alert context="info" %}}
 **Contoh Soal**
 
-<p style="text-align: justify;">
+<p>
 Diberikan Network address 15.0.0.0/11, tentukanlah:
-</p>
 
 a. Jumlah Subnet
 
@@ -602,28 +587,25 @@ C. Nilai Blok Subnet
 
 d. Alamat Broadcast & Subnet Map
 
+</p>
 {{% /alert %}}
 
 **Langkah - Langkah Penyelesaian**
 
-<p style="text-align: justify;">
-Untuk menjawab soal tersebut, langkah awal yang perlu dilakukan adalah 
+Untuk menjawab soal tersebut, langkah awal yang perlu dilakukan adalah
 melakukan analisis atau pemeriksaan secara mendalam.
-</p>
 
-<p style="text-align: justify;">
-Dari soal diatas Network address dari 15.0.0.0 adalah ip address kelas A dengan Subnet Mask /11. Yang artinya memiliki Subnet Mask 255.224.0.0 (11111111.11100000.00000000.00000000). 
-</p>
+Dari soal diatas Network address dari 15.0.0.0 adalah ip address kelas A dengan Subnet Mask /11. Yang artinya memiliki Subnet Mask 255.224.0.0 (11111111.11100000.00000000.00000000).
 
 <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
            <tr style="background-color: #7928ca2e; border-radius: 12px;">
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11100000</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>00000000</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>00000000</b></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11100000</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>00000000</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>00000000</strong></th>
            </tr>
            <tr style="border: 1px solid #ffffff21;">
              <td style="border: none; padding: 6px;">Oktet 1</td>
@@ -638,40 +620,44 @@ Dari soal diatas Network address dari 15.0.0.0 adalah ip address kelas A dengan 
 
 <span></span>
 
-- <b>Menghitung Jumlah Subnet</b>
+- <strong>Menghitung Jumlah Subnet</strong>
   {{% alert icon=" " context="info" %}}
-    <p style="text-align: center;">2^N = <b>Jumlah Subnet</b> → 2^3 = <b>8 Subnet</b>
-    </p>
+    <p style="text-align: center;">2^N = <strong>Jumlah Subnet</strong> → 2^3 = <strong>8 Subnet</strong></p>
+    
     {{% /alert %}}
-    <p style="text-align: justify;"><b>N (Besar)</b> merujuk pada jumlah <b>bit 1</b> dalam oktet yang memiliki nilai kurang 
-  dari 255. Berdasarkan pembagian subnet mask /11, <b>bit 1</b>terletak hingga <b>oktet ke-3</b>, yang berarti oktet terakhir subnet mask terdapat <b>3 bit bernilai 1</b>. Dengan demikian, <b>N = 3</b>. </p>
 
-- <b>Menghitung Jumlah Host Per-Subnet</b>
-{{% alert icon=" " context="info" %}}
-  <p style="text-align: center;">2^n - 2 = <b>Jumlah Host Per Subnet</b> → 2^21 - 2 = 2.097.152 - 2 = <b>2.097.150 Host</b>
-  </p>
+  <strong>N (Besar)</strong> merujuk pada jumlah <strong>bit 1</strong> dalam oktet yang memiliki nilai kurang
+  dari 255. Berdasarkan pembagian subnet mask /11, <strong>bit 1</strong>terletak hingga <strong>oktet ke-3</strong>, yang berarti oktet terakhir subnet mask terdapat <strong>3 bit bernilai 1</strong>. Dengan demikian, <strong>N = 3</strong>.
+
+- <strong>Menghitung Jumlah Host Per-Subnet</strong>
+  {{% alert icon=" " context="info" %}}
+  <p style="text-align: center;">2^n - 2 = <strong>Jumlah Host Per Subnet</strong> → 2^21 - 2 = 2.097.152 - 2 = <strong>2.097.150 Host</strong></p>
+
   {{% /alert %}}
-  <p style="text-align: justify;"><b>n (Kecil)</b>  merujuk pada jumlah <b>bit 0</b> yang terdapat di semua oktet. Berdasarkan 
-  pembagian subnet mask /11, dapat dilihat bahwa <b>bit 0</b> dari <b>oktet terakhir</b> 
-  berjumlah 21. Oleh karena itu, <b>n = 21</b>. </p>
 
-- <b>Menghitung Nilai Blok Subnet</b>
+  <strong>n (Kecil)</strong> merujuk pada jumlah <strong>bit 0</strong> yang terdapat di semua oktet. Berdasarkan
+  pembagian subnet mask /11, dapat dilihat bahwa <strong>bit 0</strong> dari <strong>oktet terakhir</strong>
+  berjumlah 21. Oleh karena itu, <strong>n = 21</strong>.
+
+- <strong>Menghitung Nilai Blok Subnet</strong>
 {{% alert icon=" " context="info" %}}
-   <p style="text-align: center;"><b>256</b> – <b>Pada Oktet  Paling Kanan Yang Memiliki Nilai 1</b> = <b>Blok Subnet</b> 
-   </p>
+   <p style="text-align: center;"><strong>256</strong> – <strong>Pada Oktet  Paling Kanan Yang Memiliki Nilai 1</strong> = <strong>Blok Subnet</strong></p>
+   
    {{% /alert %}}
-   <p style="text-align: justify;">Nilai oktet terakhir dari subnet mask merujuk pada angka yang terletak pada 
-bagian akhir dari subnet mask tersebut. </p>
+   Nilai oktet terakhir dari subnet mask merujuk pada angka yang terletak pada 
+bagian akhir dari subnet mask tersebut.
+
+<span></span>
 
 <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
            <tr style="background-color: #7928ca2e; border-radius: 12px;">
-             <th style="border: none; padding: 6px;"><b>11111111</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>11100000</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>00000000</b></th>
-             <th style="border: none; padding: 6px;"><b>.</b></th>
-             <th style="border: none; padding: 6px;"><b>00000000</b></th>
+             <th style="border: none; padding: 6px;"><strong>11111111</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>11100000</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>00000000</strong></th>
+             <th style="border: none; padding: 6px;"><strong>.</strong></th>
+             <th style="border: none; padding: 6px;"><strong>00000000</strong></th>
            </tr>
            <tr style="border: 1px solid #ffffff21;">
              <td style="border: none; padding: 6px;">255</td>
@@ -686,18 +672,18 @@ bagian akhir dari subnet mask tersebut. </p>
 
 <span></span>
 
-<p style="text-align: justify;">Nilai oktet terakhir dari subnet mask tersebut adalah 224, sehingga nilai Blok Subnet 
-menjadi:</p>
+Nilai oktet terakhir dari subnet mask tersebut adalah 224, sehingga nilai Blok Subnet
+menjadi:
 
 {{% alert icon=" " context="info" %}}
 
-<p style="text-align: center;"><b>256</b> – <b>224</b> = <b>32 Blok Subnet</b></p>
+<p style="text-align: center;"><strong>256</strong> – <strong>224</strong> = <strong>32 Blok Subnet</strong></p>
 {{% /alert %}}
 
-<p style="text-align: justify;">Dengan demikian, total subnet yang diperoleh adalah<b> 0, 32, 64, 96, 128, 160, 
-192, dan 224. </b></p>
+Dengan demikian, total subnet yang diperoleh adalah<strong> 0, 32, 64, 96, 128, 160,
+192, dan 224. </strong>
 
-- <b>Alamat Broadcast & Subnet Map</b>
+- <strong>Alamat Broadcast & Subnet Map</strong>
 
 <span></span>
 
@@ -762,61 +748,53 @@ menjadi:</p>
 
 ## Variable Length Subnet Mask (VLSM)
 
-<p style="text-align: justify;">
-Variable Length Subnet Mask (VLSM) adalah metode dalam subnetting yang 
-memungkinkan penggunaan subnet mask dengan panjang yang bervariasi dalam satu 
-alamat jaringan, sehingga sebuah jaringan dapat dibagi menjadi beberapa subnet 
-dengan ukuran yang berbeda sesuai kebutuhan. Dengan VLSM, administrator 
-jaringan dapat mengalokasikan alamat IP secara lebih efisien dan fleksibel, 
-meminimalkan pemborosan alamat IP, dan memungkinkan pembuatan subnet yang 
-lebih kecil dalam satu jaringan. Contohnya, sebuah network address bisa 
-menggunakan subnet mask yang lebih besar (/24) untuk jaringan dengan banyak 
+Variable Length Subnet Mask (VLSM) adalah metode dalam subnetting yang
+memungkinkan penggunaan subnet mask dengan panjang yang bervariasi dalam satu
+alamat jaringan, sehingga sebuah jaringan dapat dibagi menjadi beberapa subnet
+dengan ukuran yang berbeda sesuai kebutuhan. Dengan VLSM, administrator
+jaringan dapat mengalokasikan alamat IP secara lebih efisien dan fleksibel,
+meminimalkan pemborosan alamat IP, dan memungkinkan pembuatan subnet yang
+lebih kecil dalam satu jaringan. Contohnya, sebuah network address bisa
+menggunakan subnet mask yang lebih besar (/24) untuk jaringan dengan banyak
 host, dan subnet mask yang lebih kecil (/28) untuk jaringan dengan sedikit host.
-</p>
 
-<p style="text-align: justify;">
-VLSM (Variable Length Subnet Mask) diperkenalkan pada akhir tahun 1980an 
-dan awal tahun 1990an sebagai solusi untuk mengatasi keterbatasan dari metode 
-subnetting konvensional, yang hanya mengizinkan satu subnet mask per network 
-address. Teknologi ini menjadi penting dalam pengembangan jaringan karena 
-mendukung desain jaringan yang lebih kompleks dan efisien. VLSM juga 
-memungkinkan desain jaringan hierarkis, di mana beberapa subnet dapat 
-digabungkan menjadi satu rute agregasi, sehingga mengurangi jumlah entri dalam 
-tabel routing dan menyederhanakan pengelolaan jaringan. 
-</p>
+VLSM (Variable Length Subnet Mask) diperkenalkan pada akhir tahun 1980an
+dan awal tahun 1990an sebagai solusi untuk mengatasi keterbatasan dari metode
+subnetting konvensional, yang hanya mengizinkan satu subnet mask per network
+address. Teknologi ini menjadi penting dalam pengembangan jaringan karena
+mendukung desain jaringan yang lebih kompleks dan efisien. VLSM juga
+memungkinkan desain jaringan hierarkis, di mana beberapa subnet dapat
+digabungkan menjadi satu rute agregasi, sehingga mengurangi jumlah entri dalam
+tabel routing dan menyederhanakan pengelolaan jaringan.
 
 ### Perhitungan Subnetting VLSM
 
-<p style="text-align: justify;">
-VLSM (Variable Length Subnet Mask) menggunakan pendekatan yang berbeda 
-dengan memberikan lebih dari satu subnet mask pada satu network address. 
-Network address yang menggunakan berbagai subnet mask ini disebut sebagai VLSM. 
+VLSM (Variable Length Subnet Mask) menggunakan pendekatan yang berbeda
+dengan memberikan lebih dari satu subnet mask pada satu network address.
+Network address yang menggunakan berbagai subnet mask ini disebut sebagai VLSM.
 Berikut adalah contoh yang lebih jelas untuk menggambarkan konsep ini.
-</p>
 
 {{% alert context="info" %}}
 **Contoh Soal**
 
-1. <p style="text-align: justify;">
-   Diketahui network address 192.168.9.0/27, yang memiliki beberapa subnet dengan kebutuhan jumlah host yang berbeda-beda. Jumlah host untuk masing-masing subnet adalah sebagai berikut:</p>
+1. <p>
+      Diketahui network address 192.168.9.0/27, yang memiliki beberapa subnet dengan kebutuhan jumlah host yang berbeda-beda. Jumlah host untuk masing - masing subnet adalah sebagai berikut:
 
    - Net A memiliki 28 Host
    - Net B memiliki 60 Host
    - Net C memiliki 20 Host
    - Net D memiliki 20 Host
    - Net E memiliki 2 Host
-
-{{% /alert %}}
+   </p>
+   {{% /alert %}}
 
 **Langkah - Langkah Penyelesaian**
 
-<p style="text-align: justify;">
-Alamat jaringan 192.168.9.0 adalah alamat IP kelas C dengan prefix /27, yang 
-berarti subnet mask yang digunakan adalah 255.255.255.224 
-(11111111.11111111.11111111.11100000). 
-</p>
+Alamat jaringan 192.168.9.0 adalah alamat IP kelas C dengan prefix /27, yang
+berarti subnet mask yang digunakan adalah 255.255.255.224
+(11111111.11111111.11111111.11100000).
 
-- <p style="text-align: justify;">Menentukan urutan jaringan berdasarkan jumlah host, yang terbesar hingga yang terkecil:</p>
+- Menentukan urutan jaringan berdasarkan jumlah host, yang terbesar hingga yang terkecil:
 
   1. Net B = 60 Host
   2. Net A = 28 Host
@@ -826,46 +804,47 @@ berarti subnet mask yang digunakan adalah 255.255.255.224
 
 <span></span>
 
-- <p style="text-align: justify;">Menetapkan rentang host sesuai jumlah kebutuhan host.</p>
+- Menetapkan rentang host sesuai jumlah kebutuhan host.
 
-  1. <p style="text-align: justify;">Net B membutuhkan 60 host : <b>2^n − 2 ≥ 60 host → 2^6 – 2 = 62 host (n = 6)</b></p>
-  2. <p style="text-align: justify;">Net A membutuhkan 28 host : <b>2^n − 2 ≥ 28 host → 2^5 – 2 = 30 host (n = 5)</b></p>
-  3. <p style="text-align: justify;">Net C membutuhkan 20 host : <b>2^n − 2 ≥ 29 host → 2^5 – 2 = 30 host (n = 5)</b></p>
-  4. <p style="text-align: justify;">Net D membutuhkan 20 host : <b>2^n − 2 ≥ 20 host → 2^5 – 2 = 30 host (n = 5)</b></p>
-  5. <p style="text-align: justify;">Net E membutuhkan 2 host : <b>2^n − 2 ≥ 2 host → 2^2 – 2 = 2 host (n = 2)</b></p>
+  1. Net B membutuhkan 60 host : <strong>2^n − 2 ≥ 60 host → 2^6 – 2 = 62 host (n = 6)</strong>
+  2. Net A membutuhkan 28 host : <strong>2^n − 2 ≥ 28 host → 2^5 – 2 = 30 host (n = 5)</strong>
+  3. Net C membutuhkan 20 host : <strong>2^n − 2 ≥ 29 host → 2^5 – 2 = 30 host (n = 5)</strong>
+  4. Net D membutuhkan 20 host : <strong>2^n − 2 ≥ 20 host → 2^5 – 2 = 30 host (n = 5)</strong>
+  5. Net E membutuhkan 2 host : <strong>2^n − 2 ≥ 2 host → 2^2 – 2 = 2 host (n = 2)</strong>
      {{% alert context="info" %}}
-        <p style="text-align: justify;"><b>Keterangan : 2^n - 2 ≥ kebutuhan host berarti jumlah alamat yang dihitung harus cukup untuk memenuhi kebutuhan host yang diinginkan, tetapi tidak boleh terlalu besar sehingga membuang alamat IP yang tidak diperlukan.</b></p>
+        <p><strong>Keterangan : 2^n - 2 ≥ kebutuhan host berarti jumlah alamat yang dihitung harus cukup untuk memenuhi kebutuhan host yang diinginkan, tetapi tidak boleh terlalu besar sehingga membuang alamat IP yang tidak diperlukan.</strong>
+        </p>
        {{% /alert %}}
 
 - Menetapkan Bit Network
 
-  1.  <p style="text-align: justify;">Net B = 60 host : 32 - n → 32-6 = /26</p>
-  2.  <p style="text-align: justify;">Net A = 28 host : 32 - n → 32-5 = /27</p>
-  3.  <p style="text-align: justify;">Net C = 20 host : 32 - n → 32-5 = /27</p>
-  4.  <p style="text-align: justify;">Net D = 20 host : 32 - n → 32-5 = /27</p>
-  5.  <p style="text-align: justify;">Net E = 2 host : 32 - n → 32-2 = /30</p>
+  1.  Net B = 60 host : 32 - n → 32-6 = /26
+  2.  Net A = 28 host : 32 - n → 32-5 = /27
+  3.  Net C = 20 host : 32 - n → 32-5 = /27
+  4.  Net D = 20 host : 32 - n → 32-5 = /27
+  5.  Net E = 2 host : 32 - n → 32-2 = /30
 
 <span></span>
 
 {{% alert context="info" %}}
 
-<p style="text-align: justify;"><b>Keterangan : Angka 32 merupakan jumlah bit dari IPv4 address. Dan ( n )
-adalah nilai untuk mencari jumlah host. </b></p>
+<p><strong>Keterangan : Angka 32 merupakan jumlah bit dari IPv4 address. Dan ( n )
+adalah nilai untuk mencari jumlah host. </strong></p>
 {{% /alert %}}
 
 - Menetapkan Blok Subnet
 
-  1. <p style="text-align: justify;">Net B = 60 host : 256 - Bit Network → 256 - (/26) → 256 - 192 = 64</p>
-  2. <p style="text-align: justify;">Net A = 28 host : 256 - Bit Network → 256 - (/27) → 256 - 224 = 32</p>
-  3. <p style="text-align: justify;">Net C = 20 host : 256 - Bit Network → 256 - (/27) → 256 - 224 = 32</p>
-  4. <p style="text-align: justify;">Net D = 20 host : 256 - Bit Network → 256 - (/27) → 256 - 224 = 32</p>
-  5. <p style="text-align: justify;">Net E = 2 host : 256 - Bit Network → 256 - (/30) → 256 - 252 = 4</p>
+  1. Net B = 60 host : 256 - Bit Network → 256 - (/26) → 256 - 192 = 64
+  2. Net A = 28 host : 256 - Bit Network → 256 - (/27) → 256 - 224 = 32
+  3. Net C = 20 host : 256 - Bit Network → 256 - (/27) → 256 - 224 = 32
+  4. Net D = 20 host : 256 - Bit Network → 256 - (/27) → 256 - 224 = 32
+  5. Net E = 2 host : 256 - Bit Network → 256 - (/30) → 256 - 252 = 4
 
 {{% alert context="info" %}}
 
-<p style="text-align: justify;"><b>Keterangan : untuk angka Bit Network, cari nilai oktet terakhir subnet mask.
+<p><strong>Keterangan : untuk angka Bit Network, cari nilai oktet terakhir subnet mask.
 Misalnya ; /27 → (11111111.11111111.11111111.11100000), maka oktet
-trakhir bernilai (11100000) → 224 </b></p>
+trakhir bernilai (11100000) → 224 </strong></p>
 {{% /alert %}}
 
 - Subnet Map
@@ -912,28 +891,26 @@ trakhir bernilai (11100000) → 224 </b></p>
 {{% alert context="info" %}}
 **Contoh Soal**
 
-1. <p style="text-align: justify;">
-      Diberikan alamat jaringan 25.11.15.0 /18, yang memiliki beberapa subnet 
-   dengan kebutuhan jumlah host sebagai berikut:</p>
+1. <p>
+         Diberikan alamat jaringan 25.11.15.0 /18, yang memiliki beberapa subnet 
+      dengan kebutuhan jumlah host sebagai berikut:
 
    - Net F membutuhkan 225 Host
    - Net G membutuhkan 150 Host
    - Net H membutuhkan 180 Host
    - Net I membutuhkan 30 Host
    - Net J membutuhkan 90 Host
-
-{{% /alert %}}
+   </p>
+   {{% /alert %}}
 
 **Langkah - Langkah Penyelesaian**
 
-<p style="text-align: justify;">
-Alamat jaringan 25.11.15.0 termasuk dalam IP address kelas A dengan prefix 
-/18, 
-yang berarti memiliki subnet mask sebesar 255.255.192.0 
-(11111111.11111111.11000000.00000000). 
-</p>
+Alamat jaringan 25.11.15.0 termasuk dalam IP address kelas A dengan prefix
+/18,
+yang berarti memiliki subnet mask sebesar 255.255.192.0
+(11111111.11111111.11000000.00000000).
 
-- <p style="text-align: justify;">Menentukan urutan jaringan berdasarkan jumlah host, yang terbesar hingga yang terkecil:</p>
+- Menentukan urutan jaringan berdasarkan jumlah host, yang terbesar hingga yang terkecil:
 
   1. Net F = 225 Host
   2. Net H = 180 Host
@@ -943,45 +920,45 @@ yang berarti memiliki subnet mask sebesar 255.255.192.0
 
 <span></span>
 
-- <p style="text-align: justify;">Menetapkan rentang host sesuai jumlah kebutuhan host.</p>
+- Menetapkan rentang host sesuai jumlah kebutuhan host.
 
-  1. <p style="text-align: justify;">Net F membutuhkan 225 host : <b>2^n − 2 ≥ 225 host → 2^8 – 2 = 254 host (n = 8)</b></p>
-  2. <p style="text-align: justify;">Net H membutuhkan 180 host : <b>2^n − 2 ≥ 180 host → 2^8 – 2 = 254 host (n = 8)</b></p>
-  3. <p style="text-align: justify;">Net G membutuhkan 150 host : <b>2^n − 2 ≥ 150 host → 2^8 – 2 = 254 host (n = 8)</b></p>
-  4. <p style="text-align: justify;">Net J membutuhkan 90 host : <b>2^n − 2 ≥ 90 host → 2^7 – 2 = 126 host (n = 7)</b></p>
-  5. <p style="text-align: justify;">Net I membutuhkan 30 host : <b>2^n − 2 ≥ 30 host → 2^5 – 2 = 30 host (n = 5)</b></p>
+  1. Net F membutuhkan 225 host : <strong>2^n − 2 ≥ 225 host → 2^8 – 2 = 254 host (n = 8)</strong>
+  2. Net H membutuhkan 180 host : <strong>2^n − 2 ≥ 180 host → 2^8 – 2 = 254 host (n = 8)</strong>
+  3. Net G membutuhkan 150 host : <strong>2^n − 2 ≥ 150 host → 2^8 – 2 = 254 host (n = 8)</strong>
+  4. Net J membutuhkan 90 host : <strong>2^n − 2 ≥ 90 host → 2^7 – 2 = 126 host (n = 7)</strong>
+  5. Net I membutuhkan 30 host : <strong>2^n − 2 ≥ 30 host → 2^5 – 2 = 30 host (n = 5)</strong>
      {{% alert context="info" %}}
-        <p style="text-align: justify;"><b>Keterangan : 2^n - 2 ≥ kebutuhan host berarti jumlah alamat yang dihitung harus cukup untuk memenuhi kebutuhan host yang diinginkan, tetapi tidak boleh terlalu besar sehingga membuang alamat IP yang tidak diperlukan.</b></p>
+        <p><strong>Keterangan : 2^n - 2 ≥ kebutuhan host berarti jumlah alamat yang dihitung harus cukup untuk memenuhi kebutuhan host yang diinginkan, tetapi tidak boleh terlalu besar sehingga membuang alamat IP yang tidak diperlukan.</strong></p>
        {{% /alert %}}
 
 - Menetapkan Bit Network
 
-  1.  <p style="text-align: justify;">Network F = 225 host : 32 - n → 32-8 = /24</p>
-  2.  <p style="text-align: justify;">Network H = 180 host : 32 - n → 32-8 = /24</p>
-  3.  <p style="text-align: justify;">Network G = 150 host : 32 - n → 32-8 = /24</p>
-  4.  <p style="text-align: justify;">Network J = 90 host : 32 - n → 32-7 = /25</p>
-  5.  <p style="text-align: justify;">Network I = 30 host : 32 - n → 32-5 = /27</p>
+  1.  Network F = 225 host : 32 - n → 32-8 = /24
+  2.  Network H = 180 host : 32 - n → 32-8 = /24
+  3.  Network G = 150 host : 32 - n → 32-8 = /24
+  4.  Network J = 90 host : 32 - n → 32-7 = /25
+  5.  Network I = 30 host : 32 - n → 32-5 = /27
 
 <span></span>
 
 {{% alert context="info" %}}
 
-<p style="text-align: justify;"><b>Keterangan : Angka 32 merupakan jumlah bit dari IPv4 address. Dan ( n )
-adalah nilai untuk mencari jumlah host. </b></p>
+<p><strong>Keterangan : Angka 32 merupakan jumlah bit dari IPv4 address. Dan ( n )
+adalah nilai untuk mencari jumlah host. </strong></p>
 {{% /alert %}}
 
 - Menentukan Blok Subnet
 
-  1. <p style="text-align: justify;">Network F = 225 host : 256 - Bit Network → 256 - (/24) → 256 - 0 = 256</p>
-  2. <p style="text-align: justify;">Network H = 180 host : 256 - Bit Network → 256 - (/24) → 256 - 0 = 256</p>
-  3. <p style="text-align: justify;">Network G = 150 host : 256 - Bit Network → 256 - (/24) → 256 - 0 = 256</p>
-  4. <p style="text-align: justify;">Network J = 90 host : 256 - Bit Network → 256 - (/25) → 256 - 0 = 128</p>
-  5. <p style="text-align: justify;">Network I = 30 host : 256 - Bit Network → 256 - (/27) → 256 - 0 = 32</p>
+  1. Network F = 225 host : 256 - Bit Network → 256 - (/24) → 256 - 0 = 256
+  2. Network H = 180 host : 256 - Bit Network → 256 - (/24) → 256 - 0 = 256
+  3. Network G = 150 host : 256 - Bit Network → 256 - (/24) → 256 - 0 = 256
+  4. Network J = 90 host : 256 - Bit Network → 256 - (/25) → 256 - 0 = 128
+  5. Network I = 30 host : 256 - Bit Network → 256 - (/27) → 256 - 0 = 32
 
 {{% alert context="info" %}}
 
-<p style="text-align: justify;"><b>Keterangan : untuk angka Bit Network, cari nilai oktet terakhir subnet mask. Misalnya ; /26 → (11111111.11111111.11111111.11000000), maka oktet 
-trakhir bernilai (11100000) → 192</b></p>
+<p><strong>Keterangan : untuk angka Bit Network, cari nilai oktet terakhir subnet mask. Misalnya ; /26 → (11111111.11111111.11111111.11000000), maka oktet 
+trakhir bernilai (11100000) → 192</strong></p>
 {{% /alert %}}
 
 - Subnet Map
@@ -1036,7 +1013,7 @@ trakhir bernilai (11100000) → 192</b></p>
 <div class="col-md-6">
 <div class="badge bg-primary text-white mb-2">1</div>
 <p class="mb-2"><strong>Soal 1:</strong></p>
-<p style="text-align: justify;">Diberikan sebuah network address <code>192.168.20.0/24</code>, dari address tersebut tentukanlah:</p>
+Diberikan sebuah network address <code>192.168.20.0/24</code>, dari address tersebut tentukanlah:
 <ul>
 <li>Berapa Jumlah Subnet</li>
 <li>Berapa Jumlah Host Per-Subnet</li>
@@ -1048,7 +1025,9 @@ trakhir bernilai (11100000) → 192</b></p>
 <div class="col-md-6">
 <div class="badge bg-primary text-white mb-2">2</div>
 <p class="mb-2"><strong>Soal 2:</strong></p>
-<p style="text-align: justify;">Diberikan sebuah network address <code>172.16.0.0/18</code>, dari address tersebut tentukanlah:</p>
+<p>
+Diberikan sebuah network address <code>172.16.0.0/18</code>, dari address tersebut tentukanlah:
+</p>
 <ul>
 <li>IP tersebut merupakan kelas apa?</li>
 <li>Berapa jumlah subnetnya?</li>
@@ -1063,8 +1042,9 @@ trakhir bernilai (11100000) → 192</b></p>
 <div class="col-md-6">
 <div class="badge bg-primary text-white mb-2">3</div>
 <p class="mb-2"><strong>Soal 3:</strong></p>
-<p style="text-align: justify;">Sebuah perusahaan layanan keuangan memiliki network address <code>192.188.128.0/25</code>. Perusahaan ini terbagi menjadi 5 departemen dengan 
-kebutuhan jumlah host yang berbeda, yaitu: </p>
+<p>Sebuah perusahaan layanan keuangan memiliki network address <code>192.188.128.0/25</code>. Perusahaan ini terbagi menjadi 5 departemen dengan 
+kebutuhan jumlah host yang berbeda, yaitu: 
+</p>
 <ul>
 <li>Departemen Keuangan: 160 host</li>
 <li>Departemen Operasional: 120 host</li>
@@ -1079,8 +1059,9 @@ kebutuhan jumlah host yang berbeda, yaitu: </p>
 <div class="col-md-6">
 <div class="badge bg-primary text-white mb-2">4</div>
 <p class="mb-2"><strong>Soal 4:</strong></p>
-<p style="text-align: justify;">Perusahaan memiliki network address <code>30.12.20.0/23</code> yang perlu 
-dibagi ke dalam beberapa subnet menggunakan metode subnetting VLSM. Adapun jumlah host yang diperlukan setiap subnet sebagai berikut:</p>
+<p>Perusahaan memiliki network address <code>30.12.20.0/23</code> yang perlu 
+dibagi ke dalam beberapa subnet menggunakan metode subnetting VLSM. Adapun jumlah host yang diperlukan setiap subnet sebagai berikut:
+</p>
 <ul>
 <li>Net X: 200 host</li>
 <li>Net Y: 100 host</li>
@@ -1092,6 +1073,6 @@ dibagi ke dalam beberapa subnet menggunakan metode subnetting VLSM. Adapun jumla
 </div>
 
 <div class="mt-3">
-<small class="text-muted"><i class="material-icons align-middle me-1">info</i>Gunakan metode CIDR untuk soal 1-2, dan metode VLSM untuk soal 3-4. Urutkan subnet berdasarkan kebutuhan host terbesar untuk VLSM.</small>
+<p><small class="text-muted"><i class="material-icons align-middle me-1">info</i>Gunakan metode CIDR untuk soal 1-2, dan metode VLSM untuk soal 3-4. Urutkan subnet menurut kebutuhan host terbesar untuk VLSM.</small></p>
 </div>
 </div>

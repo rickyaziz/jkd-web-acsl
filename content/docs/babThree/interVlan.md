@@ -12,9 +12,7 @@ toc: true
 
 ### Topologi Jaringan
 
-- <p style="text-align: justify;">
-  Membuat Topologi
-  </p>
+- Membuat Topologi
 
   <center>
   <img src="/images/babThree/b.23.PNG" alt="Gambar B.23 - Topologi" class="img-fluid mb-3 responsive-img">
@@ -22,25 +20,19 @@ toc: true
 
 ### Konfigurasi VLAN Di Tiap Switch
 
-- <p style="text-align: justify;">
-  Berikan nama vlan pada switch
-  </p>
+- Berikan nama vlan pada switch
 
   <center>
   <img src="/images/babThree/b.24.PNG" alt="Gambar B.24 - Konfig Switch" class="img-fluid mb-3 responsive-img">
   </center>
 
-- <p style="text-align: justify;">
-  Konfigurasi Switchport Access Vlan tiap komputer
-  </p>
+- Konfigurasi Switchport Access Vlan tiap komputer
 
   <center>
   <img src="/images/babThree/b.25.PNG" alt="Gambar B.25 - Konfig Switch" class="img-fluid mb-3 responsive-img">
   </center>
 
-- <p style="text-align: justify;">
-  Konfigurasi Switchport Trunk Vlan untuk Router
-  </p>
+- Konfigurasi Switchport Trunk Vlan untuk Router
 
   <center>
   <img src="/images/babThree/b.26.PNG" alt="Gambar B.26 - Konfig Switch" class="img-fluid mb-3 responsive-img">
@@ -48,45 +40,33 @@ toc: true
 
 ### Konfigurasi Router
 
-- <p style="text-align: justify;">
-  Konfigurasi IP Address melalui Router
-  </p>
+- Konfigurasi IP Address melalui Router
 
   <center>
   <img src="/images/babThree/b.27.PNG" alt="Gambar B.27 - Konfig Router" class="img-fluid mb-3 responsive-img">
   </center>
 
-- <p style="text-align: justify;">
-  Berikan IP Address pada setiap komputer
-  </p>
+- Berikan IP Address pada setiap komputer
 
-  1.  <p style="text-align: justify;">
-      PC0 (192.168.1.2/24)
-      </p>
+  1.  PC0 (192.168.1.2/24)
 
       <center>
       <img src="/images/babThree/b.28.PNG" alt="Gambar B.28 - Konfig Router" class="img-fluid mb-3 responsive-img">
       </center>
 
-  2.  <p style="text-align: justify;">
-      PC1 (192.168.1.3/24)
-      </p>
+  2.  PC1 (192.168.1.3/24)
 
       <center>
       <img src="/images/babThree/b.29.PNG" alt="Gambar B.29 - Konfig Router" class="img-fluid mb-3 responsive-img">
       </center>
 
-  3.  <p style="text-align: justify;">
-      PC2 (192.168.2.2/24)
-      </p>
+  3.  PC2 (192.168.2.2/24)
 
       <center>
       <img src="/images/babThree/b.30.PNG" alt="Gambar B.30 - Konfig Router" class="img-fluid mb-3 responsive-img">
       </center>
 
-  4.  <p style="text-align: justify;">
-      PC3 (192.168.2.3/24)
-      </p>
+  4.  PC3 (192.168.2.3/24)
 
       <center>
       <img src="/images/babThree/b.31.PNG" alt="Gambar B.31 - Konfig Router" class="img-fluid mb-3 responsive-img">
@@ -94,9 +74,7 @@ toc: true
 
 ### Ping Antar PC
 
-- <p style="text-align: justify;">
-  Status ping antar komputer.
-  </p>
+- Status ping antar komputer.
 
   <center>
   <img src="/images/babThree/b.32.PNG" alt="Gambar B.32 - Ping Antar PC" class="img-fluid mb-3 responsive-img">
@@ -104,15 +82,15 @@ toc: true
 
 {{% alert context="success" %}}
 
-<p style="text-align: justify;">
-Jika PC 0 ping ke PC 3 menghasilkan output <b>Reply from/Successful</b> dan PC 1 ping ke PC 2 menghasilkan output <b>Reply from/Successful</b> maka inter-vlan berhasil dikonfigurasi dengan benar.
+<p>
+Jika PC 0 ping ke PC 3 menghasilkan output <strong>Reply from/Successful</strong> dan PC 1 ping ke PC 2 menghasilkan output <strong>Reply from/Successful</strong> maka inter-vlan berhasil dikonfigurasi dengan benar.
 </p>
 {{% /alert %}}
 
 {{% alert context="danger" %}}
 
-<p style="text-align: justify;">
-Jika PC 0 ping ke PC 3 menghasilkan output <b>Request timed out/Failed</b> atau PC 1 ping ke PC 2 menghasilkan output <b>Request timed out/Failed</b> maka inter-vlan belum terkonfigurasi dengan benar.
+<p>
+Jika PC 0 ping ke PC 3 menghasilkan output <strong>Request timed out/Failed</strong> atau PC 1 ping ke PC 2 menghasilkan output <strong>Request timed out/Failed</strong> maka inter-vlan belum terkonfigurasi dengan benar.
 </p>
 {{% /alert %}}
 
@@ -121,11 +99,11 @@ Jika PC 0 ping ke PC 3 menghasilkan output <b>Request timed out/Failed</b> atau 
 <div class="alert alert-info" role="alert">
 <h5 class="alert-heading"><i class="material-icons align-middle me-2">assignment</i>Tugas Praktikum</h5>
 <hr>
-<p class="mb-3"><strong>Kerjakanlah soal latihan berikut ini:</strong></p>
+<p class="mb-3"><strong>Kerjakanlah soal latihan berikut ini:</strong>
 
 <div class="row">
-<p class="mb-2"><strong>Soal 1:</strong></p>
-<p style="text-align: justify;">Setup dan konfigurasi jaringan berikut agar saling berkomunikasi antar-VLAN!!!</p>
+<p class="mb-2"><strong>Soal 1:</strong>
+Setup dan konfigurasi jaringan berikut agar saling berkomunikasi antar-VLAN!!!
 </div>
 
 <span></span>

@@ -1,9 +1,9 @@
 ---
-title: 'Standar Operasional Prosedure'
-description: 'Standard Operating Procedure (SOP) - Jaringan Komputer Dasar'
-icon: 'description'
-date: '2023-05-22T00:44:31+01:00'
-lastmod: '2023-05-22T00:44:31+01:00'
+title: "Standar Operasional Prosedur"
+description: "Standard Operating Procedure (SOP)- Jaringan Komputer Dasar"
+icon: "description"
+date: "2023-05-22T00:44:31+01:00"
+lastmod: "2023-05-22T00:44:31+01:00"
 draft: false
 toc: true
 weight: 1

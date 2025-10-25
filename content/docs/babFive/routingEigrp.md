@@ -1,54 +1,44 @@
 ---
 weight: 32
 title: "Routing EIGRP"
-description: "Topologi, Konfigurasi, Dan Tes Konektivitas Routing EIGRP"
+description: "Konfigurasi Dan Tes Konektivitas Routing EIGRP"
 icon: "bolt"
 date: "2025-10-20T18:07:58+07:00"
 lastmod: "2025-10-20T18:07:58+07:00"
 toc: true
 ---
 
-## Routing EIGRP
+## Pengertian
 
-<p style="text-align: justify;">
 Enhanced Interior Gateway Routing Protocol (EIGRP) merupakan protokol
 routing dinamis yang dikembangkan oleh Cisco sebagai peningkatan dari IGRP
 (Interior Gateway Routing Protocol). EIGRP meningkatkan efisiensi, kecepatan
 konvergensi, dan skalabilitas. Protokol ini disebut hybrid karena menggabungkan fitur
 dari routing distance-vector dan link-state, memberikan kinerja yang lebih baik dan
 fleksibilitas lebih tinggi dibandingkan protokol routing seperti RIP.
-</p>
 
 ### Konfigurasi Routing EIGRP
 
-<p style="text-align: justify;">
 Berikut adalah konfigurasi EIGRP pada cisco packet tracer :
-</p>
 
 <center>
 <img src="/images/babFive/b.23.PNG" alt="Gambar B.14 - Konfig EIGRP" class="img-fluid mb-3 responsive-img">
 </center>
 
-1.  <p style="text-align: justify;">
-    Router A.
-    </p>
+1.  Router A.
 
     <center>
     <img src="/images/babFive/b.24.PNG" alt="Gambar B.15 - Konfig Router" class="img-fluid mb-3 responsive-img">
     <img src="/images/babFive/b.25.PNG" alt="Gambar B.15 - Konfig Router" class="img-fluid mb-3 responsive-img">
     </center>
 
-2.  <p style="text-align: justify;">
-    Router B.
-    </p>
+2.  Router B.
 
     <center>
     <img src="/images/babFive/b.26.PNG" alt="Gambar B.16 - Konfig Router" class="img-fluid mb-3 responsive-img">
     </center>
 
-3.  <p style="text-align: justify;">
-    Router C.
-    </p>
+3.  Router C.
 
     <center>
     <img src="/images/babFive/b.27.PNG" alt="Gambar B.17 - Konfig Router" class="img-fluid mb-3 responsive-img">
@@ -62,17 +52,13 @@ Berikut adalah konfigurasi EIGRP pada cisco packet tracer :
 
 ### Ping Antar PC
 
-1.  <p style="text-align: justify;">
-    Ping dari PC 0 ke PC 1
-    </p>
+1.  Ping dari PC 0 ke PC 1
 
     <center>
     <img src="/images/babFive/b.29.PNG" alt="Gambar B.19 - Ping PC" class="img-fluid mb-3 responsive-img">
     </center>
 
-2.  <p style="text-align: justify;">
-    Ping dari PC 1 ke PC 0.
-    </p>
+2.  Ping dari PC 1 ke PC 0.
 
     <center>
     <img src="/images/babFive/b.30.PNG" alt="Gambar B.20 - Ping PC" class="img-fluid mb-3 responsive-img">
@@ -80,17 +66,13 @@ Berikut adalah konfigurasi EIGRP pada cisco packet tracer :
 
 ### Pengecekan Pada Masing - Masing Router
 
-- <p style="text-align: justify;">
-  Untuk memastikan bahwa EIGRP telah diterapkan dengan benar, ketik perintah berikut pada masing-masing router:
-  </p>
+- Untuk memastikan bahwa EIGRP telah diterapkan dengan benar, ketik perintah berikut pada masing-masing router:
 
   <center>
   <img src="/images/babFive/b.31.PNG" alt="Gambar B.21 - Cek Router" class="img-fluid mb-3 responsive-img">
   </center>
 
-1.  <p style="text-align: justify;">
-    Contoh Router A saat pengecekan.
-    </p>
+- Contoh Router A saat pengecekan.
 
   <center>
   <img src="/images/babFive/b.32.PNG" alt="Gambar B.22 - Cek Router" class="img-fluid mb-3 responsive-img">
@@ -98,23 +80,20 @@ Berikut adalah konfigurasi EIGRP pada cisco packet tracer :
 
 {{% alert context="success"%}}
 
-<p style="text-align: justify;">
 Jika PC 0 di ping ke PC 1 atau sebaliknya, kemudian menampilkan output <strong>Successful</strong> seperti di atas, maka routing berhasil dikonfigurasi dengan benar.
-</p>
+
 {{% /alert %}}
 
 {{% alert context="danger"%}}
 
-<p style="text-align: justify;">
 Jika PC 0 di ping ke PC 1 atau sebaliknya, kemudian menampilkan output <strong>Failed</strong>, maka routing belum dikonfigurasi dengan benar.
-</p>
+
 {{% /alert %}}
 
 {{% alert context="warning"%}}
 
-<p style="text-align: justify;">
 Dalam Pengecekan status Routing yang digunakan pada EIGRP. Pastikan muncul huruf <strong>D</strong> di sebelah kanan seperti gambar di atas.
-</p>
+
 <small class="text-muted"><i class="material-icons align-middle me-1">info</i>Jika bingung, silahkan bertanya ke Asisten shift mengajar.</small>
 {{% /alert %}}
 
@@ -123,7 +102,7 @@ Dalam Pengecekan status Routing yang digunakan pada EIGRP. Pastikan muncul huruf
 <div class="alert alert-info" role="alert">
 <h5 class="alert-heading"><i class="material-icons align-middle me-2">assignment</i>Tugas Praktikum</h5>
 <hr>
-<p class="mb-3"><strong>Kerjakanlah soal latihan berikut ini:</strong></p>
+<p class="mb-3"><strong>Kerjakanlah soal latihan berikut ini:</strong>
 
 <center>
       <img src="/images/babFive/b.33.PNG" alt="Gambar B.33 - Soal" class="img-fluid mb-3 responsive-img">
@@ -133,21 +112,23 @@ Dalam Pengecekan status Routing yang digunakan pada EIGRP. Pastikan muncul huruf
 <div class="col-md-6">
 <div class="badge bg-primary text-white mb-2">1</div>
 <p class="mb-2"><strong>Soal 1:</strong></p>
-<p style="text-align: justify;">Pada topologi yang telah diberikan, tambahkan 1 <strong>Switch</strong> dan 1 <strong>PC</strong> pada <strong>Router
+<p>Pada topologi yang telah diberikan, tambahkan 1 <strong>Switch</strong> dan 1 <strong>PC</strong> pada <strong>Router
 C</strong> dengan jaringan baru <strong>192.168.30.0/24</strong>.Lakukan konfigurasi protokol RIP v2
 pada seluruh router (Router A, B, dan C) agar semua jaringan dapat saling
 berkomunikasi. Pastikan setiap PC dapat melakukan <strong>ping</strong> ke PC lain di jaringan
-berbeda.</p>
+berbeda.
+</p>
 </div>
 
 <div class="col-md-6">
 <div class="badge bg-primary text-white mb-2">2</div>
 <p class="mb-2"><strong>Soal 2:</strong></p>
-<p style="text-align: justify;">Dengan topologi yang sama, tambahkan kembali <strong>Switch</strong> dan <strong>PC</strong> pada <strong>Router
+<p>Dengan topologi yang sama, tambahkan kembali <strong>Switch</strong> dan <strong>PC</strong> pada <strong>Router
 C</strong> dengan jaringan baru <strong>192.168.30.0/24</strong>. Lakukan konfigurasi protokol
 <strong>EIGRP(ASN 1)</strong> pada seluruh router (Router A, B, dan C) agar semua jaringan dapat
 saling berkomunikasi. Pastikan setiap PC dapat melakukan <strong>ping</strong> ke PC lain di
-jaringan berbeda.</p>
+jaringan berbeda.
+</p>
 </div>
 </div>
 

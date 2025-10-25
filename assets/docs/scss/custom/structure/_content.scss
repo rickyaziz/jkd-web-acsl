@@ -35,11 +35,13 @@
 
 .docs-content {
   order: 1;
+  text-align: left !important;
 }
 
 // Links
 .docs-content .main-content a {
   font-weight: 600;
+  text-align: left !important;
   color: var(--content-link-color);
   &:hover {
     text-decoration: underline 2px var(--primary-200);
@@ -79,10 +81,12 @@
 .docs-content .content-title {
   font-weight: 700;
   align-self: center;
+  text-align: left !important;
 }
 
 i {
   &.title-icon {
+    text-align: left;
     width: 44px;
     height: 44px;
     color: var(--content-icon-color);
@@ -120,6 +124,7 @@ i {
     p {
       &.lead {
         font-size: 1rem;
+        text-align: left !important;
       }
     }
   }
@@ -151,7 +156,7 @@ i {
   }
 
   > li::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 6px;
     height: 6px;
@@ -314,4 +319,9 @@ i {
       width: 50%;
     }
   }
+}
+
+// Paragraph Content
+#content {
+  text-align: justify;
 }

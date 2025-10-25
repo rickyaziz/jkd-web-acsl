@@ -9574,7 +9574,18 @@ body {
   body {
     font-size: 0.9rem; } }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: var(--bs-font-sans-serif);
   line-height: 1.4;
   font-weight: 600; }
@@ -9622,10 +9633,12 @@ img {
   --inline-code-border: 1px solid var(--gray-600); }
 
 .docs-content {
-  order: 1; }
+  order: 1;
+  text-align: left !important; }
 
 .docs-content .main-content a {
   font-weight: 600;
+  text-align: left !important;
   color: var(--content-link-color); }
   .docs-content .main-content a:hover {
     text-decoration: underline 2px var(--primary-200);
@@ -9655,9 +9668,11 @@ img {
 
 .docs-content .content-title {
   font-weight: 700;
-  align-self: center; }
+  align-self: center;
+  text-align: left !important; }
 
 i.title-icon {
+  text-align: left;
   width: 44px;
   height: 44px;
   color: var(--content-icon-color);
@@ -9682,7 +9697,8 @@ i.title-icon {
     .docs-content h2, .docs-content .h2 {
       margin-bottom: 1rem; }
     .docs-content p.lead {
-      font-size: 1rem; } }
+      font-size: 1rem;
+      text-align: left !important; } }
 
 .docs-content .main-content img,
 .docs-content .main-content svg {
@@ -9700,7 +9716,7 @@ i.title-icon {
     position: relative;
     padding-left: 32px; }
   .docs-content .main-content ul > li::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 6px;
     height: 6px;
@@ -9808,6 +9824,9 @@ i.title-icon {
   @media (min-width: 769px) and (max-width: 1024px) {
     .docs-content .main-content .responsive-img-small {
       width: 50%; } }
+#content {
+  text-align: justify; }
+
 .page-wrapper {
   height: 100vh; }
   .page-wrapper .sidebar-wrapper {
@@ -10144,7 +10163,8 @@ i.title-icon {
   top: 85px;
   padding-left: calc(var(--bs-gutter-x) * 1.05);
   padding-right: calc(var(--bs-gutter-x) * 1.05);
-  z-index: 20; }
+  z-index: 20;
+  text-align: justify; }
   .docs-toc-mobile a {
     color: var(--text-default); }
   .docs-toc-mobile a:hover {
@@ -10165,7 +10185,7 @@ i.title-icon {
     border: 1px solid var(--alert-border-color);
     border-top: none;
     border-radius: 0 0 4px 4px;
-    width: calc(100% - (var(--bs-gutter-x)*2));
+    width: calc(100% - (var(--bs-gutter-x) * 2));
     max-height: 40vh;
     overflow-y: auto;
     scrollbar-width: thin; }
@@ -10478,7 +10498,7 @@ button:not(:disabled) {
   --alert-info-color: 270, 45.5%, 97.8%;
   --alert-info-bg: hsl(var(--alert-info-color));
   --alert-info-border-color: var(--alert-border-color);
-  --alert-success-color: var(--emerald-270-hsl);
+  --alert-success-color: var(--emerald-50-hsl);
   --alert-success-bg: hsl(var(--alert-success-color), 0.4);
   --alert-success-border-color: var(--alert-border-color);
   --alert-danger-color: var(--cardinal-50-hsl);
@@ -10523,7 +10543,8 @@ button:not(:disabled) {
   border-radius: 4px;
   color: var(--gray-700); }
   .alert p {
-    line-height: 1.525rem; }
+    line-height: 1.525rem;
+    text-align: justify; }
   .alert p:last-child {
     margin-bottom: 0; }
 

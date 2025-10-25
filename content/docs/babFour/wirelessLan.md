@@ -8,9 +8,7 @@ lastmod: "2025-10-18T21:46:58+07:00"
 toc: true
 ---
 
-<p style="text-align: justify;">
 Bab ini membahas dasar jaringan wireless, termasuk media, teknologi, keamanan, dan konfigurasi dasar menggunakan Cisco Packet Tracer untuk membantu praktikan mengelola dan mengamankan jaringan wireless.
-</p>
 
 ## Tujuan
 
@@ -25,11 +23,9 @@ Bab ini membahas dasar jaringan wireless, termasuk media, teknologi, keamanan, d
 
 ## Persyaratan
 
-<p style="text-align: justify;">
 Disarankan praktikan menggunakan hardware dan software sesuai pada dokumentasi ini.
 Apabila terdapat versi yang lumayan lampau dari versi yang direcommendasikan atau
 hardware yang lawas maka sebaiknya bertanya kepada Asisten Mengajar Shift.
-</p>
 
 {{< table "table-striped" >}}
 | HARDWARE YANG DIBUTUHKAN PRAKTIKUM | JENIS |
@@ -48,7 +44,6 @@ hardware yang lawas maka sebaiknya bertanya kepada Asisten Mengajar Shift.
 
 ## Latar Belakang
 
-<p style="text-align: justify;">
 Jaringan wireless atau nirkabel merupakan teknologi yang mampu membuat
 perangkat terhubung dan berkomunikasi tanpa menggunakan kabel fisik.
 Menggunakan gelombang radio sebagai media transmisi, jaringan wireless
@@ -58,62 +53,47 @@ perkembangan pesat teknologi dan meningkatnya kebutuhan akan mobilitas, jaringan
 wireless telah menjadi komponen penting dalam infrastruktur IT modern. Standar
 IEEE 802.11, atau Wi-Fi, menjadi dasar teknologi ini, memungkinkan komunikasi antar
 perangkat dengan kecepatan dan jangkauan yang terus berkembang.
-</p>
 
 ## Jenis Media Wireless
 
-<p style="text-align: justify;">
 Media wireless, atau media nirkabel, meliputi berbagai jenis teknologi yang
 memungkinkan pengiriman data tanpa kabel fisik. Beberapa jenis media nirkabel yang
 sering digunakan adalah:
-</p>
 
 ### 1. Standar IEEE 802.11 (Wi-Fi)
 
-<p style="text-align: justify;">
 Teknologi nirkabel yang memungkinkan perangkat seperti komputer,
 smartphone, dan tablet untuk terhubung ke internet melalui jaringan lokal tanpa
 menggunakan kabel.
-</p>
 
 ### 2. Standar Cellular (Seluler)
 
-<p style="text-align: justify;">
 Teknologi jaringan nirkabel yang memungkinkan komunikasi suara dan data
 antara perangkat seluler (seperti ponsel) dan jaringan dengan menggunakan menara
 seluler.
-</p>
 
 ### 3. Bluetooth
 
-<p style="text-align: justify;">
 Teknologi nirkabel untuk komunikasi jarak pendek antara perangkat seperti
 headset, keyboard, dan ponsel, memungkinkan transfer data dan streaming audio
 dengan konsumsi daya rendah.
-</p>
 
 ### 4. NFC (Near Field Communication)
 
-<p style="text-align: justify;">
 Teknologi komunikasi nirkabel untuk pertukaran data antara perangkat dalam
 jarak sangat dekat, biasanya beberapa sentimeter, digunakan dalam pembayaran
 nirkontak dan identifikasi.
-</p>
 
 ### 5. Long Range Wide Area Network (LoRaWAN)
 
-<p style="text-align: justify;">
 Teknologi jaringan nirkabel yang memungkinkan komunikasi jarak jauh
 dengan konsumsi daya minimal, terutama untuk aplikasi IoT dan sensor yang tersebar.
-</p>
 
 ## Standar Wireless dan Teknologi
 
-<p style="text-align: justify;">
 Pada wireless diperlukan standar-standar dalam implementasinya untuk bisa
 diterapkan secara universal pada perangkat-perangkat elektronik dengan aman.
 Berikut merupakan standar-standar pada IEEE 802.11 atau biasa disebut dengan WIFI.
-</p>
 
 <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
    <tr style="background-color: #7928ca2e; border-radius: 12px;  width: 10%;">
@@ -192,9 +172,7 @@ Berikut merupakan standar-standar pada IEEE 802.11 atau biasa disebut dengan WIF
 
 <span></span>
 
-<p style="text-align: justify;">
 Berikut merupakan terminologi beradasarkan standar IEEE 802.11.
-</p>
 
 <table style="border-collapse: separate; border-spacing: 0; border-radius: 5px; width: 100%; text-align: center; margin: 0 auto; border: 1px solid #ffffff21; overflow: hidden;">
    <tr style="background-color: #7928ca2e; border-radius: 12px;  width: 10%;">
