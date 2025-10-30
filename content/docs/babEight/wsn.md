@@ -83,6 +83,10 @@ WSN membantu dalam pengelolaan kota pintar dengan mengumpulkan data yang berguna
 
 ## Rangkaian Mikrokontroler
 
+<center>
+    <img src="/images/babEight/b.3.PNG" alt="Gambar B.3 - Rangkaian" >
+</center>
+
 ## Jenis Mode Koneksi Pada Mikrokontroler
 
 Jenis mode koneksi pada mikrokontroler dibagi menjadi 2 mode, yaitu :
