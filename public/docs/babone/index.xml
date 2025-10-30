@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial Bab 1 on ACSL | Jaringan Komputer Dasar</title>
+    <link>https://jkd.rickyaziz.my.id/docs/babone/</link>
+    <description>Recent content in Tutorial Bab 1 on ACSL | Jaringan Komputer Dasar</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Sep 2025 19:22:58 +0700</lastBuildDate>
+    <atom:link href="https://jkd.rickyaziz.my.id/docs/babone/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pengalamatan IP</title>
+      <link>https://jkd.rickyaziz.my.id/docs/babone/pengelamatan/</link>
+      <pubDate>Sun, 07 Sep 2025 17:46:03 +0700</pubDate>
+      <guid>https://jkd.rickyaziz.my.id/docs/babone/pengelamatan/</guid>
+      <description>&lt;p&gt;Pada bab pengalamatan ini, praktikan akan mempelajari tentang sejarah perkembangan IPv4&#xA;dan IPv6, konsep dasar dari kedua protokol ini, serta cara kerja subnetting dalam jaringan&#xA;komputer. Asisten praktikum atau praktikan dapat membaca tujuan dan persyaratan&#xA;praktikum bab ini agar praktikum dapat berjalan sesuai prosedur.&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;table class=&#34;table table-striped&#34;&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;TUJUAN&lt;/th&gt;&#xA;          &lt;th&gt;PENJELASAN&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Memahami konsep dasar IPv4 dan IPv6&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Bab ini menjelaskan perbedaan antara IPv4 dan IPv6, fungsi masing-masing, serta cara kerjanya dalam jaringan komputer.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Memahami proses subnetting, CIDR, dan VLSM&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Bab ini memandu praktikan memahami konsep subnetting, termasuk Classless Inter-Domain Routing (CIDR) dan Variable Length Subnet Mask (VLSM), serta cara menghitung subnet mask dan membagi jaringan menjadi subnet yang lebih efisien.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Meningkatkan pengetahuan tentang cara kerja protokol&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Meningkatkan pengetahuan tentang cara kerja protokol jaringan dan bagaimana mengoptimalkan alokasi alamat IP menggunakan teknik subnetting yang tepat.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;h2 id=&#34;persyaratan&#34;&gt;Persyaratan &lt;a href=&#34;#persyaratan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Disarankan praktikan menggunakan hardware dan software sesuai pada dokumentasi ini. Apabila terdapat versi yang lumayan lampau dari versi yang direcommendasikan atau hardware yang lawas maka sebaiknya bertanya kepada Asisten Mengajar Shift.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Internet Protocol Version 4 (IPv4)</title>
+      <link>https://jkd.rickyaziz.my.id/docs/babone/ipvfour/</link>
+      <pubDate>Sun, 07 Sep 2025 17:46:03 +0700</pubDate>
+      <guid>https://jkd.rickyaziz.my.id/docs/babone/ipvfour/</guid>
+      <description>&lt;p&gt;IPv4 adalah metode pengalamatan dalam protokol TCP/IP versi 4,&#xA;dikembangkan pada tahun 1981 dan telah menjadi standar utama untuk&#xA;mengidentifikasi perangkat di jaringan komputer. Dengan panjang 32-bit, IPv4&#xA;mampu mengalamati sekitar 4 miliar perangkat di seluruh dunia. Masing -masing&#xA;alamat IPv4 ditulis menggunakan format desimal dengan pemisah titik, yang terdiri&#xA;dari empat oktet, dimana setiap oktet berukuran 8-bit dan memiliki nilai antara 0&#xA;hingga 255.&lt;/p&gt;&#xA;&lt;p&gt;Meskipun demikian, sejumlah alamat IPv4 memiliki fungsi khusus, seperti&#xA;alamat untuk broadcast, yang dipakai untuk mengirim data ke setiap perangkat dalam&#xA;jaringan, serta alamat jaringan, yang digunakan untuk mengidentifikasi jaringan itu&#xA;sendiri. IPv4 juga memiliki beberapa keterbatasan, terutama dalam hal kapasitas&#xA;alamat, yang menyebabkan pengembangan IPv6 untuk mengatasi kekurangan ini.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Internet Protocol Version 6 (IPv6)</title>
+      <link>https://jkd.rickyaziz.my.id/docs/babone/ipvsix/</link>
+      <pubDate>Sun, 07 Sep 2025 17:46:03 +0700</pubDate>
+      <guid>https://jkd.rickyaziz.my.id/docs/babone/ipvsix/</guid>
+      <description>&lt;p&gt;IPv6 merupakan sistem pengalamatan dalam protokol TCP/IP yang menggunakan panjang 128-bit, memungkinkan pengalamatan hingga 3,4 x 10^38&#xA;perangkat di seluruh dunia. Sebagai contoh, alamat IPv6 yang dapat digunakan adalah 2001:0DB8:AC10:FE01:0000:0000:0000:0001, menggunakan notasi heksadesimal kolom. Struktur ini terdiri dari 8 bagian, dengan total 32 digit heksadesimal yang dipisahkan oleh tanda kolon (:), di mana setiap bagian memiliki panjang 2 byte. Notasi ini dirancang untuk mendukung skala dan fleksibilitas jaringan modern.&lt;/p&gt;&#xA;&lt;p&gt;IPv6 dikembangkan sebagai respons terhadap keterbatasan IPv4, yang hanya mendukung sekitar 4,3 miliar alamat IP. Dengan pertumbuhan pesat internet dan perangkat yang terhubung, kekurangan alamat IP mulai terasa saat awal tahun 1990an. Pada tahun 1994, IETF (Internet Engineering Task Force) mulai bekerja pada spesifikasi IPv6 sebagai pengganti IPv4.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Subnetting</title>
+      <link>https://jkd.rickyaziz.my.id/docs/babone/subnetting/</link>
+      <pubDate>Sun, 07 Sep 2025 19:22:58 +0700</pubDate>
+      <guid>https://jkd.rickyaziz.my.id/docs/babone/subnetting/</guid>
+      <description>&lt;p&gt;Subnetting merupakan prosedur untuk membagi jaringan besar menjadi&#xA;beberapa subnetwork yang lebih kecil, yang disebut sebagai subnet. Subnetting&#xA;merupakan aspek penting dalam desain jaringan yang baik, karena memungkinkan&#xA;pengoptimalan penggunaan alamat IP dengan meminimalkan alamat yang tidak&#xA;terpakai atau terbuang. Selain itu, subnetting juga mempermudah pengelolaan dan&#xA;meningkatkan kinerja jaringan.&lt;/p&gt;&#xA;&lt;p&gt;Dalam melakukan perhitungan subnetting, terdapat dua metode utama yang&#xA;dapat digunakan, yaitu Classless Inter-Domain Routing (CIDR) dan Variable Length&#xA;Subnet Mask (VLSM). CIDR memungkinkan alokasi alamat IP yang lebih fleksibel tanpa&#xA;terikat pada kelas IP tertentu, sedangkan VLSM memungkinkan penggunaan subnet&#xA;mask dengan panjang yang bervariasi dalam satu jaringan. Pemahaman tentang&#xA;konsep dan definisi subnetting sangat penting sebelum melakukan perhitungan&#xA;dengan kedua metode ini. Untuk lebih mendalam, pembahasan mengenai CIDR dan&#xA;VLSM dapat ditemukan dalam Modul Panduan Jaringan Komputer Dasar.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
