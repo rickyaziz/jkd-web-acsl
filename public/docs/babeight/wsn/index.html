@@ -1008,9 +1008,514 @@ point (AP) atau router Wi-Fi yang ada. Mode ini mirip dengan cara kerja perangka
 seperti smartphone atau laptop saat terhubung ke jaringan Wi-Fi. Dalam mode ini,
 ESP dapat mengakses internet dan berkomunikasi dengan perangkat lain di jaringan
 yang sama.</p>
+<ol>
+<li>Mikrokontroler ESP8266</li>
+</ol>
+
+<nav>
+	<div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+		
+		
+		
+		
+
+		
+
+		<a class="nav-link  active"
+		   id="cdfbaeTab" data-bs-toggle="tab" data-bs-target="#cdfbae"
+		   type="button" role="tab" aria-controls="cdfbae" aria-selected="true">Example</a>
+
+		
+
+		<a class="nav-link "
+		   id="dbefcaTab" data-bs-toggle="tab" data-bs-target="#dbefca"
+		   type="button" role="tab" aria-controls="dbefca" aria-selected="true">Code</a>
+
+		
+
+	</div>
+</nav>
+
+<div class="tab-content" id="nav-tab-content">
+
+	
+
+
+
+
+
+
+<div class="tab-pane fade show active" id="cdfbae" role="tabpanel" aria-labelledby="nav-1">
+
+	<center>
+    <img src="/images/babEight/b.1.PNG" alt="Gambar B.1 - STA Code" class="img-fluid mb-3 responsive-img">
+    </center>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="tab-pane fade" id="dbefca" role="tabpanel" aria-labelledby="nav-1">
+
+	
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="f19e9b9" class="language- ">
+  <code>#include &lt;ESP8266WiFi.h&gt;
+#include &lt;ESP8266WebServer.h&gt;
+
+const char *ssid = &#34;LAB LANJUT 125&#34;;  // Ganti dengan nama WiFi yang tersedia
+const char *password = &#34;12345678&#34;;  // Ganti dengan password WiFi yang tersedia
+
+ESP8266WebServer server(80);
+
+uint8_t led1_pin = 5;
+uint8_t led2_pin = 4;
+uint8_t led3_pin = 2;
+uint8_t led4_pin = 14;
+
+bool led1_status = false, led2_status = false, led3_status = false, led4_status = false;
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println();
+  Serial.print(&#34;Connecting to &#34;);
+  Serial.print(ssid);
+
+  // Setup LED Pins
+  pinMode(led1_pin, OUTPUT);
+  pinMode(led2_pin, OUTPUT);
+  pinMode(led3_pin, OUTPUT);
+  pinMode(led4_pin, OUTPUT);
+
+  // Connect to WiFi
+  WiFi.begin(ssid, password);
+
+  // Wait until the ESP8266 connects to WiFi
+  int attempts = 0;
+  while (WiFi.status() != WL_CONNECTED &amp;&amp; attempts &lt; 20) {  // Limit the attempts to avoid endless loop
+    delay(1000);
+    Serial.print(&#34;.&#34;);
+    attempts&#43;&#43;;
+  }
+
+  if (WiFi.status() == WL_CONNECTED) {
+    Serial.println();
+    Serial.print(&#34;WiFi Connected! IP Address: &#34;);
+    Serial.println(WiFi.localIP());  // Display the local IP address
+  } else {
+    Serial.println();
+    Serial.println(&#34;Failed to connect to WiFi!&#34;);
+    return;  // Stop if WiFi connection failed
+  }
+
+  // Start web server and define routes
+  server.on(&#34;/&#34;, handle_OnConnect);
+  server.on(&#34;/led1on&#34;, handle_led1on);
+  server.on(&#34;/led1off&#34;, handle_led1off);
+  server.on(&#34;/led2on&#34;, handle_led2on);
+  server.on(&#34;/led2off&#34;, handle_led2off);
+  server.on(&#34;/led3on&#34;, handle_led3on);
+  server.on(&#34;/led3off&#34;, handle_led3off);
+  server.on(&#34;/led4on&#34;, handle_led4on);
+  server.on(&#34;/led4off&#34;, handle_led4off);
+  server.onNotFound(handle_NotFound);
+
+  server.begin();
+  Serial.println(&#34;HTTP Server Started&#34;);
+}
+
+void loop() {
+  server.handleClient();
+
+  // LED control based on status
+  digitalWrite(led1_pin, led1_status ? HIGH : LOW);
+  digitalWrite(led2_pin, led2_status ? HIGH : LOW);
+  digitalWrite(led3_pin, led3_status ? HIGH : LOW);
+  digitalWrite(led4_pin, led4_status ? HIGH : LOW);
+}
+
+void handle_OnConnect() {
+  Serial.println(&#34;Client Connected&#34;);
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led1on() {
+  Serial.println(&#34;LED1 ON&#34;);
+  led1_status = true;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led1off() {
+  Serial.println(&#34;LED1 OFF&#34;);
+  led1_status = false;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led2on() {
+  Serial.println(&#34;LED2 ON&#34;);
+  led2_status = true;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led2off() {
+  Serial.println(&#34;LED2 OFF&#34;);
+  led2_status = false;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led3on() {
+  Serial.println(&#34;LED3 ON&#34;);
+  led3_status = true;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led3off() {
+  Serial.println(&#34;LED3 OFF&#34;);
+  led3_status = false;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led4on() {
+  Serial.println(&#34;LED4 ON&#34;);
+  led4_status = true;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led4off() {
+  Serial.println(&#34;LED4 OFF&#34;);
+  led4_status = false;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_NotFound() {
+  server.send(404, &#34;text/plain&#34;, &#34;Not found&#34;);
+}
+
+String HTML() {
+  String msg = &#34;&lt;!DOCTYPE html&gt; &lt;html&gt;\n&#34;;
+  msg &#43;= &#34;&lt;head&gt;&lt;meta name=\&#34;viewport\&#34; content=\&#34;width=device-width, initial-scale=1.0, user-scalable=no\&#34;&gt;\n&#34;;
+  msg &#43;= &#34;&lt;title&gt;Kontrol LED&lt;/title&gt;\n&#34;;
+  msg &#43;= &#34;&lt;style&gt;html{font-family:Helvetica; display:inline-block; margin:0px auto; text-align:center;}\n&#34;;
+  msg &#43;= &#34;body{margin-top: 50px;} h1{color: #444444; margin: 50px auto 30px;} h3{color:#444444; margin-bottom: 50px;}\n&#34;;
+  msg &#43;= &#34;.button{display:block; width:80px; background-color:#f48100; border:none; color:white; padding: 13px 30px; text-decoration:none; font-size:25px; margin: 0px auto 35px; cursor:pointer; border-radius:4px;}\n&#34;;
+  msg &#43;= &#34;.button-on{background-color:#f48100;}\n&#34;;
+  msg &#43;= &#34;.button-on:active{background-color:#f48100;}\n&#34;;
+  msg &#43;= &#34;.button-off{background-color:#26282d;}\n&#34;;
+  msg &#43;= &#34;.button-off:active{background-color:#26282d;}\n&#34;;
+  msg &#43;= &#34;&lt;/style&gt;\n&#34;;
+  msg &#43;= &#34;&lt;/head&gt;\n&#34;;
+  msg &#43;= &#34;&lt;body&gt;\n&#34;;
+  msg &#43;= &#34;&lt;h1&gt;ESP8266 Web Server&lt;/h1&gt;\n&#34;;
+  msg &#43;= &#34;&lt;h3&gt;Mode Station (STA) Connected&lt;/h3&gt;\n&#34;;
+
+  msg &#43;= (led1_status == false) ? &#34;&lt;p&gt;LED1 Status: OFF&lt;/p&gt;&lt;a class=\&#34;button button-on\&#34; href=\&#34;/led1on\&#34;&gt;ON&lt;/a&gt;\n&#34; : &#34;&lt;p&gt;LED1 Status: ON&lt;/p&gt;&lt;a class=\&#34;button button-off\&#34; href=\&#34;/led1off\&#34;&gt;OFF&lt;/a&gt;\n&#34;;
+  msg &#43;= (led2_status == false) ? &#34;&lt;p&gt;LED2 Status: OFF&lt;/p&gt;&lt;a class=\&#34;button button-on\&#34; href=\&#34;/led2on\&#34;&gt;ON&lt;/a&gt;\n&#34; : &#34;&lt;p&gt;LED2 Status: ON&lt;/p&gt;&lt;a class=\&#34;button button-off\&#34; href=\&#34;/led2off\&#34;&gt;OFF&lt;/a&gt;\n&#34;;
+  msg &#43;= (led3_status == false) ? &#34;&lt;p&gt;LED3 Status: OFF&lt;/p&gt;&lt;a class=\&#34;button button-on\&#34; href=\&#34;/led3on\&#34;&gt;ON&lt;/a&gt;\n&#34; : &#34;&lt;p&gt;LED3 Status: ON&lt;/p&gt;&lt;a class=\&#34;button button-off\&#34; href=\&#34;/led3off\&#34;&gt;OFF&lt;/a&gt;\n&#34;;
+  msg &#43;= (led4_status == false) ? &#34;&lt;p&gt;LED4 Status: OFF&lt;/p&gt;&lt;a class=\&#34;button button-on\&#34; href=\&#34;/led4on\&#34;&gt;ON&lt;/a&gt;\n&#34; : &#34;&lt;p&gt;LED4 Status: ON&lt;/p&gt;&lt;a class=\&#34;button button-off\&#34; href=\&#34;/led4off\&#34;&gt;OFF&lt;/a&gt;\n&#34;;
+
+  msg &#43;= &#34;&lt;/body&gt;\n&#34;;
+  msg &#43;= &#34;&lt;/html&gt;\n&#34;;
+  return msg;
+}</code>
+  </pre>
+  </div>
+
+
+</div>
+
+
+</div>
+<div class="alert alert-warning d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  <span class="material-icons size-20 me-2">
+  warning
+  </span></div>
+  <div class="w-100">
+<p>
+Pastikan isi <strong>ssid</strong> dan <strong>password</strong> sesuai dengan nama WiFi dan Password WiFi yang digunakan.
+</p>
+<p><small class="text-muted"><i class="material-icons align-middle me-1">info</i>Jika bingung, silahkan bertanya ke Asisten shift mengajar.</small></p>
+  </div>
+  </div>
 <h3 id="mode-access-point-ap">Mode Access Point (AP) <a href="#mode-access-point-ap" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Dalam mode access point, ESP bertindak sebagai titik akses Wi-Fi,
 memungkinkan perangkat lain untuk terhubung langsung ke ESP. Mode ini sering
 digunakan untuk membuat jaringan lokal di mana ESP adalah pusatnya.</p>
+<ol>
+<li>Mikrokontroler ESP8266</li>
+</ol>
+
+<nav>
+	<div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+		
+		
+		
+		
+
+		
+
+		<a class="nav-link  active"
+		   id="afcebdTab" data-bs-toggle="tab" data-bs-target="#afcebd"
+		   type="button" role="tab" aria-controls="afcebd" aria-selected="true">Example</a>
+
+		
+
+		<a class="nav-link "
+		   id="cbefdaTab" data-bs-toggle="tab" data-bs-target="#cbefda"
+		   type="button" role="tab" aria-controls="cbefda" aria-selected="true">Code</a>
+
+		
+
+	</div>
+</nav>
+
+<div class="tab-content" id="nav-tab-content">
+
+	
+
+
+
+
+
+
+<div class="tab-pane fade show active" id="afcebd" role="tabpanel" aria-labelledby="nav-1">
+
+	<center>
+    <img src="/images/babEight/b.2.PNG" alt="Gambar B.2 - AP Code" class="img-fluid mb-3 responsive-img">
+</center>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="tab-pane fade" id="cbefda" role="tabpanel" aria-labelledby="nav-1">
+
+	
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="c2d2b70" class="language- ">
+  <code>#include &lt;ESP8266WiFi.h&gt;
+#include &lt;ESP8266WebServer.h&gt;
+
+const char* ap_ssid = &#34;ACSL JAYA&#34;;  // Access Point SSID
+const char* ap_password = &#34;12345678&#34;;
+uint8_t max_connections = 8;      // Max number of connections
+int current_stations = 0, new_stations = 0;
+ESP8266WebServer server(80);
+
+uint8_t led1_pin = 5;
+uint8_t led2_pin = 4;
+uint8_t led3_pin = 2;
+uint8_t led4_pin = 14;
+
+bool led1_status = false, led2_status = false, led3_status = false, led4_status = false;
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println();
+
+  pinMode(led1_pin, OUTPUT);
+  pinMode(led2_pin, OUTPUT);
+  pinMode(led3_pin, OUTPUT);
+  pinMode(led4_pin, OUTPUT);
+
+  // Setup the access point
+  if(WiFi.softAP(ap_ssid, ap_password, 1, false, max_connections) == true) {
+    Serial.print(&#34;Access Point is Created with SSID: &#34;);
+    Serial.println(ap_ssid);
+    Serial.print(&#34;Max Connections Allowed: &#34;);
+    Serial.println(max_connections);
+    Serial.print(&#34;Access Point IP: &#34;);
+    Serial.println(WiFi.softAPIP());
+  } else {
+    Serial.println(&#34;Unable to Create Access Point&#34;);
+  }
+
+  // Define HTTP server routes
+  server.on(&#34;/&#34;, handle_OnConnect);
+  server.on(&#34;/led1on&#34;, handle_led1on);
+  server.on(&#34;/led1off&#34;, handle_led1off);
+  server.on(&#34;/led2on&#34;, handle_led2on);
+  server.on(&#34;/led2off&#34;, handle_led2off);
+  server.on(&#34;/led3on&#34;, handle_led3on);
+  server.on(&#34;/led3off&#34;, handle_led3off);
+  server.on(&#34;/led4on&#34;, handle_led4on);
+  server.on(&#34;/led4off&#34;, handle_led4off);
+  server.onNotFound(handle_NotFound);
+
+  server.begin();
+  Serial.println(&#34;HTTP Server Started&#34;);
+}
+
+void loop() {
+  server.handleClient();
+
+  new_stations = WiFi.softAPgetStationNum();
+
+  if(current_stations &lt; new_stations) {  // Device is connected
+    current_stations = new_stations;
+    Serial.print(&#34;New Device Connected to SoftAP... Total Connections: &#34;);
+    Serial.println(current_stations);
+  }
+
+  if(current_stations &gt; new_stations) {  // Device is disconnected
+    current_stations = new_stations;
+    Serial.print(&#34;Device disconnected from SoftAP... Total Connections: &#34;);
+    Serial.println(current_stations);
+  }
+
+  // Control LED states
+  digitalWrite(led1_pin, led1_status ? HIGH : LOW);
+  digitalWrite(led2_pin, led2_status ? HIGH : LOW);
+  digitalWrite(led3_pin, led3_status ? HIGH : LOW);
+  digitalWrite(led4_pin, led4_status ? HIGH : LOW);
+}
+
+void handle_OnConnect() {
+  Serial.println(&#34;Client Connected&#34;);
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led1on() {
+  Serial.println(&#34;LED1 ON&#34;);
+  led1_status = true;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led1off() {
+  Serial.println(&#34;LED1 OFF&#34;);
+  led1_status = false;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led2on() {
+  Serial.println(&#34;LED2 ON&#34;);
+  led2_status = true;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led2off() {
+  Serial.println(&#34;LED2 OFF&#34;);
+  led2_status = false;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led3on() {
+  Serial.println(&#34;LED3 ON&#34;);
+  led3_status = true;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led3off() {
+  Serial.println(&#34;LED3 OFF&#34;);
+  led3_status = false;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led4on() {
+  Serial.println(&#34;LED4 ON&#34;);
+  led4_status = true;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_led4off() {
+  Serial.println(&#34;LED4 OFF&#34;);
+  led4_status = false;
+  server.send(200, &#34;text/html&#34;, HTML());
+}
+
+void handle_NotFound() {
+  server.send(404, &#34;text/plain&#34;, &#34;Not found&#34;);
+}
+
+String HTML() {
+  String msg = &#34;&lt;!DOCTYPE html&gt;&lt;html&gt;\n&#34;;
+  msg &#43;= &#34;&lt;head&gt;&lt;meta name=\&#34;viewport\&#34; content=\&#34;width=device-width, initial-scale=1.0, user-scalable=no\&#34;&gt;\n&#34;;
+  msg &#43;= &#34;&lt;title&gt;Kontrol LED&lt;/title&gt;\n&#34;;
+  msg &#43;= &#34;&lt;style&gt;html {font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}\n&#34;;
+  msg &#43;= &#34;body {margin-top: 50px;} h1 {color: #444444; margin: 50px auto 30px;} h3 {color:#444444; margin-bottom: 50px;}\n&#34;;
+  msg &#43;= &#34;.button {display: block; width: 80px; background-color: #f48100; border: none; color: white; padding: 13px 30px; text-decoration: none; font-size: 25px; margin: 0px auto 35px; cursor: pointer; border-radius: 4px;}\n&#34;;
+  msg &#43;= &#34;.button-on {background-color: #f48100;}\n&#34;;
+  msg &#43;= &#34;.button-on:active {background-color: #f48100;}\n&#34;;
+  msg &#43;= &#34;.button-off {background-color: #26282d;}\n&#34;;
+  msg &#43;= &#34;.button-off:active {background-color: #26282d;}\n&#34;;
+  msg &#43;= &#34;&lt;/style&gt;\n&#34;;
+  msg &#43;= &#34;&lt;/head&gt;\n&#34;;
+  msg &#43;= &#34;&lt;body&gt;\n&#34;;
+  msg &#43;= &#34;&lt;h1&gt;ESP8266 Web Server&lt;/h1&gt;\n&#34;;
+  msg &#43;= &#34;&lt;h3&gt;Using Access Point (AP) mode&lt;/h3&gt;\n&#34;;
+
+  // LED controls
+  if(led1_status == false) {
+    msg &#43;= &#34;&lt;p&gt;LED1 Status: OFF&lt;/p&gt;&lt;a class=\&#34;button button-on\&#34; href=\&#34;/led1on\&#34;&gt;ON&lt;/a&gt;\n&#34;;
+  } else {
+    msg &#43;= &#34;&lt;p&gt;LED1 Status: ON&lt;/p&gt;&lt;a class=\&#34;button button-off\&#34; href=\&#34;/led1off\&#34;&gt;OFF&lt;/a&gt;\n&#34;;
+  }
+  if(led2_status == false) {
+    msg &#43;= &#34;&lt;p&gt;LED2 Status: OFF&lt;/p&gt;&lt;a class=\&#34;button button-on\&#34; href=\&#34;/led2on\&#34;&gt;ON&lt;/a&gt;\n&#34;;
+  } else {
+    msg &#43;= &#34;&lt;p&gt;LED2 Status: ON&lt;/p&gt;&lt;a class=\&#34;button button-off\&#34; href=\&#34;/led2off\&#34;&gt;OFF&lt;/a&gt;\n&#34;;
+  }
+  if(led3_status == false) {
+    msg &#43;= &#34;&lt;p&gt;LED3 Status: OFF&lt;/p&gt;&lt;a class=\&#34;button button-on\&#34; href=\&#34;/led3on\&#34;&gt;ON&lt;/a&gt;\n&#34;;
+  } else {
+    msg &#43;= &#34;&lt;p&gt;LED3 Status: ON&lt;/p&gt;&lt;a class=\&#34;button button-off\&#34; href=\&#34;/led3off\&#34;&gt;OFF&lt;/a&gt;\n&#34;;
+  }
+  if(led4_status == false) {
+    msg &#43;= &#34;&lt;p&gt;LED4 Status: OFF&lt;/p&gt;&lt;a class=\&#34;button button-on\&#34; href=\&#34;/led4on\&#34;&gt;ON&lt;/a&gt;\n&#34;;
+  } else {
+    msg &#43;= &#34;&lt;p&gt;LED4 Status: ON&lt;/p&gt;&lt;a class=\&#34;button button-off\&#34; href=\&#34;/led4off\&#34;&gt;OFF&lt;/a&gt;\n&#34;;
+  }
+
+  msg &#43;= &#34;&lt;/body&gt;\n&#34;;
+  msg &#43;= &#34;&lt;/html&gt;\n&#34;;
+
+  return msg;
+}</code>
+  </pre>
+  </div>
+
+
+</div>
+
+
+</div>
 
     </div>
 
@@ -1927,7 +2432,7 @@ digunakan untuk membuat jaringan lokal di mana ESP adalah pusatnya.</p>
                 id:  43 ,
                 href: "\/docs\/babeight\/",
                 title: "Tutorial Bab 8 (Ongoing)",
-                description: "WIRELESS SENSOR NETWORK (WSN)",
+                description: "Wireless Sensor Network (WSN)",
                 content: ""
             }
         );
@@ -1937,7 +2442,7 @@ digunakan untuk membuat jaringan lokal di mana ESP adalah pusatnya.</p>
                 href: "\/docs\/babeight\/wsn\/",
                 title: "Wireless Sensor Network",
                 description: "Konsep, Manfaat, Rangkaian Dan Jenis Koneksi Mikrokontroler",
-                content: "Bab 8 ini akan membahas praktikum tentang jaringan sensor nirkabel (WSN), yang mencakup instalasi sensor untuk membangun jaringan, serta konfigurasi seperti pengaturan alamat node, protokol komunikasi, dan topologi jaringan.\nTujuan link\rTUJUAN PENJELASAN Memahami dasar – dasar WSN Pada bab ini membantu praktikan untuk memahami dasar-dasar dari WSN. Merancang dan mengkonfigurasi mikrokontroler dalam system WSN Bab ini memandu praktikan langkah demi langkah untuk mengkonfigurasi mikrokontroler dalam system WSN. Persyaratan linkDisarankan praktikan menggunakan hardware dan software sesuai pada dokumentasi ini. Apabila terdapat versi yang lumayan lampau dari versi yang direcommendasikan atau hardware yang lawas maka sebaiknya bertanya kepada Asisten Mengajar Shift.\nHARDWARE YANG DIBUTUHKAN PRAKTIKUM JENIS PC / Laptop CPU ≥ 4 Cores PC / Laptop RAM ≥ 4 GB PC / Laptop Storage ≥ 10 GB 1 Buah Mikrokontroler ESP32 1 Protoboard - 4 Buah LED - Segulung Kabel GPIO - SOFTWARE YANG DIBUTUHKAN PRAKTIKUM JENIS Windows OS ≥ Versi 11 Arduino IDE ≥ Versi 2.3 WSN linkKonsep WSN Wireless Sensor Network (WSN) atau jaringan Sensor tanpa kabel (Nirkabel) adalah sistem yang terdiri dari banyak sensor kecil yang dilengkapi dengan kemampuan untuk saling berkomunikasi tanpa menggunakan kabel.. Sensor-sensor ini ditempatkan di berbagai lokasi untuk memantau dan mengumpulkan data dari lingkungan sekitar, seperti suhu, kelembapan, cahaya, getaran, dan lain-lain. Data yang dikumpulkan kemudian dikirim melalui jaringan nirkabel ke pusat pengolahan data atau sink node, di mana data tersebut dapat dianalisis dan diambil tindakan yang diperlukan.\nManfaat WSN linkBerikut adalah beberapa keuntungan yang dapat diperoleh dengan menggunakan WSN:\nPemantauan Lingkungan linkWSN dapat dirancang untuk mengawasi faktor lingkungan seperti suhu, kelembapan, cahaya, tekanan, dan polusi udara. Ini berguna dalam aplikasi seperti:\nPemantauan Cuaca: Mengumpulkan data meteorologi untuk prediksi cuaca dan analisis iklim. Deteksi Kebakaran Hutan: Memantau kondisi yang dapat menyebabkan kebakaran dan memberikan peringatan dini. Pengelolaan Kota Pintar linkWSN membantu dalam pengelolaan kota pintar dengan mengumpulkan data yang berguna untuk berbagai aplikasi perkotaan:\nPengelolaan Lalu Lintas: Memantau dan mengelola arus lalu lintas untuk mengurangi kemacetan. Pengelolaan Sampah: Mengoptimalkan pengumpulan sampah berdasarkan pemantauan tingkat pengisian tempat sampah. Kesehatan dan Medis linkWSN membantu dalam pengelolaan kota pintar dengan mengumpulkan data yang berguna untuk berbagai aplikasi Kesehatan dan medis:\nPemantauan Kondisi Vital Pasien: Memantau kondisi organ vital seperti jantung, paru-paru, denyut nadi, dan lain-lain dari jauh. Manajemen Obat: Memantau apakah kondisi obat pasien mencukupi atau tidak. Rangkaian Mikrokontroler linkJenis Mode Koneksi Pada Mikrokontroler linkJenis mode koneksi pada mikrokontroler dibagi menjadi 2 mode, yaitu :\nMode Station (STA) linkDalam mode station, ESP bertindak sebagai klien yang terhubung ke access point (AP) atau router Wi-Fi yang ada. Mode ini mirip dengan cara kerja perangkat seperti smartphone atau laptop saat terhubung ke jaringan Wi-Fi. Dalam mode ini, ESP dapat mengakses internet dan berkomunikasi dengan perangkat lain di jaringan yang sama.\nMode Access Point (AP) linkDalam mode access point, ESP bertindak sebagai titik akses Wi-Fi, memungkinkan perangkat lain untuk terhubung langsung ke ESP. Mode ini sering digunakan untuk membuat jaringan lokal di mana ESP adalah pusatnya.\n"
+                content: "Bab 8 ini akan membahas praktikum tentang jaringan sensor nirkabel (WSN), yang mencakup instalasi sensor untuk membangun jaringan, serta konfigurasi seperti pengaturan alamat node, protokol komunikasi, dan topologi jaringan.\nTujuan link\rTUJUAN PENJELASAN Memahami dasar – dasar WSN Pada bab ini membantu praktikan untuk memahami dasar-dasar dari WSN. Merancang dan mengkonfigurasi mikrokontroler dalam system WSN Bab ini memandu praktikan langkah demi langkah untuk mengkonfigurasi mikrokontroler dalam system WSN. Persyaratan linkDisarankan praktikan menggunakan hardware dan software sesuai pada dokumentasi ini. Apabila terdapat versi yang lumayan lampau dari versi yang direcommendasikan atau hardware yang lawas maka sebaiknya bertanya kepada Asisten Mengajar Shift.\nHARDWARE YANG DIBUTUHKAN PRAKTIKUM JENIS PC / Laptop CPU ≥ 4 Cores PC / Laptop RAM ≥ 4 GB PC / Laptop Storage ≥ 10 GB 1 Buah Mikrokontroler ESP32 1 Protoboard - 4 Buah LED - Segulung Kabel GPIO - SOFTWARE YANG DIBUTUHKAN PRAKTIKUM JENIS Windows OS ≥ Versi 11 Arduino IDE ≥ Versi 2.3 WSN linkKonsep WSN Wireless Sensor Network (WSN) atau jaringan Sensor tanpa kabel (Nirkabel) adalah sistem yang terdiri dari banyak sensor kecil yang dilengkapi dengan kemampuan untuk saling berkomunikasi tanpa menggunakan kabel.. Sensor-sensor ini ditempatkan di berbagai lokasi untuk memantau dan mengumpulkan data dari lingkungan sekitar, seperti suhu, kelembapan, cahaya, getaran, dan lain-lain. Data yang dikumpulkan kemudian dikirim melalui jaringan nirkabel ke pusat pengolahan data atau sink node, di mana data tersebut dapat dianalisis dan diambil tindakan yang diperlukan.\nManfaat WSN linkBerikut adalah beberapa keuntungan yang dapat diperoleh dengan menggunakan WSN:\nPemantauan Lingkungan linkWSN dapat dirancang untuk mengawasi faktor lingkungan seperti suhu, kelembapan, cahaya, tekanan, dan polusi udara. Ini berguna dalam aplikasi seperti:\nPemantauan Cuaca: Mengumpulkan data meteorologi untuk prediksi cuaca dan analisis iklim. Deteksi Kebakaran Hutan: Memantau kondisi yang dapat menyebabkan kebakaran dan memberikan peringatan dini. Pengelolaan Kota Pintar linkWSN membantu dalam pengelolaan kota pintar dengan mengumpulkan data yang berguna untuk berbagai aplikasi perkotaan:\nPengelolaan Lalu Lintas: Memantau dan mengelola arus lalu lintas untuk mengurangi kemacetan. Pengelolaan Sampah: Mengoptimalkan pengumpulan sampah berdasarkan pemantauan tingkat pengisian tempat sampah. Kesehatan dan Medis linkWSN membantu dalam pengelolaan kota pintar dengan mengumpulkan data yang berguna untuk berbagai aplikasi Kesehatan dan medis:\nPemantauan Kondisi Vital Pasien: Memantau kondisi organ vital seperti jantung, paru-paru, denyut nadi, dan lain-lain dari jauh. Manajemen Obat: Memantau apakah kondisi obat pasien mencukupi atau tidak. Rangkaian Mikrokontroler linkJenis Mode Koneksi Pada Mikrokontroler linkJenis mode koneksi pada mikrokontroler dibagi menjadi 2 mode, yaitu :\nMode Station (STA) linkDalam mode station, ESP bertindak sebagai klien yang terhubung ke access point (AP) atau router Wi-Fi yang ada. Mode ini mirip dengan cara kerja perangkat seperti smartphone atau laptop saat terhubung ke jaringan Wi-Fi. Dalam mode ini, ESP dapat mengakses internet dan berkomunikasi dengan perangkat lain di jaringan yang sama.\nMikrokontroler ESP8266 Example\rCode\r#include #include const char *ssid = \"LAB LANJUT 125\"; // Ganti dengan nama WiFi yang tersedia\rconst char *password = \"12345678\"; // Ganti dengan password WiFi yang tersedia\rESP8266WebServer server(80);\ruint8_t led1_pin = 5;\ruint8_t led2_pin = 4;\ruint8_t led3_pin = 2;\ruint8_t led4_pin = 14;\rbool led1_status = false, led2_status = false, led3_status = false, led4_status = false;\rvoid setup() {\rSerial.begin(115200);\rSerial.println();\rSerial.print(\"Connecting to \");\rSerial.print(ssid);\r// Setup LED Pins\rpinMode(led1_pin, OUTPUT);\rpinMode(led2_pin, OUTPUT);\rpinMode(led3_pin, OUTPUT);\rpinMode(led4_pin, OUTPUT);\r// Connect to WiFi\rWiFi.begin(ssid, password);\r// Wait until the ESP8266 connects to WiFi\rint attempts = 0;\rwhile (WiFi.status() != WL_CONNECTED \u0026\u0026 attempts \u003c 20) { // Limit the attempts to avoid endless loop\rdelay(1000);\rSerial.print(\".\");\rattempts++;\r}\rif (WiFi.status() == WL_CONNECTED) {\rSerial.println();\rSerial.print(\"WiFi Connected! IP Address: \");\rSerial.println(WiFi.localIP()); // Display the local IP address\r} else {\rSerial.println();\rSerial.println(\"Failed to connect to WiFi!\");\rreturn; // Stop if WiFi connection failed\r}\r// Start web server and define routes\rserver.on(\"/\", handle_OnConnect);\rserver.on(\"/led1on\", handle_led1on);\rserver.on(\"/led1off\", handle_led1off);\rserver.on(\"/led2on\", handle_led2on);\rserver.on(\"/led2off\", handle_led2off);\rserver.on(\"/led3on\", handle_led3on);\rserver.on(\"/led3off\", handle_led3off);\rserver.on(\"/led4on\", handle_led4on);\rserver.on(\"/led4off\", handle_led4off);\rserver.onNotFound(handle_NotFound);\rserver.begin();\rSerial.println(\"HTTP Server Started\");\r}\rvoid loop() {\rserver.handleClient();\r// LED control based on status\rdigitalWrite(led1_pin, led1_status ? HIGH : LOW);\rdigitalWrite(led2_pin, led2_status ? HIGH : LOW);\rdigitalWrite(led3_pin, led3_status ? HIGH : LOW);\rdigitalWrite(led4_pin, led4_status ? HIGH : LOW);\r}\rvoid handle_OnConnect() {\rSerial.println(\"Client Connected\");\rserver.send(200, \"text/html\", HTML());\r}\rvoid handle_led1on() {\rSerial.println(\"LED1 ON\");\rled1_status = true;\rserver.send(200, \"text/html\", HTML());\r}\rvoid handle_led1off() {\rSerial.println(\"LED1 OFF\");\rled1_status = false;\rserver.send(200, \"text/html\", HTML());\r}\rvoid handle_led2on() {\rSerial.println(\"LED2 ON\");\rled2_status = true;\rserver.send(200, \"text/html\", HTML());\r}\rvoid handle_led2off() {\rSerial.println(\"LED2 OFF\");\rled2_status = false;\rserver.send(200, \"text/html\", HTML());\r}\rvoid handle_led3on() {\rSerial.println(\"LED3 ON\");\rled3_status = true;\rserver.send(200, \"text/html\", HTML());\r}\rvoid handle_led3off() {\rSerial.println(\"LED3 OFF\");\rled3_status = false;\rserver.send(200, \"text/html\", HTML());\r}\rvoid handle_led4on() {\rSerial.println(\"LED4 ON\");\rled4_status = true;\rserver.send(200, \"text/html\", HTML());\r}\rvoid handle_led4off() {\rSerial.println(\"LED4 OFF\");\rled4_status = false;\rserver.send(200, \"text/html\", HTML());\r}\rvoid handle_NotFound() {\rserver.send(404, \"text/plain\", \"Not found\");\r}\rString HTML() {\rString msg = \"\u003c!DOCTYPE html\u003e \\n\";\rmsg += \"\\n\";\rmsg += \"Kontrol LED\\n\";\rmsg += \"\\n\";\rmsg += \"\\n\";\rmsg += \"\\n\";\rmsg += \"ESP8266 Web Server\\n\";\rmsg += \"Mode Station (STA) Connected\\n\";\rmsg += (led1_status == false) ? \"LED1 Status: OFF\n"
             }
         );
     index.add(
