@@ -11106,10 +11106,12 @@ span.menu-icon {
   background-position: center center;
   z-index: 3; }
 
-.icv__is--fluid .icv__wrapper, .icv__icv--vertical .icv__wrapper {
+.icv__is--fluid .icv__wrapper,
+.icv__icv--vertical .icv__wrapper {
   width: 100% !important; }
 
-.icv__is--fluid .icv__wrapper, .icv__icv--horizontal .icv__wrapper {
+.icv__is--fluid .icv__wrapper,
+.icv__icv--horizontal .icv__wrapper {
   height: 100% !important; }
 
 .icv__fluidwrapper {
