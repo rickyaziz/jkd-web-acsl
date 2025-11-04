@@ -152,22 +152,6 @@ Berikut merupakan standar-standar pada IEEE 802.11 atau biasa disebut dengan WIF
        <td style="border: none; padding: 6px;">-</td>
        <td style="border: none; padding: 6px; ">Peningkatan MU MIMO, OFDMA, target kecepatan lebih tinggi dan latensi rendah</td>
    </tr>
-   <tr>
-       <td style="border: none; padding: 6px;">IEEE 802.11a</td>
-       <td style="border: none; padding: 6px; ">1999</td>
-       <td style="border: none; padding: 6px;">5 GHz</td>
-       <td style="border: none; padding: 6px; ">54 Mbps</td>
-       <td style="border: none; padding: 6px;">Pendek</td>
-       <td style="border: none; padding: 6px; ">OFDM, tahan interferensi, tidak kompatibel dengan 802.11b/g</td>
-   </tr>
-   <tr style="background-color: #7928ca2e;">
-       <td style="border: none; padding: 6px;">IEEE 802.11a</td>
-       <td style="border: none; padding: 6px; ">1999</td>
-       <td style="border: none; padding: 6px;">5 GHz</td>
-       <td style="border: none; padding: 6px; ">54 Mbps</td>
-       <td style="border: none; padding: 6px;">Pendek</td>
-       <td style="border: none; padding: 6px; ">OFDM, tahan interferensi, tidak kompatibel dengan 802.11b/g</td>
-   </tr>
    </table>
 
 <span></span>
