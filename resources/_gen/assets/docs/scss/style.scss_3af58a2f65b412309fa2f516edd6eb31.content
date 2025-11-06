@@ -11075,7 +11075,7 @@ table th:last-child {
   font-weight: var(--fw-medium); }
 
 .section {
-  padding: 200px 0;
+  padding: 100px 0;
   position: relative; }
   @media (max-width: 768px) {
     .section {
@@ -11110,8 +11110,8 @@ table th:last-child {
   @media (max-width: 768px) {
     .section-title .title {
       font-size: 24px !important; } }
-.docs-content .para-desc {
-  max-width: 500px !important; }
+.para-desc {
+  max-width: 600px; }
 
 .mt-100 {
   margin-top: 100px; }
