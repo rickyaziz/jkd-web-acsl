@@ -1,4 +1,4 @@
-baseUrl = "https://jkd.rickyaziz.my.id/"
+baseUrl = "https://jkd.acsl.my.id/"
 title = 'ACSL | Jaringan Komputer Dasar'
 
 # -------------------------------------------------------------------
@@ -56,7 +56,7 @@ title = 'ACSL | Jaringan Komputer Dasar'
 # Social Media & Contact
 # -------------------------------------------------------------------
 [params.social]
-  github = "https://github.com/gunadarma-academy"
+  github = "https://github.com/Advanced-Computer-System-Laboratory"
   instagram = "labacsl_ug"
   email = "info@gunadarma.ac.id"
   website = "https://gunadarma.ac.id"

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jaringan Komputer Dasar on ACSL | Jaringan Komputer Dasar</title>
-    <link>https://jkd.rickyaziz.my.id/docs/</link>
+    <link>https://jkd.acsl.my.id/docs/</link>
     <description>Recent content in Jaringan Komputer Dasar on ACSL | Jaringan Komputer Dasar</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 May 2023 00:44:31 +0100</lastBuildDate>
-    <atom:link href="https://jkd.rickyaziz.my.id/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jkd.acsl.my.id/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Standar Operasional Prosedur</title>
-      <link>https://jkd.rickyaziz.my.id/docs/sop/</link>
+      <link>https://jkd.acsl.my.id/docs/sop/</link>
       <pubDate>Mon, 22 May 2023 00:44:31 +0100</pubDate>
-      <guid>https://jkd.rickyaziz.my.id/docs/sop/</guid>
+      <guid>https://jkd.acsl.my.id/docs/sop/</guid>
       <description>&lt;hr&gt;&#xA;&lt;center&gt;&#xD;&#xA;&lt;p&gt;&lt;span style=&#34;font-size:1.9em; font-weight: bold;&#34;&gt;Selamat Datang di Mata Kuliah Praktikum Jaringan Komputer Lanjut Gunadarma.&lt;/span&gt;&lt;/p&gt;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;persyaratan&#34;&gt;Persyaratan &lt;a href=&#34;#persyaratan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Pada SOP ini, praktikan akan mempraktekan beberapa bab pada website ini. Agar praktikum berjalan sesuai prosedur maka Asisten Mengajar Shift atau Praktikan dapat membaca persyaratan praktikum ini sebelum memulai ke bab praktikum. Ada beberapa point yang harus Asisten ketahui yaitu:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Ketua Materi wajib membuat grup WhatsApp kelompok belajar sebagai fasilitator kegiatan belajar mengajar.&lt;/li&gt;&#xA;&lt;li&gt;Asisten Mengajar Shift wajib melakukan live config dengan materi modul yang sudah tersedia di repository utama Advanced Computer System.&lt;/li&gt;&#xA;&lt;li&gt;Asisten Mengajar Shift wajib melakukan interaksi secara langsung ke praktikan dengan menyebutkan secara verbal langkah-langkah penyelesaian modul dan siap untuk menerima interupsi jika ada praktikan yang bertanya.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Sedangkan pada praktikan ada beberapa point yang harus diketahui yaitu:&lt;/p&gt;</description>
     </item>
   </channel>
