@@ -15,7 +15,7 @@ toc: true
     <img src="/images/babSix/b.24.PNG" alt="Gambar B.24 - Konfig BGP" class="img-fluid mb-3 responsive-img">
     </center>
 
-2.  Router 1 :
+2.  Router 4 :
     <center>
     <img src="/images/babSix/b.25.PNG" alt="Gambar B.25 - Konfig BGP" class="img-fluid mb-3 responsive-img">
     </center>
