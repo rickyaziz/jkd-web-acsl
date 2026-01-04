@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial Bab 8 on ACSL | Jaringan Komputer Dasar</title>
+    <link>https://jkd.acsl.my.id/docs/babeight/</link>
+    <description>Recent content in Tutorial Bab 8 on ACSL | Jaringan Komputer Dasar</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Oct 2025 19:34:58 +0700</lastBuildDate>
+    <atom:link href="https://jkd.acsl.my.id/docs/babeight/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wireless Sensor Network</title>
+      <link>https://jkd.acsl.my.id/docs/babeight/wsn/</link>
+      <pubDate>Wed, 29 Oct 2025 19:34:58 +0700</pubDate>
+      <guid>https://jkd.acsl.my.id/docs/babeight/wsn/</guid>
+      <description>&lt;p&gt;Bab 8 ini akan membahas praktikum tentang jaringan sensor nirkabel (WSN), yang mencakup instalasi sensor untuk membangun jaringan, serta konfigurasi seperti pengaturan alamat node, protokol komunikasi, dan topologi jaringan.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tujuan&#34;&gt;Tujuan &lt;a href=&#34;#tujuan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;table class=&#34;table table-striped&#34;&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;TUJUAN&lt;/th&gt;&#xA;          &lt;th&gt;PENJELASAN&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Memahami dasar – dasar WSN&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Pada bab ini membantu praktikan untuk memahami dasar-dasar dari WSN.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Merancang dan mengkonfigurasi mikrokontroler dalam system WSN&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Bab ini memandu praktikan langkah demi langkah untuk mengkonfigurasi mikrokontroler dalam system WSN.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;h2 id=&#34;persyaratan&#34;&gt;Persyaratan &lt;a href=&#34;#persyaratan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Disarankan praktikan menggunakan hardware dan software sesuai pada dokumentasi ini. Apabila terdapat versi yang lumayan lampau dari versi yang direcommendasikan atau hardware yang lawas maka sebaiknya bertanya kepada Asisten Mengajar Shift.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

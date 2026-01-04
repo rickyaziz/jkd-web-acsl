@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Briefing on ACSL | Jaringan Komputer Dasar</title>
+    <link>https://jkd.acsl.my.id/docs/briefing/</link>
+    <description>Recent content in Briefing on ACSL | Jaringan Komputer Dasar</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 31 Aug 2025 23:20:07 +0700</lastBuildDate>
+    <atom:link href="https://jkd.acsl.my.id/docs/briefing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sejarah Dan Evolusi Jaringan</title>
+      <link>https://jkd.acsl.my.id/docs/briefing/sejarahdanevolusi/</link>
+      <pubDate>Sun, 31 Aug 2025 17:27:28 +0700</pubDate>
+      <guid>https://jkd.acsl.my.id/docs/briefing/sejarahdanevolusi/</guid>
+      <description>&lt;p&gt;Pada bab ini, praktikan akan mempelajari sejarah perkembangan jaringan komputer,memahami tujuan utama dari pembentukan jaringan, serta mengenal berbagai perangkat yang digunakan dalam jaringan. Selain itu, praktikan juga akan mendalami model OSI layer sebagai dasar komunikasi jaringan, mempelajari IP address beserta pembagian kelasnya, dan mengaplikasikan konsep-konsep ini melalui simulasi jaringan menggunakan Cisco Packet Tracer.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tujuan&#34;&gt;Tujuan &lt;a href=&#34;#tujuan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;table class=&#34;table table-striped&#34;&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;TUJUAN&lt;/th&gt;&#xA;          &lt;th&gt;PENJELASAN&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Memahami sejarah jaringan komputer&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;p style=&#34;text-align: justify;&#34;&gt;Bab ini membahas perkembangan jaringan komputer dari masa ke masa, bagaimana konsepnya terbentuk, dan pengaruh pentingnya dalam dunia teknologi saat ini.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Definisi Dan Cara Kerja Jaringan</title>
+      <link>https://jkd.acsl.my.id/docs/briefing/definisidancarakerja/</link>
+      <pubDate>Sun, 31 Aug 2025 20:29:51 +0700</pubDate>
+      <guid>https://jkd.acsl.my.id/docs/briefing/definisidancarakerja/</guid>
+      <description>&lt;h2 id=&#34;definisi-jaringan&#34;&gt;Definisi Jaringan &lt;a href=&#34;#definisi-jaringan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;d-flex justify-content-center w-100&#34;&gt;&#xD;&#xA;&lt;img src=&#34;https://jkd.acsl.my.id/images/briefing/br-3.png&#34; alt=&#34;Gambar B.3 - Jaringan Komputer&#34; class=&#34;img-fluid mb-3 responsive-img&#34;&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p style= &#34;text-align: center;&#34;&gt;&lt;b&gt;Gambar B.3&lt;/b&gt; Jaringan Komputer&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Definisi jaringan komputer itu sendiri merupakan dua atau lebih perangkat komputer yang saling terhubung untuk berbagi sumber daya, bertukar informasi, serta serta menggunakan perangkat lunak atau aplikasi secara bersama-sama. Perangkat dalam jaringan ini memanfaatkan aturan standar yang dikenal sebagai protokol komunikasi untuk mengirimkan data melalui media fisik atau teknologi nirkabel.&lt;/p&gt;&#xA;&lt;h2 id=&#34;manfaat-jaringan&#34;&gt;Manfaat Jaringan &lt;a href=&#34;#manfaat-jaringan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Jaringan komputer pertama kali dikembangkan pada akhir 1950-an oleh militer dan Departemen Pertahanan Amerika Serikat. Awalnya, jaringan ini dirancang untuk mentransmisikan data melalui saluran telepon, dengan aplikasi yang terbatas pada bidang ilmiah dan komersial. Seiring waktu, teknologi ini berkembang menjadi internet yang kini dikenal luas oleh masyarakat. Di era modern, internet digunakan untuk berbagai kebutuhan, seperti pekerjaan, hiburan, pendidikan, dan banyak lagi. Perkembangan ini didukung oleh sejumlah faktor berikut:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Perangkat Jaringan Komputer</title>
+      <link>https://jkd.acsl.my.id/docs/briefing/perangkatjaringan/</link>
+      <pubDate>Sun, 31 Aug 2025 21:26:57 +0700</pubDate>
+      <guid>https://jkd.acsl.my.id/docs/briefing/perangkatjaringan/</guid>
+      <description>&lt;p&gt;Pengertian dari perangkat jaringan yaitu perangkat lunak maupun perangkat keras yang berfungsi untuk menyambungkan, mengatur, dan mengelola komunikasi antar komputer, perangkat, atau sistem pada sebuah jaringan komputer. Tugas perangkat ini meliputi pengiriman, penerimaan, dan pemrosesan data, serta memastikan kelancaran fungsi jaringan.&lt;/p&gt;&#xA;&lt;h3 id=&#34;switch&#34;&gt;Switch &lt;a href=&#34;#switch&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;https://jkd.acsl.my.id/images/briefing/br-5.jpg&#34; alt=&#34;Gambar B.5 - Switch&#34; class=&#34;img-fluid mb-3 responsive-img&#34;&gt;&#xD;&#xA;&lt;p style=&#34;text-align: center;&#34;&gt;&lt;b&gt;Gambar B.19&lt;/b&gt; Topologi Jala (Mesh)&lt;/p&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;https://jkd.acsl.my.id/images/briefing/br-5.jpg&#34; alt=&#34;Gambar B.5 - Switch&#34; class=&#34;img-fluid mb-3 responsive-img-small&#34;&gt;&#xD;&#xA;&lt;p style=&#34;text-align: center;&#34;&gt;&lt;b&gt;Gambar B.5&lt;/b&gt; Switch&lt;/p&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;!-- [Sumber Gambar](https://id.pinterest.com/pin/342555115427531425/) --&gt;&#xD;&#xA;&lt;p&gt;Switch merupakan perangkat yang berfungsi menghubungkan berbagai perangkat dalam jaringan lokal (LAN). Alat ini mengarahkan paket data langsung ke perangkat tujuan, sehingga memastikan komunikasi antar perangkat dalam jaringan berlangsung secara efisien.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tipe Arsitektur Jaringan</title>
+      <link>https://jkd.acsl.my.id/docs/briefing/arsitekturdantopologijaringan/</link>
+      <pubDate>Sun, 31 Aug 2025 22:10:31 +0700</pubDate>
+      <guid>https://jkd.acsl.my.id/docs/briefing/arsitekturdantopologijaringan/</guid>
+      <description>&lt;h2 id=&#34;arsitektur-jaringan&#34;&gt;Arsitektur Jaringan &lt;a href=&#34;#arsitektur-jaringan&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Arsitektur jaringan mengacu pada cara penyusunan atau struktur jaringan komputer yang dirancang untuk mengatur dan mengelola aliran data, sumber daya, serta komunikasi antara perangkat dalam jaringan. Beberapa tipe arsitektur jaringan yang sering digunakan antara lain:&lt;/p&gt;&#xA;&lt;h5&gt;&#xD;&#xA;Arsitektur Klien-Server&#xD;&#xA;&lt;/h5&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;https://jkd.acsl.my.id/images/briefing/br-14.jpg&#34; alt=&#34;Gambar B.14 - Arsitektur Klien-Server&#34; class=&#34;img-fluid mb-3 responsive-img&#34;&gt;&#xD;&#xA;&lt;p style=&#34;text-align: center;&#34;&gt;&lt;b&gt;Gambar B.14&lt;/b&gt; Arsitektur Klien-Server&lt;/p&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;!-- [Source Gambar](https://id.pinterest.com/pin/626070785729210483/) --&gt;&#xD;&#xA;&lt;p&gt;Dalam arsitektur ini, terdapat dua jenis perangkat utama: server dan klien. Server memiliki peran untuk menyediakan layanan dan sumber daya, seperti file, printer, atau aplikasi, kepada klien. Sebaliknya, klien adalah perangkat yang meminta layanan atau sumber daya tersebut dari server. Komunikasi dalam arsitektur client server terjadi secara terpusat, di mana klien mengirim permintaan kepada server, dan server memberikan respons.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Digital</title>
+      <link>https://jkd.acsl.my.id/docs/briefing/datadigital/</link>
+      <pubDate>Sun, 31 Aug 2025 23:20:07 +0700</pubDate>
+      <guid>https://jkd.acsl.my.id/docs/briefing/datadigital/</guid>
+      <description>&lt;p&gt;Data digital adalah representasi dari informasi dalam bentuk yang terdiri dari angka-angka biner (1 dan 0) yang banyak dikenal sebagai bit atau binary digit. Di dunia komputer, data digital adalah bentuk yang paling umum dari data, dan hampir semua perangkat elektronik modern menggunakan data digital. Setiap bit dalam data digital merepresentasikan satu dari dua keadaan, biasanya disebut sebagai &amp;ldquo;0&amp;rdquo; atau &amp;ldquo;1&amp;rdquo;. Dengan menggabungkan sejumlah besar bit ini, kita dapat merepresentasikan informasi yang lebih kompleks, termasuk teks, gambar, suara, video, dan lainnya. Proses pengkodean dan penguraian (encoding dan decoding) digunakan untuk mengubah informasi dari bentuk aslinya menjadi data digital dan sebaliknya. Proses ini melibatkan penggunaan metode khusus untuk mewakili informasi dalam bentuk serangkaian bit yang dapat dipahami oleh komputer atau perangkat elektronik lainnya.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
